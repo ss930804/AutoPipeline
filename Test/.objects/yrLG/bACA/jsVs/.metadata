@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge 資訊主頁 [Jenkins]",
+  "Type": "Screen",
+  "Id": "jsVsafqMIkSe-ge6mxMYrg",
+  "Reference": "EdNSm3KZAUmUdwdO1xTKrw/jsVsafqMIkSe-ge6mxMYrg",
+  "ParentRef": "EdNSm3KZAUmUdwdO1xTKrw/bACAIKOyNUmIsh78qE3cLw",
+  "Created": "2025-07-08T05:56:48.544823Z",
+  "Updated": "2025-07-08T05:56:48.544823Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
