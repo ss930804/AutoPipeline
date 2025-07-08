@@ -1,0 +1,14 @@
+﻿{
+  "Name": "滑鼠捲動",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "uo-Qvaxs5Em1_Rherzl_xg",
+  "Reference": "EdNSm3KZAUmUdwdO1xTKrw/uo-Qvaxs5Em1_Rherzl_xg",
+  "ParentRef": "EdNSm3KZAUmUdwdO1xTKrw/jsVsafqMIkSe-ge6mxMYrg",
+  "Created": "2025-07-08T09:41:40.687894Z",
+  "Updated": "2025-07-08T09:41:40.687894Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

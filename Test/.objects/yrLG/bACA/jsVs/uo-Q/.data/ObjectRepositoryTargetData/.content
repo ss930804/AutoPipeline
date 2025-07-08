@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="0uYGvWrXY0iPqRIuSoeYqQ" Reference="EdNSm3KZAUmUdwdO1xTKrw/uo-Qvaxs5Em1_Rherzl_xg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="192.168.138.210" CVScreenId="b9338487-dcf1-488f-90e9-12699592b2a3" CvTextArea="541, 460, 34, 14" CvTextArgument="S073" CvType="Text" DesignTimeRectangle="543, 461, 32, 14" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl aaname='S W 名稱  ↓ 上次成功 上次失敗 上次費時 Fav' tag='TABLE' /&gt;&lt;webctrl aaname='{0}' type='' tag='SPAN' class='' check:innerText='{0}' /&gt;&quot;, projectName)]" Guid="9b7422ee-f14c-4f1a-a3a2-d7dab1099eda" ScopeSelectorArgument="&lt;html app='msedge.exe' title='資訊主頁 [Jenkins]' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="256cdaab059a329deba3ce33a2c25daa.png" xmlns="">0UrQ6-YCYJECTcmeS2e3-Ow</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="*" Name="projectName" />
+    </scg:List>
+    <x:String x:Key="ActivityType">MouseScroll</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

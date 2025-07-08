@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Rm4cMD8ktUW4RKqYHPplDQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="192.168.138.210/job/S073" DesignTimeRectangle="31, 298, 321, 40" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='帶參數建置' tag='A' type='' class='task-link ' check:innerText='帶參數建置' /&gt;" Guid="080ff54f-d315-456e-b799-774d627fcdbb" ScopeSelectorArgument="&lt;html app='msedge.exe' title='S073 [Jenkins]' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.PointOffset>
+        <PointOffset Position="BottomLeft" X="55" Y="-21" />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="2dd35fa416ea96f157234fac6f4e0279.png" xmlns="">05HeFQVSosU-DEBYxjNjGxw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Hover</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
