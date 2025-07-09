@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="_lBcQwHjv0ekMwVEhpAagA" Reference="EdNSm3KZAUmUdwdO1xTKrw/djLWuNcxbEC_UwElEw5ahw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="192.168.138.210/job/S073" DesignTimeRectangle="31, 343, 321, 40" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='帶參數建置' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='帶參數建置' tag='A' type='' class='task-link ' check:innerText='帶參數建置' /&gt;" Guid="1b78a941-f0cf-40cb-a414-947fa78c0708" ScopeSelectorArgument="&lt;html app='msedge.exe' title='S073 [Jenkins]' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
-      <imageRef attrName="InformativeScreenshot" originalValue="08dd5e9bd86943abe38b49e8ea107753.png" xmlns="">0iHOZ5ZuUuEy1TX2rVHVebQ</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">Click</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>

@@ -1,13 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <x:Members>
-    <x:Property Name="in_JenkinsURL" Type="InArgument(x:String)" />
-    <x:Property Name="in_ProjectName" Type="InArgument(x:String)" />
-    <x:Property Name="in_TagName" Type="InArgument(x:String)" />
-  </x:Members>
-  <VisualBasic.Settings>
-    <x:Null />
-  </VisualBasic.Settings>
-  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -120,6 +111,15 @@
       <x:String>UiPath.Platform.ObjectLibrary</x:String>
       <x:String>UiPath.Platform.SyncObjects</x:String>
       <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.Activities.System.Text</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>Microsoft</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -230,13 +230,29 @@
       <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualStudio.Validation</AssemblyReference>
+      <AssemblyReference>Microsoft.CodeAnalysis.Features</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="985,1507" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1122,2771" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="selectTagName">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">01.00.02.03</Literal>
+        </Variable.Default>
+      </Variable>
       <Variable x:TypeArguments="x:String" Name="projectName">
         <Variable.Default>
-          <Literal x:TypeArguments="x:String">S072</Literal>
+          <Literal x:TypeArguments="x:String">S073</Literal>
         </Variable.Default>
       </Variable>
     </Sequence.Variables>
@@ -245,7 +261,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard DisplayName="Edge 資訊主頁 [Jenkins]" sap:VirtualizedContainerService.HintSize="484,1484" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="843a1574-9888-4dc5-95ed-b6e4f79529c7">
+    <uix:NApplicationCard DisplayName="Edge 資訊主頁 [Jenkins]" sap:VirtualizedContainerService.HintSize="570,2748" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="843a1574-9888-4dc5-95ed-b6e4f79529c7">
       <uix:NApplicationCard.AutoGenerationOptions>
         <uix:GenerationOptions ExpectedInputs="{x:Null}" Url="{x:Null}" Prompt="Open a web browser">
           <uix:GenerationOptions.ExpectedOutputs>
@@ -260,13 +276,16 @@
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="執行" sap:VirtualizedContainerService.HintSize="450,1244" sap2010:WorkflowViewState.IdRef="Sequence_1">
+          <Sequence DisplayName="執行" sap:VirtualizedContainerService.HintSize="536,2508" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="allTags" />
+            </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NMouseScroll KeyModifiers="{x:Null}" CursorMotionType="Smooth" Direction="Down" DisplayName="滑鼠捲動 '滑鼠捲動'" sap:VirtualizedContainerService.HintSize="416,289" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="10" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V4">
+            <uix:NMouseScroll KeyModifiers="{x:Null}" CursorMotionType="Smooth" Direction="Down" DisplayName="滑鼠捲動 '滑鼠捲動'" sap:VirtualizedContainerService.HintSize="502,289" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="10" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V4">
               <uix:NMouseScroll.SearchedElement>
                 <uix:SearchedElement>
                   <uix:SearchedElement.Target>
@@ -281,7 +300,7 @@
                 <uix:TargetAnchorable BrowserURL="192.168.138.210" CVScreenId="b9338487-dcf1-488f-90e9-12699592b2a3" ContentHash="0uYGvWrXY0iPqRIuSoeYqQ" CvTextArea="541, 460, 34, 14" CvTextArgument="S073" CvType="Text" DesignTimeRectangle="543, 461, 32, 14" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl aaname='S W 名稱  ↓ 上次成功 上次失敗 上次費時 Fav' tag='TABLE' /&gt;&lt;webctrl aaname='{0}' type='' tag='SPAN' class='' check:innerText='{0}' /&gt;&quot;, projectName)]" Guid="9b7422ee-f14c-4f1a-a3a2-d7dab1099eda" InformativeScreenshot="256cdaab059a329deba3ce33a2c25daa.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/uo-Qvaxs5Em1_Rherzl_xg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='資訊主頁 [Jenkins]' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NMouseScroll.Target>
             </uix:NMouseScroll>
-            <uix:NHover CursorMotionType="Smooth" DisplayName="懸停 'S073'" sap:VirtualizedContainerService.HintSize="416,225" HoverTime="1" sap2010:WorkflowViewState.IdRef="NHover_1" InteractionMode="HardwareEvents" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V4">
+            <uix:NHover CursorMotionType="Smooth" DisplayName="懸停 'S073'" sap:VirtualizedContainerService.HintSize="502,225" HoverTime="1" sap2010:WorkflowViewState.IdRef="NHover_1" InteractionMode="HardwareEvents" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V4">
               <uix:NHover.Target>
                 <uix:TargetAnchorable BrowserURL="192.168.138.210" CVScreenId="fe2f11dc-4e36-4c8d-af42-3947e9210aff" CvTextArea="541, 460, 34, 14" CvTextArgument="S073" CvType="Text" DesignTimeRectangle="543, 461, 32, 14" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl aaname='S W 名稱  ↓ 上次成功 上次失敗 上次費時 Fav' tag='TABLE' /&gt;&lt;webctrl aaname='{0}' type='' tag='SPAN' class='' check:innerText='{0}' /&gt;&quot;, projectName)]" Guid="6282af4d-f415-4e1b-92d4-3b522ec93d51" InformativeScreenshot="4ca5d2f8852e97c5fe2ce7b8ef96fcc6.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='資訊主頁 [Jenkins]' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NHover.Target>
@@ -296,7 +315,7 @@
                 </uix:VerifyExecutionOptions>
               </uix:NHover.VerifyOptions>
             </uix:NHover>
-            <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DisplayName="按一下 'S073'" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V4">
+            <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DisplayName="按一下 'S073'" sap:VirtualizedContainerService.HintSize="502,225" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V4">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="192.168.138.210" CVScreenId="2b039186-70d6-4f3c-bed7-10e7066c09cb" ContentHash="bmyjSPm2PUyOAPTZGEZk0g" CvTextArea="541, 577, 34, 14" CvTextArgument="S073" CvType="Text" DesignTimeRectangle="543, 578, 32, 14" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl aaname='S W 名稱  ↓ 上次成功 上次失敗 上次費時 Fav' tag='TABLE' /&gt;&lt;webctrl aaname='{0}' type='' tag='SPAN' class='' check:innerText='{0}' /&gt;&quot;, projectName)]" Guid="44ae67fa-2e24-407e-b8ce-5e518dc89092" InformativeScreenshot="49082fab0fe0affb45881ff7caebdb0b.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/l6pPE5CdkUGGaP5iqC-u3g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='資訊主頁 [Jenkins]' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NClick.Target>
@@ -311,7 +330,7 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NHover CursorMotionType="Smooth" DisplayName="懸停 '帶參數建置'" sap:VirtualizedContainerService.HintSize="416,225" HoverTime="1" sap2010:WorkflowViewState.IdRef="NHover_2" InteractionMode="HardwareEvents" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V4">
+            <uix:NHover CursorMotionType="Smooth" DisplayName="懸停 '帶參數建置'" sap:VirtualizedContainerService.HintSize="502,225" HoverTime="1" sap2010:WorkflowViewState.IdRef="NHover_2" InteractionMode="HardwareEvents" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V4">
               <uix:NHover.Target>
                 <uix:TargetAnchorable BrowserURL="192.168.138.210/job/S073" ContentHash="Rm4cMD8ktUW4RKqYHPplDQ" DesignTimeRectangle="31, 298, 321, 40" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='帶參數建置' tag='A' type='' class='task-link ' check:innerText='帶參數建置' /&gt;" Guid="080ff54f-d315-456e-b799-774d627fcdbb" InformativeScreenshot="2dd35fa416ea96f157234fac6f4e0279.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/Yq12icipfkOEJh34NH1_EQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='S073 [Jenkins]' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.PointOffset>
@@ -330,9 +349,13 @@
                 </uix:VerifyExecutionOptions>
               </uix:NHover.VerifyOptions>
             </uix:NHover>
-            <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DisplayName="按一下 ''帶參數建置''" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V4">
+            <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DisplayName="按一下 '帶參數建置'" sap:VirtualizedContainerService.HintSize="502,225" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V4">
               <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="192.168.138.210/job/S073" ContentHash="_lBcQwHjv0ekMwVEhpAagA" DesignTimeRectangle="31, 343, 321, 40" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='帶參數建置' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='帶參數建置' tag='A' type='' class='task-link ' check:innerText='帶參數建置' /&gt;" Guid="1b78a941-f0cf-40cb-a414-947fa78c0708" InformativeScreenshot="08dd5e9bd86943abe38b49e8ea107753.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/djLWuNcxbEC_UwElEw5ahw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='S073 [Jenkins]' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                <uix:TargetAnchorable BrowserURL="192.168.138.210/job/S073" ContentHash="Rm4cMD8ktUW4RKqYHPplDQ" DesignTimeRectangle="31, 298, 321, 40" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='帶參數建置' tag='A' type='' class='task-link ' check:innerText='帶參數建置' /&gt;" Guid="080ff54f-d315-456e-b799-774d627fcdbb" InformativeScreenshot="2dd35fa416ea96f157234fac6f4e0279.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/Yq12icipfkOEJh34NH1_EQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='S073 [Jenkins]' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset Position="BottomLeft" X="55" Y="-21" />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
               </uix:NClick.Target>
               <uix:NClick.VerifyOptions>
                 <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
@@ -345,11 +368,88 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
+            <uix:NHover CursorMotionType="Smooth" DisplayName="懸停 '下拉清單'" sap:VirtualizedContainerService.HintSize="502,225" HoverTime="1" sap2010:WorkflowViewState.IdRef="NHover_3" InteractionMode="HardwareEvents" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V4">
+              <uix:NHover.Target>
+                <uix:TargetAnchorable BrowserURL="192.168.138.210/job/S073/build" CVScreenId="18567541-1c1a-4a14-a5d0-8ac3831804c6" ContentHash="50JKFuE930SmqBhTu4IzIA" CvElementArea="383, 487, 99, 24" CvType="InputBox" DesignTimeRectangle="384, 488, 97, 22" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' class='' aaname='' /&gt;" Guid="24f3be5a-92ff-40f9-951c-5a8a3106af15" InformativeScreenshot="ca688b6ee76b9e8e3f58aa9c9ef2db89.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/LBNK_BYnz0-3Ol1zT9sPww" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Jenkins' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete" />
+              </uix:NHover.Target>
+              <uix:NHover.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NHover.VerifyOptions>
+            </uix:NHover>
+            <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DisplayName="按一下 '下拉清單'" sap:VirtualizedContainerService.HintSize="502,225" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="192.168.138.210/job/S073/build" CVScreenId="18567541-1c1a-4a14-a5d0-8ac3831804c6" ContentHash="50JKFuE930SmqBhTu4IzIA" CvElementArea="383, 487, 99, 24" CvType="InputBox" DesignTimeRectangle="384, 488, 97, 22" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' class='' aaname='' /&gt;" Guid="24f3be5a-92ff-40f9-951c-5a8a3106af15" InformativeScreenshot="ca688b6ee76b9e8e3f58aa9c9ef2db89.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/LBNK_BYnz0-3Ol1zT9sPww" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Jenkins' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <ui:FindChildren Children="[allTags]" DisplayName="尋找子元素 'SELECT'" Filter="&lt;webctrl /&gt;" sap:VirtualizedContainerService.HintSize="502,139" sap2010:WorkflowViewState.IdRef="FindChildren_3" Scope="FIND_CHILDREN">
+              <ui:FindChildren.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9aeadbe5-9876-4484-9924-bd07eb69c2d7" InformativeScreenshot="67407361337875fe384529aa030ff3d5" Selector="&lt;webctrl tag='SELECT' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:FindChildren.Target>
+            </ui:FindChildren>
+            <ParallelForEach x:TypeArguments="ui:UiElement" DisplayName="平行的 For Each" sap:VirtualizedContainerService.HintSize="502,668" sap2010:WorkflowViewState.IdRef="ParallelForEach`1_3" Values="[allTags]">
+              <ActivityAction x:TypeArguments="ui:UiElement">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="ui:UiElement" Name="item" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="sequence" sap:VirtualizedContainerService.HintSize="452,493" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <WriteLine DisplayName="寫入行" sap:VirtualizedContainerService.HintSize="418,122" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[item.Get(&quot;innerText&quot;).ToString()]" />
+                  <If Condition="[item.Get(&quot;innerText&quot;).ToString() = selectTagName]" sap:VirtualizedContainerService.HintSize="418,309" sap2010:WorkflowViewState.IdRef="If_1">
+                    <If.Then>
+                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                </Sequence>
+              </ActivityAction>
+            </ParallelForEach>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
       <uix:NApplicationCard.TargetApp>
-        <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Edge" ContentHash="0ynPUHBWKUawFmQpGviHPg" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALxSURBVDhPbZFrTJJRGMfJ1oc+14f6ZFtbTU2Iy5Q0BTTY0OYtE1HRUClKRc3Uhllm5pVMs9IUzEtmXiZWXtCMXObMvC2vldoyS5yYF0AzJZ9e4EVH87f9t7P3fX7/c84OZicOmx/ab0sg5diRiLLwYD+lIJSjjuRxplkeLnHIv73o2M4EsP0q+KGhmoSYcI1iWL6pnnwL6ol2WP4ih7aqB4t0Rzs5UrIHHTeFxw2pvpl4fTP5qmBG87UDlsdk+iyNNm+lT1aqZVDs61BlG6qDA4VOc9rgBYf87W+r1CyNtYA4Owkay+6aFLwoEYEbg7qAnGIfqhpg0hlDaSmpwA3iQtfL4rW5wUYYaCnRS4sjTSYlP3qkEB3KjkJVA+yzPt8jwiIgKCBINdMn3RpWj7fDQGuZft3bKIEl5EqtlXkgCGblo6oBpjN1Jj3x8irb22t++HX5b2PBu/p8SIm9oF83l9+BptIseF6cDrF8Timq6p9tV86teE2G8BIUZgoXprprtcaC/yNKFMBEZxXEXeSIUN1A9HnOuHKwYUdJl8nOGuhuKIScpGgYkZeDvyfTF1UN+Li5uJ9xcf7WXldkIi5/agV51T24HccHSZYQrgm4uispkVMfQNVtkI821UWijaVRGUy9r9UXzH1sgMyEMHj2MBlqHqXAz14peLue6kIVU5ACM5Y7U6mZ7IDpnjpoeZKtL1H01SNP+hjG2ivgRgx/weoYVooq2yCyuQWWOII7QfsTH8lfHX5Toe2sL0Ceyxee3k9SS0TCKTc6RUG0xq/YMH20ljhSrlE0O3LUMhVLpqiceAngEHQF3P1CfmWmZ6hicFiVGI9VsiwtZtm0k4MFJIImj4hfJ7kHAoF6egVxD+oKcCSG17pOJHoGA9GDqw/BLRCQYcUQmQivbAjL5/D4uTQcdj6XRFgjuPqDFZnar9tcV7Ab78ictw+I2pKNiSDZfpbgrce9HGkfZE1N62Jx8SwrJklznO4FFnhyDQaDwfwDb/XrcmjdftIAAAAASUVORK5CYII=" InformativeScreenshot="9492d7ab2191e59fb9de857fe87ce765.jpg" Reference="EdNSm3KZAUmUdwdO1xTKrw/jsVsafqMIkSe-ge6mxMYrg" Selector="&lt;html app='msedge.exe' title='資訊主頁 [Jenkins]' /&gt;" Title="資訊主頁 [Jenkins]" Url="http://192.168.138.210:8080/" Version="V1" />
+        <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Edge" ContentHash="Yxvfd5SGAEm3V_MIPhEekw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALxSURBVDhPbZFrTJJRGMfJ1oc+14f6ZFtbTU2Iy5Q0BTTY0OYtE1HRUClKRc3Uhllm5pVMs9IUzEtmXiZWXtCMXObMvC2vldoyS5yYF0AzJZ9e4EVH87f9t7P3fX7/c84OZicOmx/ab0sg5diRiLLwYD+lIJSjjuRxplkeLnHIv73o2M4EsP0q+KGhmoSYcI1iWL6pnnwL6ol2WP4ih7aqB4t0Rzs5UrIHHTeFxw2pvpl4fTP5qmBG87UDlsdk+iyNNm+lT1aqZVDs61BlG6qDA4VOc9rgBYf87W+r1CyNtYA4Owkay+6aFLwoEYEbg7qAnGIfqhpg0hlDaSmpwA3iQtfL4rW5wUYYaCnRS4sjTSYlP3qkEB3KjkJVA+yzPt8jwiIgKCBINdMn3RpWj7fDQGuZft3bKIEl5EqtlXkgCGblo6oBpjN1Jj3x8irb22t++HX5b2PBu/p8SIm9oF83l9+BptIseF6cDrF8Timq6p9tV86teE2G8BIUZgoXprprtcaC/yNKFMBEZxXEXeSIUN1A9HnOuHKwYUdJl8nOGuhuKIScpGgYkZeDvyfTF1UN+Li5uJ9xcf7WXldkIi5/agV51T24HccHSZYQrgm4uispkVMfQNVtkI821UWijaVRGUy9r9UXzH1sgMyEMHj2MBlqHqXAz14peLue6kIVU5ACM5Y7U6mZ7IDpnjpoeZKtL1H01SNP+hjG2ivgRgx/weoYVooq2yCyuQWWOII7QfsTH8lfHX5Toe2sL0Ceyxee3k9SS0TCKTc6RUG0xq/YMH20ljhSrlE0O3LUMhVLpqiceAngEHQF3P1CfmWmZ6hicFiVGI9VsiwtZtm0k4MFJIImj4hfJ7kHAoF6egVxD+oKcCSG17pOJHoGA9GDqw/BLRCQYcUQmQivbAjL5/D4uTQcdj6XRFgjuPqDFZnar9tcV7Ab78ictw+I2pKNiSDZfpbgrce9HGkfZE1N62Jx8SwrJklznO4FFnhyDQaDwfwDb/XrcmjdftIAAAAASUVORK5CYII=" InformativeScreenshot="8efc6952739a0256c0b9ac520bce358d.jpg" Reference="EdNSm3KZAUmUdwdO1xTKrw/jsVsafqMIkSe-ge6mxMYrg" Selector="&lt;html app='msedge.exe' title='資訊主頁 [Jenkins]' /&gt;" Title="資訊主頁 [Jenkins]" Url="http://192.168.138.210:8080/" Version="V1" />
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
   </Sequence>
