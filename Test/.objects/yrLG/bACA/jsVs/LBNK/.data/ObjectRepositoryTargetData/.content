@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="50JKFuE930SmqBhTu4IzIA" Reference="EdNSm3KZAUmUdwdO1xTKrw/LBNK_BYnz0-3Ol1zT9sPww" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="Dn15RGwUWkGu_WHABL_dmg" Reference="EdNSm3KZAUmUdwdO1xTKrw/LBNK_BYnz0-3Ol1zT9sPww" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="192.168.138.210/job/S073/build" CVScreenId="18567541-1c1a-4a14-a5d0-8ac3831804c6" CvElementArea="383, 487, 99, 24" CvType="InputBox" DesignTimeRectangle="384, 488, 97, 22" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' class='' aaname='' /&gt;" Guid="24f3be5a-92ff-40f9-951c-5a8a3106af15" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Jenkins' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
-      <imageRef attrName="InformativeScreenshot" originalValue="ca688b6ee76b9e8e3f58aa9c9ef2db89.png" xmlns="">0Kf5S2v29BUG5HMzZjgVcJg</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="192.168.138.210/job/S073/build" CVScreenId="ffb8ae9b-800b-4be1-90cc-85a4a6835b82" CvElementArea="383, 487, 99, 24" CvType="InputBox" DesignTimeRectangle="384, 488, 97, 22" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' class='' aaname='' /&gt;" Guid="cce52f84-c08f-4d13-9574-2f9df0593ee3" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Jenkins' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="ca688b6ee76b9e8e3f58aa9c9ef2db89.png" xmlns="">06Y29oFxi_Eq03EPTjJAobw</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">Hover</x:String>
   </ObjectRepositoryTargetData.Data>

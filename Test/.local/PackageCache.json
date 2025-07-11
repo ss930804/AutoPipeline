@@ -71,15 +71,15 @@
         "C:\\Users\\philliptsai\\.nuget\\packages\\system.servicemodel.duplex\\4.9.0\\lib/net6.0/System.ServiceModel.Duplex.dll",
         "C:\\Users\\philliptsai\\.nuget\\packages\\system.servicemodel.http\\4.9.0\\lib/net6.0/System.ServiceModel.Http.dll",
         "C:\\Users\\philliptsai\\.nuget\\packages\\system.servicemodel.nettcp\\4.9.0\\lib/net6.0/System.ServiceModel.NetTcp.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\system.servicemodel.primitives\\4.9.0\\lib/net6.0/System.ServiceModel.dll",
         "C:\\Users\\philliptsai\\.nuget\\packages\\system.servicemodel.primitives\\4.9.0\\lib/net6.0/System.ServiceModel.Primitives.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\system.servicemodel.primitives\\4.9.0\\lib/net6.0/System.ServiceModel.dll",
         "C:\\Users\\philliptsai\\.nuget\\packages\\system.servicemodel.security\\4.9.0\\lib/net6.0/System.ServiceModel.Security.dll",
         "C:\\Users\\philliptsai\\.nuget\\packages\\system.servicemodel.syndication\\6.0.0\\lib/net6.0/System.ServiceModel.Syndication.dll",
         "C:\\Users\\philliptsai\\.nuget\\packages\\system.serviceprocess.servicecontroller\\6.0.1\\runtimes/win/lib/net6.0/System.ServiceProcess.ServiceController.dll",
         "C:\\Users\\philliptsai\\.nuget\\packages\\system.speech\\6.0.0\\runtimes/win/lib/net6.0/System.Speech.dll",
         "C:\\Users\\philliptsai\\.nuget\\packages\\system.web.services.description\\4.9.0\\lib/netstandard2.0/System.Web.Services.Description.dll",
         "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.codedworkflows\\24.10.1\\lib/net6.0-windows7.0/UiPath.CodedWorkflows.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.opentelemetry.contracts\\2.3.3\\lib/netstandard2.0/UiPath.OpenTelemetry.Contracts.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.opentelemetry.contracts\\2.5.26\\lib/netstandard2.0/UiPath.OpenTelemetry.Contracts.dll",
         "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.platform\\25.4.0\\lib/net6.0-windows7.0/UiPath.Platform.dll",
         "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.system.activities\\25.4.4\\lib/net6.0-windows7.0/UiPath.System.Activities.Design.dll",
         "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.system.activities\\25.4.4\\lib/net6.0-windows7.0/UiPath.System.Activities.ViewModels.dll",
@@ -87,14 +87,14 @@
         "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.system.activities.runtime.windows\\25.4.4\\lib/net6.0-windows7.0/UiPath.OrchestratorClient.dll",
         "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.system.activities.runtime.windows\\25.4.4\\lib/net6.0-windows7.0/UiPath.System.Activities.Api.dll",
         "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.system.activities.runtime.windows\\25.4.4\\lib/net6.0-windows7.0/UiPath.System.Activities.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.telemetry.client\\2.3.3\\lib/netstandard2.0/TelemetryClient.dll"
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.telemetry.client\\2.5.26\\lib/netstandard2.0/TelemetryClient.dll"
       ],
       "Path": "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.system.activities\\25.4.4"
     },
     {
       "Package": {
         "Id": "UiPath.UIAutomation.Activities",
-        "Version": "24.10.8"
+        "Version": "25.10.8"
       },
       "Assemblies": [
         "C:\\Users\\philliptsai\\.nuget\\packages\\microsoft.azure.cognitiveservices.vision.computervision\\7.0.1\\lib/netstandard2.0/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.dll",
@@ -106,15 +106,16 @@
         "C:\\Users\\philliptsai\\.nuget\\packages\\nlog\\4.7.15\\lib/netstandard2.0/NLog.dll",
         "C:\\Users\\philliptsai\\.nuget\\packages\\polly\\7.1.0\\lib/netstandard2.0/Polly.dll",
         "C:\\Users\\philliptsai\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib/netstandard2.0/System.IO.Abstractions.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath\\24.10.112.56016\\lib/net6.0-windows7.0/SapAutomationConnectivitySdk.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath\\24.10.112.56016\\lib/net6.0-windows7.0/SapAutomationLogger.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath\\24.10.112.56016\\lib/net6.0-windows7.0/SapWinGuiSdk.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath\\24.10.112.56016\\lib/net6.0-windows7.0/UiPath.Interop.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.activities.runtimegovernance\\1.1.6\\lib/net5.0-windows7.0/UiPath.Activities.RuntimeGovernance.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath\\25.6.140.65296\\lib/net6.0-windows7.0/SapAutomationConnectivitySdk.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath\\25.6.140.65296\\lib/net6.0-windows7.0/SapAutomationLogger.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath\\25.6.140.65296\\lib/net6.0-windows7.0/SapWinGuiSdk.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath\\25.6.140.65296\\lib/net6.0-windows7.0/UiPath.Interop.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.activities.runtimegovernance\\1.1.7\\lib/net6.0-windows7.0/UiPath.Activities.RuntimeGovernance.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.appsignatures\\25.6.140.65296\\lib/net6.0-windows7.0/AppSignatures.Locator.dll",
         "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.codedworkflows\\24.10.1\\lib/net6.0-windows7.0/UiPath.CodedWorkflows.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.emgucvbundle\\1.3.0\\lib/net6.0/Emgu.CV.dll",
         "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.emgucvbundle\\1.3.0\\lib/net6.0/concrt140.dll",
         "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.emgucvbundle\\1.3.0\\lib/net6.0/cvextern.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.emgucvbundle\\1.3.0\\lib/net6.0/Emgu.CV.dll",
         "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.emgucvbundle\\1.3.0\\lib/net6.0/libusb-1.0.dll",
         "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.emgucvbundle\\1.3.0\\lib/net6.0/msvcp140.dll",
         "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.emgucvbundle\\1.3.0\\lib/net6.0/msvcp140_1.dll",
@@ -124,36 +125,36 @@
         "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.emgucvbundle\\1.3.0\\lib/net6.0/vcruntime140.dll",
         "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.emgucvbundle\\1.3.0\\lib/net6.0/vcruntime140_1.dll",
         "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.imageprocessing\\23.4.0\\lib/net6.0-windows7.0/UiPath.ImageProcessingInterop.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.ocr.activities\\3.21.2\\lib/net6.0-windows7.0/UiPath.OCR.Activities.Design.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.ocr.activities\\3.21.2\\lib/net6.0-windows7.0/UiPath.OCR.Activities.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.ocr.activities\\3.21.2\\lib/net6.0-windows7.0/UiPath.OCR.Core.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.ocr.contracts\\2.16.0\\lib/net6.0-windows7.0/UiPath.OCR.Contracts.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.opentelemetry.contracts\\2.3.3\\lib/netstandard2.0/UiPath.OpenTelemetry.Contracts.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.ocr.activities\\3.22.0\\lib/net6.0-windows7.0/UiPath.OCR.Activities.Design.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.ocr.activities\\3.22.0\\lib/net6.0-windows7.0/UiPath.OCR.Activities.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.ocr.activities\\3.22.0\\lib/net6.0-windows7.0/UiPath.OCR.Core.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.ocr.contracts\\2.17.1\\lib/net6.0-windows7.0/UiPath.OCR.Contracts.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.opentelemetry.contracts\\2.5.26\\lib/netstandard2.0/UiPath.OpenTelemetry.Contracts.dll",
         "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.platform\\25.4.0\\lib/net6.0-windows7.0/UiPath.Platform.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.telemetry.client\\2.3.3\\lib/netstandard2.0/TelemetryClient.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities\\24.10.8\\lib/net6.0-windows7.0/UiPath.CV.Activities.Design.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities\\24.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomation.Activities.Design.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities\\24.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.Activities.Design.Contracts.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities\\24.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.Activities.Design.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities\\24.10.8\\lib/net6.0-windows7.0/UiPath.Wizards.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.design.recoverypanel\\24.10.8\\lib/net6.0/UiPath.UIAutomation.Activities.Design.RecoveryPanel.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\24.10.8\\lib/net6.0-windows7.0/UiPath.CV.Activities.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\24.10.8\\lib/net6.0-windows7.0/UiPath.CV.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\24.10.8\\lib/net6.0-windows7.0/UiPath.UiAutomation.Activities.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\24.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomationCore.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\24.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.Activities.Contracts.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\24.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.Activities.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\24.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.API.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\24.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\24.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.ExternalIntegrations.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime.design\\24.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomation.Activities.Runtime.Design.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.vision\\3.14.2\\lib/net6.0-windows7.0/UiPath.Vision.AzureComputerVision.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.vision\\3.14.2\\lib/net6.0-windows7.0/UiPath.Vision.Core.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.vision\\3.14.2\\lib/net6.0-windows7.0/UiPath.Vision.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.vision\\3.14.2\\lib/net6.0-windows7.0/UiPath.Vision.GoogleCloud.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.vision\\3.14.2\\lib/net6.0-windows7.0/UiPath.Vision.Tesseract.dll"
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.telemetry.client\\2.5.26\\lib/netstandard2.0/TelemetryClient.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities\\25.10.8\\lib/net6.0-windows7.0/UiPath.CV.Activities.Design.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities\\25.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomation.Activities.Design.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities\\25.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.Activities.Design.Contracts.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities\\25.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.Activities.Design.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities\\25.10.8\\lib/net6.0-windows7.0/UiPath.Wizards.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib/net6.0-windows7.0/UiPath.CV.Activities.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib/net6.0-windows7.0/UiPath.CV.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomationCore.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.API.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.Activities.Contracts.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.Activities.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.ExternalIntegrations.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib/net6.0-windows7.0/UiPath.UiAutomation.Activities.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime.design\\25.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomation.Activities.Runtime.Design.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.design.recoverypanel\\25.10.8\\lib/net6.0/UiPath.UIAutomation.Design.RecoveryPanel.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.vision\\3.15.0\\lib/net6.0-windows7.0/UiPath.Vision.AzureComputerVision.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.vision\\3.15.0\\lib/net6.0-windows7.0/UiPath.Vision.Core.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.vision\\3.15.0\\lib/net6.0-windows7.0/UiPath.Vision.GoogleCloud.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.vision\\3.15.0\\lib/net6.0-windows7.0/UiPath.Vision.Tesseract.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.vision\\3.15.0\\lib/net6.0-windows7.0/UiPath.Vision.dll"
       ],
-      "Path": "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities\\24.10.8"
+      "Path": "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities\\25.10.8"
     }
   ],
   "Conflicts": [],
@@ -3583,7 +3584,7 @@
     },
     "System.Threading.Tasks.Dataflow": {
       "Id": "System.Threading.Tasks.Dataflow",
-      "Version": "6.0.0",
+      "Version": "8.0.0",
       "Dependencies": []
     },
     "System.Threading.Tasks.Extensions": {
@@ -3751,18 +3752,23 @@
     },
     "UiPath": {
       "Id": "UiPath",
-      "Version": "24.10.112.56016",
+      "Version": "25.6.140.65296",
       "Dependencies": []
     },
     "UiPath.Activities.RuntimeGovernance": {
       "Id": "UiPath.Activities.RuntimeGovernance",
-      "Version": "1.1.6",
+      "Version": "1.1.7",
       "Dependencies": [
         {
           "Item1": "Newtonsoft.Json",
-          "Item2": "[11.0.2, )"
+          "Item2": "[13.0.1, )"
         }
       ]
+    },
+    "UiPath.AppSignatures": {
+      "Id": "UiPath.AppSignatures",
+      "Version": "25.6.140.65296",
+      "Dependencies": []
     },
     "UiPath.CodedWorkflows": {
       "Id": "UiPath.CodedWorkflows",
@@ -3819,7 +3825,7 @@
     },
     "UiPath.OCR.Activities": {
       "Id": "UiPath.OCR.Activities",
-      "Version": "3.21.2",
+      "Version": "3.22.0",
       "Dependencies": [
         {
           "Item1": "Microsoft.Azure.CognitiveServices.Vision.ComputerVision",
@@ -3863,7 +3869,7 @@
         },
         {
           "Item1": "UiPath.OCR.Contracts",
-          "Item2": "[2.16.0, )"
+          "Item2": "[2.17.1, )"
         },
         {
           "Item1": "UiPath.Platform",
@@ -3873,7 +3879,7 @@
     },
     "UiPath.OCR.Contracts": {
       "Id": "UiPath.OCR.Contracts",
-      "Version": "2.16.0",
+      "Version": "2.17.1",
       "Dependencies": [
         {
           "Item1": "System.Drawing.Common",
@@ -3883,7 +3889,7 @@
     },
     "UiPath.OpenTelemetry.Contracts": {
       "Id": "UiPath.OpenTelemetry.Contracts",
-      "Version": "2.3.3",
+      "Version": "2.5.26",
       "Dependencies": [
         {
           "Item1": "System.Diagnostics.DiagnosticSource",
@@ -4077,11 +4083,11 @@
     },
     "UiPath.Telemetry.Client": {
       "Id": "UiPath.Telemetry.Client",
-      "Version": "2.3.3",
+      "Version": "2.5.26",
       "Dependencies": [
         {
           "Item1": "UiPath.OpenTelemetry.Contracts",
-          "Item2": "[2.3.3, )"
+          "Item2": "[2.5.26, )"
         },
         {
           "Item1": "Newtonsoft.Json",
@@ -4089,7 +4095,7 @@
         },
         {
           "Item1": "System.Threading.Tasks.Dataflow",
-          "Item2": "[5.0.0, )"
+          "Item2": "[8.0.0, )"
         },
         {
           "Item1": "System.ValueTuple",
@@ -4099,50 +4105,45 @@
     },
     "UiPath.UIAutomation.Activities": {
       "Id": "UiPath.UIAutomation.Activities",
-      "Version": "24.10.8",
+      "Version": "25.10.8",
       "Dependencies": [
         {
           "Item1": "UiPath.UIAutomation.Activities.Runtime",
-          "Item2": "[24.10.8, 24.10.8]"
+          "Item2": "[25.10.8, 25.10.8]"
         },
         {
-          "Item1": "UiPath.UIAutomation.Activities.Design.RecoveryPanel",
-          "Item2": "[24.10.8, 24.10.8]"
+          "Item1": "UiPath.UIAutomation.Design.RecoveryPanel",
+          "Item2": "[25.10.8, 25.10.8]"
         }
       ]
     },
-    "UiPath.UIAutomation.Activities.Design.RecoveryPanel": {
-      "Id": "UiPath.UIAutomation.Activities.Design.RecoveryPanel",
-      "Version": "24.10.8",
-      "Dependencies": []
-    },
     "UiPath.UIAutomation.Activities.Runtime": {
       "Id": "UiPath.UIAutomation.Activities.Runtime",
-      "Version": "24.10.8",
+      "Version": "25.10.8",
       "Dependencies": [
         {
           "Item1": "UiPath",
-          "Item2": "[24.10.112.56016, 24.10.112.56016]"
+          "Item2": "[25.6.140.65296, 25.6.140.65296]"
         },
         {
           "Item1": "UiPath.UIAutomation.Activities.Runtime.Design",
-          "Item2": "[24.10.8, 24.10.8]"
+          "Item2": "[25.10.8, 25.10.8]"
         },
         {
           "Item1": "UiPath.Vision",
-          "Item2": "[3.14.2, )"
+          "Item2": "[3.15.0, )"
         },
         {
           "Item1": "UiPath.OCR.Contracts",
-          "Item2": "[2.16.0, )"
+          "Item2": "[2.17.1, )"
         },
         {
           "Item1": "UiPath.OCR.Activities",
-          "Item2": "[3.21.2, )"
+          "Item2": "[3.22.0, )"
         },
         {
           "Item1": "UiPath.Platform",
-          "Item2": "[24.11.1, )"
+          "Item2": "[25.4.0, )"
         },
         {
           "Item1": "UiPath.CodedWorkflows",
@@ -4162,26 +4163,35 @@
         },
         {
           "Item1": "UiPath.Telemetry.Client",
-          "Item2": "[2.1.3, )"
+          "Item2": "[2.5.26, )"
         },
         {
           "Item1": "UiPath.Activities.RuntimeGovernance",
-          "Item2": "[1.1.6, )"
+          "Item2": "[1.1.7, )"
+        },
+        {
+          "Item1": "UiPath.AppSignatures",
+          "Item2": "[25.6.140.65296, )"
         }
       ]
     },
     "UiPath.UIAutomation.Activities.Runtime.Design": {
       "Id": "UiPath.UIAutomation.Activities.Runtime.Design",
-      "Version": "24.10.8",
+      "Version": "25.10.8",
+      "Dependencies": []
+    },
+    "UiPath.UIAutomation.Design.RecoveryPanel": {
+      "Id": "UiPath.UIAutomation.Design.RecoveryPanel",
+      "Version": "25.10.8",
       "Dependencies": []
     },
     "UiPath.Vision": {
       "Id": "UiPath.Vision",
-      "Version": "3.14.2",
+      "Version": "3.15.0",
       "Dependencies": [
         {
           "Item1": "UiPath.OCR.Contracts",
-          "Item2": "[2.16.0, )"
+          "Item2": "[2.17.1, )"
         },
         {
           "Item1": "UiPath.EmguCVBundle",
@@ -5414,8 +5424,8 @@
         "Version": "6.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\philliptsai\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\runtimes\\win\\lib\\net6.0\\System.Diagnostics.EventLog.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\runtimes\\win\\lib\\net6.0\\System.Diagnostics.EventLog.Messages.dll"
+        "C:\\Users\\philliptsai\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\runtimes\\win\\lib\\net6.0\\System.Diagnostics.EventLog.Messages.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\runtimes\\win\\lib\\net6.0\\System.Diagnostics.EventLog.dll"
       ],
       "Path": "C:\\Users\\philliptsai\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0"
     },
@@ -6101,8 +6111,8 @@
         "Version": "4.9.0"
       },
       "Assemblies": [
-        "C:\\Users\\philliptsai\\.nuget\\packages\\system.servicemodel.primitives\\4.9.0\\lib\\net6.0\\System.ServiceModel.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\system.servicemodel.primitives\\4.9.0\\lib\\net6.0\\System.ServiceModel.Primitives.dll"
+        "C:\\Users\\philliptsai\\.nuget\\packages\\system.servicemodel.primitives\\4.9.0\\lib\\net6.0\\System.ServiceModel.Primitives.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\system.servicemodel.primitives\\4.9.0\\lib\\net6.0\\System.ServiceModel.dll"
       ],
       "Path": "C:\\Users\\philliptsai\\.nuget\\packages\\system.servicemodel.primitives\\4.9.0"
     },
@@ -6253,12 +6263,12 @@
     {
       "Package": {
         "Id": "System.Threading.Tasks.Dataflow",
-        "Version": "6.0.0"
+        "Version": "8.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\philliptsai\\.nuget\\packages\\system.threading.tasks.dataflow\\6.0.0\\lib\\net6.0\\System.Threading.Tasks.Dataflow.dll"
+        "C:\\Users\\philliptsai\\.nuget\\packages\\system.threading.tasks.dataflow\\8.0.0\\lib\\net8.0\\System.Threading.Tasks.Dataflow.dll"
       ],
-      "Path": "C:\\Users\\philliptsai\\.nuget\\packages\\system.threading.tasks.dataflow\\6.0.0"
+      "Path": "C:\\Users\\philliptsai\\.nuget\\packages\\system.threading.tasks.dataflow\\8.0.0"
     },
     {
       "Package": {
@@ -6331,25 +6341,35 @@
     {
       "Package": {
         "Id": "UiPath",
-        "Version": "24.10.112.56016"
+        "Version": "25.6.140.65296"
       },
       "Assemblies": [
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath\\24.10.112.56016\\lib\\net6.0-windows7.0\\SapAutomationConnectivitySdk.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath\\24.10.112.56016\\lib\\net6.0-windows7.0\\SapAutomationLogger.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath\\24.10.112.56016\\lib\\net6.0-windows7.0\\SapWinGuiSdk.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath\\24.10.112.56016\\lib\\net6.0-windows7.0\\UiPath.Interop.dll"
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath\\25.6.140.65296\\lib\\net6.0-windows7.0\\SapAutomationConnectivitySdk.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath\\25.6.140.65296\\lib\\net6.0-windows7.0\\SapAutomationLogger.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath\\25.6.140.65296\\lib\\net6.0-windows7.0\\SapWinGuiSdk.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath\\25.6.140.65296\\lib\\net6.0-windows7.0\\UiPath.Interop.dll"
       ],
-      "Path": "C:\\Users\\philliptsai\\.nuget\\packages\\uipath\\24.10.112.56016"
+      "Path": "C:\\Users\\philliptsai\\.nuget\\packages\\uipath\\25.6.140.65296"
     },
     {
       "Package": {
         "Id": "UiPath.Activities.RuntimeGovernance",
-        "Version": "1.1.6"
+        "Version": "1.1.7"
       },
       "Assemblies": [
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.activities.runtimegovernance\\1.1.6\\lib\\net5.0-windows7.0\\UiPath.Activities.RuntimeGovernance.dll"
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.activities.runtimegovernance\\1.1.7\\lib\\net6.0-windows7.0\\UiPath.Activities.RuntimeGovernance.dll"
       ],
-      "Path": "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.activities.runtimegovernance\\1.1.6"
+      "Path": "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.activities.runtimegovernance\\1.1.7"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.AppSignatures",
+        "Version": "25.6.140.65296"
+      },
+      "Assemblies": [
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.appsignatures\\25.6.140.65296\\lib\\net6.0-windows7.0\\AppSignatures.Locator.dll"
+      ],
+      "Path": "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.appsignatures\\25.6.140.65296"
     },
     {
       "Package": {
@@ -6367,9 +6387,9 @@
         "Version": "1.3.0"
       },
       "Assemblies": [
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.emgucvbundle\\1.3.0\\lib\\net6.0\\Emgu.CV.dll",
         "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.emgucvbundle\\1.3.0\\lib\\net6.0\\concrt140.dll",
         "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.emgucvbundle\\1.3.0\\lib\\net6.0\\cvextern.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.emgucvbundle\\1.3.0\\lib\\net6.0\\Emgu.CV.dll",
         "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.emgucvbundle\\1.3.0\\lib\\net6.0\\libusb-1.0.dll",
         "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.emgucvbundle\\1.3.0\\lib\\net6.0\\msvcp140.dll",
         "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.emgucvbundle\\1.3.0\\lib\\net6.0\\msvcp140_1.dll",
@@ -6394,34 +6414,34 @@
     {
       "Package": {
         "Id": "UiPath.OCR.Activities",
-        "Version": "3.21.2"
+        "Version": "3.22.0"
       },
       "Assemblies": [
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.ocr.activities\\3.21.2\\lib\\net6.0-windows7.0\\UiPath.OCR.Activities.Design.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.ocr.activities\\3.21.2\\lib\\net6.0-windows7.0\\UiPath.OCR.Activities.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.ocr.activities\\3.21.2\\lib\\net6.0-windows7.0\\UiPath.OCR.Core.dll"
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.ocr.activities\\3.22.0\\lib\\net6.0-windows7.0\\UiPath.OCR.Activities.Design.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.ocr.activities\\3.22.0\\lib\\net6.0-windows7.0\\UiPath.OCR.Activities.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.ocr.activities\\3.22.0\\lib\\net6.0-windows7.0\\UiPath.OCR.Core.dll"
       ],
-      "Path": "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.ocr.activities\\3.21.2"
+      "Path": "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.ocr.activities\\3.22.0"
     },
     {
       "Package": {
         "Id": "UiPath.OCR.Contracts",
-        "Version": "2.16.0"
+        "Version": "2.17.1"
       },
       "Assemblies": [
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.ocr.contracts\\2.16.0\\lib\\net6.0-windows7.0\\UiPath.OCR.Contracts.dll"
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.ocr.contracts\\2.17.1\\lib\\net6.0-windows7.0\\UiPath.OCR.Contracts.dll"
       ],
-      "Path": "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.ocr.contracts\\2.16.0"
+      "Path": "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.ocr.contracts\\2.17.1"
     },
     {
       "Package": {
         "Id": "UiPath.OpenTelemetry.Contracts",
-        "Version": "2.3.3"
+        "Version": "2.5.26"
       },
       "Assemblies": [
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.opentelemetry.contracts\\2.3.3\\lib\\netstandard2.0\\UiPath.OpenTelemetry.Contracts.dll"
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.opentelemetry.contracts\\2.5.26\\lib\\netstandard2.0\\UiPath.OpenTelemetry.Contracts.dll"
       ],
-      "Path": "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.opentelemetry.contracts\\2.3.3"
+      "Path": "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.opentelemetry.contracts\\2.5.26"
     },
     {
       "Package": {
@@ -6469,78 +6489,78 @@
     {
       "Package": {
         "Id": "UiPath.Telemetry.Client",
-        "Version": "2.3.3"
+        "Version": "2.5.26"
       },
       "Assemblies": [
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.telemetry.client\\2.3.3\\lib\\netstandard2.0\\TelemetryClient.dll"
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.telemetry.client\\2.5.26\\lib\\netstandard2.0\\TelemetryClient.dll"
       ],
-      "Path": "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.telemetry.client\\2.3.3"
+      "Path": "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.telemetry.client\\2.5.26"
     },
     {
       "Package": {
         "Id": "UiPath.UIAutomation.Activities",
-        "Version": "24.10.8"
+        "Version": "25.10.8"
       },
       "Assemblies": [
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities\\24.10.8\\lib\\net6.0-windows7.0\\UiPath.CV.Activities.Design.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities\\24.10.8\\lib\\net6.0-windows7.0\\UiPath.UIAutomation.Activities.Design.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities\\24.10.8\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.Activities.Design.Contracts.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities\\24.10.8\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.Activities.Design.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities\\24.10.8\\lib\\net6.0-windows7.0\\UiPath.Wizards.dll"
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities\\25.10.8\\lib\\net6.0-windows7.0\\UiPath.CV.Activities.Design.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities\\25.10.8\\lib\\net6.0-windows7.0\\UiPath.UIAutomation.Activities.Design.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities\\25.10.8\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.Activities.Design.Contracts.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities\\25.10.8\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.Activities.Design.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities\\25.10.8\\lib\\net6.0-windows7.0\\UiPath.Wizards.dll"
       ],
-      "Path": "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities\\24.10.8"
-    },
-    {
-      "Package": {
-        "Id": "UiPath.UIAutomation.Activities.Design.RecoveryPanel",
-        "Version": "24.10.8"
-      },
-      "Assemblies": [
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.design.recoverypanel\\24.10.8\\lib\\net6.0\\UiPath.UIAutomation.Activities.Design.RecoveryPanel.dll"
-      ],
-      "Path": "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.design.recoverypanel\\24.10.8"
+      "Path": "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities\\25.10.8"
     },
     {
       "Package": {
         "Id": "UiPath.UIAutomation.Activities.Runtime",
-        "Version": "24.10.8"
+        "Version": "25.10.8"
       },
       "Assemblies": [
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\24.10.8\\lib\\net6.0-windows7.0\\UiPath.CV.Activities.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\24.10.8\\lib\\net6.0-windows7.0\\UiPath.CV.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\24.10.8\\lib\\net6.0-windows7.0\\UiPath.UiAutomation.Activities.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\24.10.8\\lib\\net6.0-windows7.0\\UiPath.UIAutomationCore.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\24.10.8\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.Activities.Contracts.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\24.10.8\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.Activities.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\24.10.8\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.API.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\24.10.8\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\24.10.8\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.ExternalIntegrations.dll"
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib\\net6.0-windows7.0\\UiPath.CV.Activities.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib\\net6.0-windows7.0\\UiPath.CV.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib\\net6.0-windows7.0\\UiPath.UIAutomationCore.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.API.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.Activities.Contracts.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.Activities.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.ExternalIntegrations.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib\\net6.0-windows7.0\\UiPath.UiAutomation.Activities.dll"
       ],
-      "Path": "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\24.10.8"
+      "Path": "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8"
     },
     {
       "Package": {
         "Id": "UiPath.UIAutomation.Activities.Runtime.Design",
-        "Version": "24.10.8"
+        "Version": "25.10.8"
       },
       "Assemblies": [
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime.design\\24.10.8\\lib\\net6.0-windows7.0\\UiPath.UIAutomation.Activities.Runtime.Design.dll"
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime.design\\25.10.8\\lib\\net6.0-windows7.0\\UiPath.UIAutomation.Activities.Runtime.Design.dll"
       ],
-      "Path": "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime.design\\24.10.8"
+      "Path": "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.activities.runtime.design\\25.10.8"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.UIAutomation.Design.RecoveryPanel",
+        "Version": "25.10.8"
+      },
+      "Assemblies": [
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.design.recoverypanel\\25.10.8\\lib\\net6.0\\UiPath.UIAutomation.Design.RecoveryPanel.dll"
+      ],
+      "Path": "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.uiautomation.design.recoverypanel\\25.10.8"
     },
     {
       "Package": {
         "Id": "UiPath.Vision",
-        "Version": "3.14.2"
+        "Version": "3.15.0"
       },
       "Assemblies": [
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.vision\\3.14.2\\lib\\net6.0-windows7.0\\UiPath.Vision.AzureComputerVision.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.vision\\3.14.2\\lib\\net6.0-windows7.0\\UiPath.Vision.Core.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.vision\\3.14.2\\lib\\net6.0-windows7.0\\UiPath.Vision.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.vision\\3.14.2\\lib\\net6.0-windows7.0\\UiPath.Vision.GoogleCloud.dll",
-        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.vision\\3.14.2\\lib\\net6.0-windows7.0\\UiPath.Vision.Tesseract.dll"
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.vision\\3.15.0\\lib\\net6.0-windows7.0\\UiPath.Vision.AzureComputerVision.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.vision\\3.15.0\\lib\\net6.0-windows7.0\\UiPath.Vision.Core.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.vision\\3.15.0\\lib\\net6.0-windows7.0\\UiPath.Vision.GoogleCloud.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.vision\\3.15.0\\lib\\net6.0-windows7.0\\UiPath.Vision.Tesseract.dll",
+        "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.vision\\3.15.0\\lib\\net6.0-windows7.0\\UiPath.Vision.dll"
       ],
-      "Path": "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.vision\\3.14.2"
+      "Path": "C:\\Users\\philliptsai\\.nuget\\packages\\uipath.vision\\3.15.0"
     }
   ]
 }

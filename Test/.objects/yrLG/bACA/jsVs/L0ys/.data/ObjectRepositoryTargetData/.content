@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="7U3cWd2G_EWzYatInbsa5g" Reference="EdNSm3KZAUmUdwdO1xTKrw/L0ys-3JWNU-rVdDbQOWiaA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="192.168.138.210" CVScreenId="e26a7b92-4156-4f65-aff0-76874bea2014" CvTextArea="541, 405, 59, 14" CvTextArgument="[SJPDLLType]" CvType="Text" DesignTimeRectangle="543, 406, 56, 14" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='S W 名稱  ↓ 上次成功 上次失敗 上次費時 Fav' tag='TABLE' /&gt;&lt;webctrl aaname='SJPD002' tableRow='74' tag='SPAN' /&gt;" Guid="da76aafb-936c-4905-a48c-84f6b9a840de" ScopeSelectorArgument="&lt;html app='msedge.exe' title='資訊主頁 [Jenkins]' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="b3b969d87fe83e0128523cff710aca11.png" xmlns="">0hgvC2G0apEuOb5nwjnkjSg</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData Name="SJPDLLType" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

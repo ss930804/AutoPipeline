@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="7g9jdfubpUCDnTKsrFDC1A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="192.168.138.210/job/S073/build" CVScreenId="91b1f785-63aa-408e-8df2-ff138b67fd3c" CvElementArea="383, 555, 99, 24" CvType="InputBox" DesignTimeRectangle="384, 556, 97, 22" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl idx='3' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='SELECT' class='' aaname='' /&gt;" Guid="cc308e9f-35d7-45ce-90f8-66d61c3ee911" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Jenkins' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="5306c5f81fa8eaf8a43b3c5cc85083df.png" xmlns="">0uQQthx3oy0GLKqVvAXf-hA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -5,13 +5,13 @@
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.System.Activities": "[25.4.4]",
-    "UiPath.UIAutomation.Activities": "24.10.8"
+    "UiPath.UIAutomation.Activities": "[25.10.8]"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "25.0.167.0",
-  "projectVersion": "1.0.2",
+  "projectVersion": "1.0.6",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Iirbk_CEdUCbqbRSGEf_IQ" Reference="EdNSm3KZAUmUdwdO1xTKrw/umc0nyFBPkesb5fHOBimdQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="192.168.138.210/userContent/S074/Math%20Dll" CVScreenId="b600fdf4-daa2-4910-963b-530a1a64ee48" CvTextArea="405, 663, 240, 17" CvTextArgument="[string.Format(&quot;Math-{0}-(1)({2}).7z&quot;, projectName, selectMathDLLTag, gameMode)]" CvType="Text" DesignTimeRectangle="406, 662, 239, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl class='fileList' tag='TABLE' /&gt;&lt;webctrl tableRow='13' tag='A' /&gt;" Guid="813e874c-fb23-44eb-812b-0725d5d58c53" ScopeSelectorArgument="&lt;html app='msedge.exe' title='User content : /S074/Math Dll [Jenkins]' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="b797940db878d3b96eb8b68c34781a72.png" xmlns="">0rG0UJlf3fk6WZGaqn7AKNg</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="3">
+      <ObjectRepositoryVariableData DefaultValue="S073" Name="projectName" />
+      <ObjectRepositoryVariableData Name="selectMathDLLTag" />
+      <ObjectRepositoryVariableData DefaultValue="Debug" Name="gameMode" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

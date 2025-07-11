@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="l-j60GhHjUqo9ozdtRY8dA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="192.168.138.210/job/S073" CVScreenId="89dba01b-ffc0-4b8a-b912-cfe36de454ed" CvTextArea="384, 471, 69, 14" CvTextArgument="Download" CvType="Text" DesignTimeRectangle="384, 470, 69, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Download' tag='A' /&gt;" Guid="6a72d05d-5ec5-45e4-a63d-3d15120105e0" ScopeSelectorArgument="&lt;html app='msedge.exe' title='S073 [Jenkins]' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="a108415eef27634c9b2be36f046299ee.png" xmlns="">0sKf1j7mLlE2CD_kHjcmyNA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

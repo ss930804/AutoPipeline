@@ -1,241 +1,258 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" this:Main.projectName="S073" this:Main.selectTagName="01.00.02.03" this:Main.gameMode="Debug" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="projectName" Type="InArgument(x:String)" />
+    <x:Property Name="selectSJPDLLTag" Type="InArgument(x:String)" />
+    <x:Property Name="selectTagName" Type="InArgument(x:String)" />
+    <x:Property Name="selectGameDLLTag" Type="InArgument(x:String)" />
+    <x:Property Name="selectMathDLLTag" Type="InArgument(x:String)" />
+    <x:Property Name="gameMode" Type="InArgument(x:String)" />
+    <x:Property Name="SJPDLLType" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
-      <x:String>System.Activities</x:String>
-      <x:String>System.Activities.Statements</x:String>
-      <x:String>System.Activities.Expressions</x:String>
-      <x:String>System.Activities.Validation</x:String>
-      <x:String>System.Activities.XamlIntegration</x:String>
-      <x:String>Microsoft.VisualBasic</x:String>
-      <x:String>Microsoft.VisualBasic.Activities</x:String>
-      <x:String>System</x:String>
-      <x:String>System.Collections</x:String>
-      <x:String>System.Collections.Generic</x:String>
-      <x:String>System.Collections.ObjectModel</x:String>
-      <x:String>System.Data</x:String>
-      <x:String>System.Diagnostics</x:String>
-      <x:String>System.Drawing</x:String>
-      <x:String>System.IO</x:String>
-      <x:String>System.Linq</x:String>
-      <x:String>System.Net.Mail</x:String>
-      <x:String>System.Xml</x:String>
-      <x:String>System.Xml.Linq</x:String>
-      <x:String>UiPath.Core</x:String>
-      <x:String>UiPath.Core.Activities</x:String>
-      <x:String>System.Windows.Markup</x:String>
-      <x:String>GlobalVariablesNamespace</x:String>
       <x:String>GlobalConstantsNamespace</x:String>
-      <x:String>System.Reflection</x:String>
-      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
-      <x:String>Microsoft.Win32.SafeHandles</x:String>
-      <x:String>System.Numerics</x:String>
-      <x:String>System.Net</x:String>
-      <x:String>System.Globalization</x:String>
-      <x:String>System.Configuration.Assemblies</x:String>
-      <x:String>System.ComponentModel</x:String>
-      <x:String>System.CodeDom.Compiler</x:String>
-      <x:String>System.Buffers</x:String>
-      <x:String>System.Buffers.Text</x:String>
-      <x:String>System.Buffers.Binary</x:String>
-      <x:String>System.Threading</x:String>
-      <x:String>System.Threading.Tasks</x:String>
-      <x:String>System.Threading.Tasks.Sources</x:String>
-      <x:String>System.Text</x:String>
-      <x:String>System.Text.Unicode</x:String>
-      <x:String>System.Security</x:String>
-      <x:String>System.Security.Principal</x:String>
-      <x:String>System.Security.Permissions</x:String>
-      <x:String>System.Security.Cryptography</x:String>
-      <x:String>System.Runtime</x:String>
-      <x:String>System.Runtime.Serialization</x:String>
-      <x:String>System.Runtime.Remoting</x:String>
-      <x:String>System.Runtime.ExceptionServices</x:String>
-      <x:String>System.Runtime.ConstrainedExecution</x:String>
-      <x:String>System.Runtime.Versioning</x:String>
-      <x:String>System.Runtime.Loader</x:String>
-      <x:String>System.Runtime.Intrinsics</x:String>
-      <x:String>System.Runtime.Intrinsics.Wasm</x:String>
-      <x:String>System.Runtime.Intrinsics.Arm</x:String>
-      <x:String>System.Runtime.Intrinsics.X86</x:String>
-      <x:String>System.Runtime.InteropServices</x:String>
-      <x:String>System.Runtime.InteropServices.ObjectiveC</x:String>
-      <x:String>System.Runtime.InteropServices.Marshalling</x:String>
-      <x:String>System.Runtime.InteropServices.ComTypes</x:String>
-      <x:String>System.Runtime.CompilerServices</x:String>
-      <x:String>System.Resources</x:String>
-      <x:String>System.Reflection.Metadata</x:String>
-      <x:String>System.Reflection.Emit</x:String>
-      <x:String>System.IO.Enumeration</x:String>
-      <x:String>System.Diagnostics.SymbolStore</x:String>
-      <x:String>System.Diagnostics.Contracts</x:String>
-      <x:String>System.Diagnostics.CodeAnalysis</x:String>
-      <x:String>System.Diagnostics.Tracing</x:String>
-      <x:String>System.Collections.Concurrent</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
       <x:String>Internal</x:String>
-      <x:String>System.CodeDom</x:String>
-      <x:String>Microsoft.CSharp</x:String>
-      <x:String>System.Linq.Expressions</x:String>
-      <x:String>System.Linq.Expressions.Interpreter</x:String>
-      <x:String>System.Dynamic</x:String>
-      <x:String>UiPath.Workflow.Runtime</x:String>
-      <x:String>System.Activities.Tracking</x:String>
-      <x:String>System.Activities.Statements.Tracking</x:String>
-      <x:String>System.Activities.Runtime</x:String>
-      <x:String>System.Activities.Runtime.DurableInstancing</x:String>
-      <x:String>System.Activities.Runtime.Collections</x:String>
-      <x:String>System.Activities.ParallelTracking</x:String>
-      <x:String>System.Activities.Hosting</x:String>
-      <x:String>System.Activities.Persistence</x:String>
-      <x:String>System.Activities.DurableInstancing</x:String>
-      <x:String>System.ComponentModel.Design.Serialization</x:String>
-      <x:String>System.Text.RegularExpressions</x:String>
-      <x:String>System.Security.Authentication.ExtendedProtection</x:String>
-      <x:String>System.Timers</x:String>
-      <x:String>System.ComponentModel.Design</x:String>
-      <x:String>System.Xml.Schema</x:String>
-      <x:String>System.Xml.Xsl</x:String>
-      <x:String>System.Xml.Xsl.Runtime</x:String>
-      <x:String>System.Xml.XPath</x:String>
-      <x:String>System.Xml.Resolvers</x:String>
-      <x:String>System.Xml.Serialization</x:String>
+      <x:String>Microsoft</x:String>
       <x:String>Microsoft.CodeAnalysis</x:String>
       <x:String>Microsoft.CodeAnalysis.VisualBasic</x:String>
       <x:String>Microsoft.CodeAnalysis.VisualBasic.Syntax</x:String>
+      <x:String>Microsoft.CSharp</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
       <x:String>Microsoft.VisualBasic.FileIO</x:String>
-      <x:String>UiPath.UIAutomationNext</x:String>
-      <x:String>UiPath.UIAutomationNext.Enums</x:String>
-      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
-      <x:String>UiPath.UIAutomationNext.Models</x:String>
-      <x:String>UiPath.UIAutomationNext.Activities</x:String>
-      <x:String>UiPath.Shared.Activities</x:String>
-      <x:String>UiPath.Platform.ObjectLibrary</x:String>
-      <x:String>UiPath.Platform.SyncObjects</x:String>
-      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>Microsoft.Win32.SafeHandles</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.DurableInstancing</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Hosting</x:String>
+      <x:String>System.Activities.ParallelTracking</x:String>
+      <x:String>System.Activities.Persistence</x:String>
+      <x:String>System.Activities.Runtime</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.Activities.Runtime.DurableInstancing</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Statements.Tracking</x:String>
+      <x:String>System.Activities.Tracking</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Buffers</x:String>
+      <x:String>System.Buffers.Binary</x:String>
+      <x:String>System.Buffers.Text</x:String>
+      <x:String>System.CodeDom</x:String>
+      <x:String>System.CodeDom.Compiler</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Concurrent</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.ComponentModel.Design</x:String>
+      <x:String>System.ComponentModel.Design.Serialization</x:String>
+      <x:String>System.Configuration.Assemblies</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Diagnostics.CodeAnalysis</x:String>
+      <x:String>System.Diagnostics.Contracts</x:String>
+      <x:String>System.Diagnostics.SymbolStore</x:String>
+      <x:String>System.Diagnostics.Tracing</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.Globalization</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.IO.Enumeration</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Linq.Expressions.Interpreter</x:String>
+      <x:String>System.Net</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Reflection.Emit</x:String>
+      <x:String>System.Reflection.Metadata</x:String>
+      <x:String>System.Resources</x:String>
+      <x:String>System.Runtime</x:String>
+      <x:String>System.Runtime.CompilerServices</x:String>
+      <x:String>System.Runtime.ConstrainedExecution</x:String>
+      <x:String>System.Runtime.ExceptionServices</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Runtime.InteropServices.ComTypes</x:String>
+      <x:String>System.Runtime.InteropServices.Marshalling</x:String>
+      <x:String>System.Runtime.InteropServices.ObjectiveC</x:String>
+      <x:String>System.Runtime.Intrinsics</x:String>
+      <x:String>System.Runtime.Intrinsics.Arm</x:String>
+      <x:String>System.Runtime.Intrinsics.Wasm</x:String>
+      <x:String>System.Runtime.Intrinsics.X86</x:String>
+      <x:String>System.Runtime.Loader</x:String>
+      <x:String>System.Runtime.Remoting</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Runtime.Versioning</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Security.Authentication.ExtendedProtection</x:String>
+      <x:String>System.Security.Cryptography</x:String>
+      <x:String>System.Security.Permissions</x:String>
+      <x:String>System.Security.Principal</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Text.Unicode</x:String>
+      <x:String>System.Threading</x:String>
+      <x:String>System.Threading.Tasks</x:String>
+      <x:String>System.Threading.Tasks.Sources</x:String>
+      <x:String>System.Timers</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.Xml.Resolvers</x:String>
+      <x:String>System.Xml.Schema</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Xml.XPath</x:String>
+      <x:String>System.Xml.Xsl</x:String>
+      <x:String>System.Xml.Xsl.Runtime</x:String>
       <x:String>UiPath.Activities.System.Text</x:String>
-      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
       <x:String>UiPath.CV</x:String>
-      <x:String>UiPath.Shared.ObjectLibrary</x:String>
       <x:String>UiPath.CV.Activities</x:String>
       <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.Semantic.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
       <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
       <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
-      <x:String>Microsoft</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Workflow.Runtime</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
     <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CodeAnalysis.Features</AssemblyReference>
+      <AssemblyReference>Microsoft.CodeAnalysis.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.PowerShell.Commands.Diagnostics</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualStudio.Validation</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Registry</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
       <AssemblyReference>PresentationCore</AssemblyReference>
       <AssemblyReference>PresentationFramework</AssemblyReference>
       <AssemblyReference>System</AssemblyReference>
       <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.Concurrent</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
       <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
       <AssemblyReference>System.Core</AssemblyReference>
       <AssemblyReference>System.Data</AssemblyReference>
       <AssemblyReference>System.Data.Common</AssemblyReference>
       <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.DiagnosticSource</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.EventLog</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.FileVersionInfo</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.PerformanceCounter</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.Process</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.StackTrace</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.TextWriterTraceListener</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.TraceSource</AssemblyReference>
       <AssemblyReference>System.Drawing</AssemblyReference>
       <AssemblyReference>System.Drawing.Common</AssemblyReference>
       <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.MemoryMappedFiles</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.Pipes</AssemblyReference>
       <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Net.HttpListener</AssemblyReference>
       <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.Net.NameResolution</AssemblyReference>
+      <AssemblyReference>System.Net.Primitives</AssemblyReference>
+      <AssemblyReference>System.Net.Requests</AssemblyReference>
+      <AssemblyReference>System.Net.Security</AssemblyReference>
+      <AssemblyReference>System.Net.ServicePoint</AssemblyReference>
+      <AssemblyReference>System.Net.WebClient</AssemblyReference>
+      <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
+      <AssemblyReference>System.Net.WebProxy</AssemblyReference>
       <AssemblyReference>System.ObjectModel</AssemblyReference>
       <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Private.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Resources.Writer</AssemblyReference>
+      <AssemblyReference>System.Runtime.CompilerServices.VisualC</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Claims</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.Pkcs</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.ProtectedData</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Security.Principal.Windows</AssemblyReference>
+      <AssemblyReference>System.Text.Encoding.CodePages</AssemblyReference>
+      <AssemblyReference>System.Text.Encodings.Web</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.Threading</AssemblyReference>
+      <AssemblyReference>System.Threading.AccessControl</AssemblyReference>
+      <AssemblyReference>System.Threading.Tasks.Parallel</AssemblyReference>
+      <AssemblyReference>System.Windows.Forms</AssemblyReference>
+      <AssemblyReference>System.Windows.Forms.Design</AssemblyReference>
       <AssemblyReference>System.Xaml</AssemblyReference>
       <AssemblyReference>System.Xml</AssemblyReference>
       <AssemblyReference>System.Xml.Linq</AssemblyReference>
-      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
-      <AssemblyReference>WindowsBase</AssemblyReference>
-      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
-      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
-      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
-      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
-      <AssemblyReference>System.Console</AssemblyReference>
-      <AssemblyReference>System.Security.Permissions</AssemblyReference>
-      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
-      <AssemblyReference>System.ComponentModel</AssemblyReference>
-      <AssemblyReference>System.Memory</AssemblyReference>
-      <AssemblyReference>System.Private.Uri</AssemblyReference>
-      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
-      <AssemblyReference>System.Collections</AssemblyReference>
-      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
-      <AssemblyReference>System.Linq.Async</AssemblyReference>
-      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
-      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
-      <AssemblyReference>System.IO.Packaging</AssemblyReference>
-      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
-      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
-      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
-      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
-      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
-      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
-      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
-      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
-      <AssemblyReference>System.IO.Pipes</AssemblyReference>
-      <AssemblyReference>System.Security.Cryptography</AssemblyReference>
-      <AssemblyReference>System.Security.Principal.Windows</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.Process</AssemblyReference>
-      <AssemblyReference>System.IO.MemoryMappedFiles</AssemblyReference>
-      <AssemblyReference>Microsoft.Win32.Registry</AssemblyReference>
-      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
-      <AssemblyReference>System.Net.WebClient</AssemblyReference>
-      <AssemblyReference>System.Net.Primitives</AssemblyReference>
-      <AssemblyReference>System.Net.HttpListener</AssemblyReference>
-      <AssemblyReference>System.Net.WebProxy</AssemblyReference>
-      <AssemblyReference>System.Net.NameResolution</AssemblyReference>
-      <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
-      <AssemblyReference>System.Net.Requests</AssemblyReference>
-      <AssemblyReference>System.Net.ServicePoint</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
-      <AssemblyReference>System.CodeDom</AssemblyReference>
-      <AssemblyReference>System.Threading.AccessControl</AssemblyReference>
-      <AssemblyReference>System.Threading</AssemblyReference>
-      <AssemblyReference>System.Threading.Tasks.Parallel</AssemblyReference>
-      <AssemblyReference>System.Text.Encoding.CodePages</AssemblyReference>
-      <AssemblyReference>System.Text.Encodings.Web</AssemblyReference>
-      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
-      <AssemblyReference>System.Security.Claims</AssemblyReference>
-      <AssemblyReference>System.Security.Cryptography.Pkcs</AssemblyReference>
-      <AssemblyReference>System.Security.Cryptography.ProtectedData</AssemblyReference>
-      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
-      <AssemblyReference>System.Windows.Forms.Design</AssemblyReference>
-      <AssemblyReference>System.Runtime.CompilerServices.VisualC</AssemblyReference>
-      <AssemblyReference>System.Windows.Forms</AssemblyReference>
-      <AssemblyReference>System.Resources.Writer</AssemblyReference>
-      <AssemblyReference>Microsoft.PowerShell.Commands.Diagnostics</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.FileVersionInfo</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.DiagnosticSource</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.TraceSource</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.EventLog</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.PerformanceCounter</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.TextWriterTraceListener</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.StackTrace</AssemblyReference>
-      <AssemblyReference>System.Collections.Concurrent</AssemblyReference>
-      <AssemblyReference>UiPath.Workflow</AssemblyReference>
-      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
-      <AssemblyReference>System.Net.Security</AssemblyReference>
-      <AssemblyReference>System.Private.Xml</AssemblyReference>
-      <AssemblyReference>System.Private.Xml.Linq</AssemblyReference>
       <AssemblyReference>System.Xml.XPath.XDocument</AssemblyReference>
-      <AssemblyReference>Microsoft.CodeAnalysis.VisualBasic</AssemblyReference>
-      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
-      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
-      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
-      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
-      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.Platform</AssemblyReference>
       <AssemblyReference>UiPath.CV</AssemblyReference>
-      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
-      <AssemblyReference>Microsoft.VisualStudio.Validation</AssemblyReference>
-      <AssemblyReference>Microsoft.CodeAnalysis.Features</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
@@ -243,25 +260,13 @@
       <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1122,2771" sap2010:WorkflowViewState.IdRef="Sequence_2">
-    <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Name="selectTagName">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">01.00.02.03</Literal>
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:String" Name="projectName">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">S073</Literal>
-        </Variable.Default>
-      </Variable>
-    </Sequence.Variables>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1098,4672" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard DisplayName="Edge 資訊主頁 [Jenkins]" sap:VirtualizedContainerService.HintSize="570,2748" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="843a1574-9888-4dc5-95ed-b6e4f79529c7">
+    <uix:NApplicationCard DisplayName="Edge 資訊主頁 [Jenkins]" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="522,4649" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="843a1574-9888-4dc5-95ed-b6e4f79529c7" WindowResize="Maximize">
       <uix:NApplicationCard.AutoGenerationOptions>
         <uix:GenerationOptions ExpectedInputs="{x:Null}" Url="{x:Null}" Prompt="Open a web browser">
           <uix:GenerationOptions.ExpectedOutputs>
@@ -276,20 +281,20 @@
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="執行" sap:VirtualizedContainerService.HintSize="536,2508" sap2010:WorkflowViewState.IdRef="Sequence_1">
+          <Sequence DisplayName="執行" sap:VirtualizedContainerService.HintSize="488,4409" sap2010:WorkflowViewState.IdRef="Sequence_1">
             <Sequence.Variables>
-              <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="allTags" />
+              <Variable x:TypeArguments="x:Boolean" Name="building" />
             </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NMouseScroll KeyModifiers="{x:Null}" CursorMotionType="Smooth" Direction="Down" DisplayName="滑鼠捲動 '滑鼠捲動'" sap:VirtualizedContainerService.HintSize="502,289" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="10" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V4">
+            <uix:NMouseScroll KeyModifiers="{x:Null}" CursorMotionType="Smooth" Direction="Down" DisplayName="滑鼠捲動 '滑鼠捲動'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="454,289" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="10" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V4">
               <uix:NMouseScroll.SearchedElement>
                 <uix:SearchedElement>
                   <uix:SearchedElement.Target>
-                    <uix:TargetAnchorable BrowserURL="192.168.138.210" CVScreenId="b9338487-dcf1-488f-90e9-12699592b2a3" ContentHash="0uYGvWrXY0iPqRIuSoeYqQ" CvTextArea="541, 460, 34, 14" CvTextArgument="S073" CvType="Text" DesignTimeRectangle="543, 461, 32, 14" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl aaname='S W 名稱  ↓ 上次成功 上次失敗 上次費時 Fav' tag='TABLE' /&gt;&lt;webctrl aaname='{0}' type='' tag='SPAN' class='' check:innerText='{0}' /&gt;&quot;, projectName)]" Guid="9b7422ee-f14c-4f1a-a3a2-d7dab1099eda" InformativeScreenshot="256cdaab059a329deba3ce33a2c25daa.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/uo-Qvaxs5Em1_Rherzl_xg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='資訊主頁 [Jenkins]' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                    <uix:TargetAnchorable BrowserURL="192.168.138.210" CVScreenId="b9338487-dcf1-488f-90e9-12699592b2a3" CvTextArea="541, 460, 34, 14" CvTextArgument="S073" CvType="Text" DesignTimeRectangle="543, 461, 32, 14" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl aaname='S W 名稱  ↓ 上次成功 上次失敗 上次費時 Fav' tag='TABLE' /&gt;&lt;webctrl aaname='{0}' type='' tag='SPAN' class='' check:innerText='{0}' /&gt;&quot;, projectName)]" Guid="9b7422ee-f14c-4f1a-a3a2-d7dab1099eda" InformativeScreenshot="256cdaab059a329deba3ce33a2c25daa.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='資訊主頁 [Jenkins]' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
                   </uix:SearchedElement.Target>
                   <uix:SearchedElement.Timeout>
                     <InArgument x:TypeArguments="x:Double" />
@@ -297,12 +302,12 @@
                 </uix:SearchedElement>
               </uix:NMouseScroll.SearchedElement>
               <uix:NMouseScroll.Target>
-                <uix:TargetAnchorable BrowserURL="192.168.138.210" CVScreenId="b9338487-dcf1-488f-90e9-12699592b2a3" ContentHash="0uYGvWrXY0iPqRIuSoeYqQ" CvTextArea="541, 460, 34, 14" CvTextArgument="S073" CvType="Text" DesignTimeRectangle="543, 461, 32, 14" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl aaname='S W 名稱  ↓ 上次成功 上次失敗 上次費時 Fav' tag='TABLE' /&gt;&lt;webctrl aaname='{0}' type='' tag='SPAN' class='' check:innerText='{0}' /&gt;&quot;, projectName)]" Guid="9b7422ee-f14c-4f1a-a3a2-d7dab1099eda" InformativeScreenshot="256cdaab059a329deba3ce33a2c25daa.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/uo-Qvaxs5Em1_Rherzl_xg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='資訊主頁 [Jenkins]' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                <uix:TargetAnchorable BrowserURL="192.168.138.210" CVScreenId="b9338487-dcf1-488f-90e9-12699592b2a3" CvTextArea="541, 460, 34, 14" CvTextArgument="S073" CvType="Text" DesignTimeRectangle="543, 461, 32, 14" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl aaname='S W 名稱  ↓ 上次成功 上次失敗 上次費時 Fav' tag='TABLE' /&gt;&lt;webctrl aaname='{0}' type='' tag='SPAN' class='' check:innerText='{0}' /&gt;&quot;, projectName)]" Guid="9b7422ee-f14c-4f1a-a3a2-d7dab1099eda" InformativeScreenshot="256cdaab059a329deba3ce33a2c25daa.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='資訊主頁 [Jenkins]' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NMouseScroll.Target>
             </uix:NMouseScroll>
-            <uix:NHover CursorMotionType="Smooth" DisplayName="懸停 'S073'" sap:VirtualizedContainerService.HintSize="502,225" HoverTime="1" sap2010:WorkflowViewState.IdRef="NHover_1" InteractionMode="HardwareEvents" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V4">
+            <uix:NHover CursorMotionType="Smooth" DisplayName="懸停 'S073'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="454,225" HoverTime="1" sap2010:WorkflowViewState.IdRef="NHover_1" InteractionMode="HardwareEvents" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V4">
               <uix:NHover.Target>
-                <uix:TargetAnchorable BrowserURL="192.168.138.210" CVScreenId="fe2f11dc-4e36-4c8d-af42-3947e9210aff" CvTextArea="541, 460, 34, 14" CvTextArgument="S073" CvType="Text" DesignTimeRectangle="543, 461, 32, 14" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl aaname='S W 名稱  ↓ 上次成功 上次失敗 上次費時 Fav' tag='TABLE' /&gt;&lt;webctrl aaname='{0}' type='' tag='SPAN' class='' check:innerText='{0}' /&gt;&quot;, projectName)]" Guid="6282af4d-f415-4e1b-92d4-3b522ec93d51" InformativeScreenshot="4ca5d2f8852e97c5fe2ce7b8ef96fcc6.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='資訊主頁 [Jenkins]' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                <uix:TargetAnchorable BrowserURL="192.168.138.210" CVScreenId="b9338487-dcf1-488f-90e9-12699592b2a3" CvTextArea="541, 460, 34, 14" CvTextArgument="S073" CvType="Text" DesignTimeRectangle="543, 461, 32, 14" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl aaname='S W 名稱  ↓ 上次成功 上次失敗 上次費時 Fav' tag='TABLE' /&gt;&lt;webctrl aaname='{0}' type='' tag='SPAN' class='' check:innerText='{0}' /&gt;&quot;, projectName)]" Guid="9b7422ee-f14c-4f1a-a3a2-d7dab1099eda" InformativeScreenshot="256cdaab059a329deba3ce33a2c25daa.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='資訊主頁 [Jenkins]' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NHover.Target>
               <uix:NHover.VerifyOptions>
                 <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
@@ -315,9 +320,9 @@
                 </uix:VerifyExecutionOptions>
               </uix:NHover.VerifyOptions>
             </uix:NHover>
-            <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DisplayName="按一下 'S073'" sap:VirtualizedContainerService.HintSize="502,225" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V4">
+            <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DisplayName="按一下 'S073'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="454,225" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V4">
               <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="192.168.138.210" CVScreenId="2b039186-70d6-4f3c-bed7-10e7066c09cb" ContentHash="bmyjSPm2PUyOAPTZGEZk0g" CvTextArea="541, 577, 34, 14" CvTextArgument="S073" CvType="Text" DesignTimeRectangle="543, 578, 32, 14" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl aaname='S W 名稱  ↓ 上次成功 上次失敗 上次費時 Fav' tag='TABLE' /&gt;&lt;webctrl aaname='{0}' type='' tag='SPAN' class='' check:innerText='{0}' /&gt;&quot;, projectName)]" Guid="44ae67fa-2e24-407e-b8ce-5e518dc89092" InformativeScreenshot="49082fab0fe0affb45881ff7caebdb0b.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/l6pPE5CdkUGGaP5iqC-u3g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='資訊主頁 [Jenkins]' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                <uix:TargetAnchorable BrowserURL="192.168.138.210" CVScreenId="b9338487-dcf1-488f-90e9-12699592b2a3" ContentHash="0uYGvWrXY0iPqRIuSoeYqQ" CvTextArea="541, 460, 34, 14" CvTextArgument="S073" CvType="Text" DesignTimeRectangle="543, 461, 32, 14" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl aaname='S W 名稱  ↓ 上次成功 上次失敗 上次費時 Fav' tag='TABLE' /&gt;&lt;webctrl aaname='{0}' type='' tag='SPAN' class='' check:innerText='{0}' /&gt;&quot;, projectName)]" Guid="9b7422ee-f14c-4f1a-a3a2-d7dab1099eda" InformativeScreenshot="256cdaab059a329deba3ce33a2c25daa.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/uo-Qvaxs5Em1_Rherzl_xg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='資訊主頁 [Jenkins]' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NClick.Target>
               <uix:NClick.VerifyOptions>
                 <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
@@ -330,7 +335,7 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NHover CursorMotionType="Smooth" DisplayName="懸停 '帶參數建置'" sap:VirtualizedContainerService.HintSize="502,225" HoverTime="1" sap2010:WorkflowViewState.IdRef="NHover_2" InteractionMode="HardwareEvents" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V4">
+            <uix:NHover CursorMotionType="Smooth" DisplayName="懸停 '帶參數建置'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="454,225" HoverTime="1" sap2010:WorkflowViewState.IdRef="NHover_2" InteractionMode="HardwareEvents" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V4">
               <uix:NHover.Target>
                 <uix:TargetAnchorable BrowserURL="192.168.138.210/job/S073" ContentHash="Rm4cMD8ktUW4RKqYHPplDQ" DesignTimeRectangle="31, 298, 321, 40" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='帶參數建置' tag='A' type='' class='task-link ' check:innerText='帶參數建置' /&gt;" Guid="080ff54f-d315-456e-b799-774d627fcdbb" InformativeScreenshot="2dd35fa416ea96f157234fac6f4e0279.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/Yq12icipfkOEJh34NH1_EQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='S073 [Jenkins]' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.PointOffset>
@@ -349,7 +354,7 @@
                 </uix:VerifyExecutionOptions>
               </uix:NHover.VerifyOptions>
             </uix:NHover>
-            <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DisplayName="按一下 '帶參數建置'" sap:VirtualizedContainerService.HintSize="502,225" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V4">
+            <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DisplayName="按一下 '帶參數建置'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="454,225" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V4">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="192.168.138.210/job/S073" ContentHash="Rm4cMD8ktUW4RKqYHPplDQ" DesignTimeRectangle="31, 298, 321, 40" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='帶參數建置' tag='A' type='' class='task-link ' check:innerText='帶參數建置' /&gt;" Guid="080ff54f-d315-456e-b799-774d627fcdbb" InformativeScreenshot="2dd35fa416ea96f157234fac6f4e0279.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/Yq12icipfkOEJh34NH1_EQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='S073 [Jenkins]' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.PointOffset>
@@ -368,9 +373,13 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NHover CursorMotionType="Smooth" DisplayName="懸停 '下拉清單'" sap:VirtualizedContainerService.HintSize="502,225" HoverTime="1" sap2010:WorkflowViewState.IdRef="NHover_3" InteractionMode="HardwareEvents" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V4">
+            <uix:NHover CursorMotionType="Smooth" DisplayName="懸停 '下拉清單'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="454,225" HoverTime="1" sap2010:WorkflowViewState.IdRef="NHover_3" InteractionMode="HardwareEvents" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V4">
               <uix:NHover.Target>
-                <uix:TargetAnchorable BrowserURL="192.168.138.210/job/S073/build" CVScreenId="18567541-1c1a-4a14-a5d0-8ac3831804c6" ContentHash="50JKFuE930SmqBhTu4IzIA" CvElementArea="383, 487, 99, 24" CvType="InputBox" DesignTimeRectangle="384, 488, 97, 22" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' class='' aaname='' /&gt;" Guid="24f3be5a-92ff-40f9-951c-5a8a3106af15" InformativeScreenshot="ca688b6ee76b9e8e3f58aa9c9ef2db89.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/LBNK_BYnz0-3Ol1zT9sPww" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Jenkins' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                <uix:TargetAnchorable BrowserURL="192.168.138.210/job/S073/build" CVScreenId="ffb8ae9b-800b-4be1-90cc-85a4a6835b82" ContentHash="Dn15RGwUWkGu_WHABL_dmg" CvElementArea="383, 487, 99, 24" CvType="InputBox" DesignTimeRectangle="384, 488, 97, 22" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' class='' aaname='' /&gt;" Guid="cce52f84-c08f-4d13-9574-2f9df0593ee3" InformativeScreenshot="ca688b6ee76b9e8e3f58aa9c9ef2db89.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/LBNK_BYnz0-3Ol1zT9sPww" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Jenkins' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
               </uix:NHover.Target>
               <uix:NHover.VerifyOptions>
                 <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
@@ -383,9 +392,13 @@
                 </uix:VerifyExecutionOptions>
               </uix:NHover.VerifyOptions>
             </uix:NHover>
-            <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DisplayName="按一下 '下拉清單'" sap:VirtualizedContainerService.HintSize="502,225" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V4">
+            <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DisplayName="按一下 '下拉清單'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="454,225" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V4">
               <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="192.168.138.210/job/S073/build" CVScreenId="18567541-1c1a-4a14-a5d0-8ac3831804c6" ContentHash="50JKFuE930SmqBhTu4IzIA" CvElementArea="383, 487, 99, 24" CvType="InputBox" DesignTimeRectangle="384, 488, 97, 22" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' class='' aaname='' /&gt;" Guid="24f3be5a-92ff-40f9-951c-5a8a3106af15" InformativeScreenshot="ca688b6ee76b9e8e3f58aa9c9ef2db89.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/LBNK_BYnz0-3Ol1zT9sPww" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Jenkins' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                <uix:TargetAnchorable BrowserURL="192.168.138.210/job/S073/build" CVScreenId="ffb8ae9b-800b-4be1-90cc-85a4a6835b82" ContentHash="Dn15RGwUWkGu_WHABL_dmg" CvElementArea="383, 487, 99, 24" CvType="InputBox" DesignTimeRectangle="384, 488, 97, 22" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' class='' aaname='' /&gt;" Guid="cce52f84-c08f-4d13-9574-2f9df0593ee3" InformativeScreenshot="ca688b6ee76b9e8e3f58aa9c9ef2db89.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/LBNK_BYnz0-3Ol1zT9sPww" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Jenkins' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
               </uix:NClick.Target>
               <uix:NClick.VerifyOptions>
                 <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
@@ -398,42 +411,419 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <ui:FindChildren Children="[allTags]" DisplayName="尋找子元素 'SELECT'" Filter="&lt;webctrl /&gt;" sap:VirtualizedContainerService.HintSize="502,139" sap2010:WorkflowViewState.IdRef="FindChildren_3" Scope="FIND_CHILDREN">
-              <ui:FindChildren.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9aeadbe5-9876-4484-9924-bd07eb69c2d7" InformativeScreenshot="67407361337875fe384529aa030ff3d5" Selector="&lt;webctrl tag='SELECT' /&gt;">
-                  <ui:Target.TimeoutMS>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:Target.TimeoutMS>
-                  <ui:Target.WaitForReady>
-                    <InArgument x:TypeArguments="ui:WaitForReady" />
-                  </ui:Target.WaitForReady>
-                </ui:Target>
-              </ui:FindChildren.Target>
-            </ui:FindChildren>
-            <ParallelForEach x:TypeArguments="ui:UiElement" DisplayName="平行的 For Each" sap:VirtualizedContainerService.HintSize="502,668" sap2010:WorkflowViewState.IdRef="ParallelForEach`1_3" Values="[allTags]">
-              <ActivityAction x:TypeArguments="ui:UiElement">
-                <ActivityAction.Argument>
-                  <DelegateInArgument x:TypeArguments="ui:UiElement" Name="item" />
-                </ActivityAction.Argument>
-                <Sequence DisplayName="sequence" sap:VirtualizedContainerService.HintSize="452,493" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <uix:NSelectItem DisplayName="選取項目 '下拉清單'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="454,189" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="[selectTagName]" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V4">
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="192.168.138.210/job/S073/build" CVScreenId="ffb8ae9b-800b-4be1-90cc-85a4a6835b82" ContentHash="Dn15RGwUWkGu_WHABL_dmg" CvElementArea="383, 487, 99, 24" CvType="InputBox" DesignTimeRectangle="384, 488, 97, 22" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' class='' aaname='' /&gt;" Guid="cce52f84-c08f-4d13-9574-2f9df0593ee3" InformativeScreenshot="ca688b6ee76b9e8e3f58aa9c9ef2db89.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/LBNK_BYnz0-3Ol1zT9sPww" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Jenkins' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DisplayName="按一下 '下拉清單'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="454,225" sap2010:WorkflowViewState.IdRef="NClick_10" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="192.168.138.210/job/S073/build" CVScreenId="ffb8ae9b-800b-4be1-90cc-85a4a6835b82" ContentHash="Dn15RGwUWkGu_WHABL_dmg" CvElementArea="383, 487, 99, 24" CvType="InputBox" DesignTimeRectangle="384, 488, 97, 22" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' class='' aaname='' /&gt;" Guid="cce52f84-c08f-4d13-9574-2f9df0593ee3" InformativeScreenshot="ca688b6ee76b9e8e3f58aa9c9ef2db89.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/LBNK_BYnz0-3Ol1zT9sPww" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Jenkins' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <ui:CommentOut DisplayName="註解化" sap:VirtualizedContainerService.HintSize="454,57" sap2010:WorkflowViewState.IdRef="CommentOut_9">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="已忽略的活動" sap:VirtualizedContainerService.HintSize="450,190" sap2010:WorkflowViewState.IdRef="Sequence_15">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <WriteLine DisplayName="寫入行" sap:VirtualizedContainerService.HintSize="418,122" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[item.Get(&quot;innerText&quot;).ToString()]" />
-                  <If Condition="[item.Get(&quot;innerText&quot;).ToString() = selectTagName]" sap:VirtualizedContainerService.HintSize="418,309" sap2010:WorkflowViewState.IdRef="If_1">
-                    <If.Then>
-                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <ui:FindChildren Children="[allTags]" DisplayName="尋找子元素 'SELECT'" Filter="&lt;webctrl /&gt;" sap:VirtualizedContainerService.HintSize="416,130" sap2010:WorkflowViewState.IdRef="FindChildren_4" Scope="FIND_CHILDREN">
+                    <ui:FindChildren.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9aeadbe5-9876-4484-9924-bd07eb69c2d7" InformativeScreenshot="67407361337875fe384529aa030ff3d5" Selector="&lt;webctrl tag='SELECT' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:FindChildren.Target>
+                  </ui:FindChildren>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+            <ui:CommentOut DisplayName="註解化" sap:VirtualizedContainerService.HintSize="454,57" sap2010:WorkflowViewState.IdRef="CommentOut_8">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="已忽略的活動" sap:VirtualizedContainerService.HintSize="536,907" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ParallelForEach x:TypeArguments="ui:UiElement" DisplayName="平行的 For Each" sap:VirtualizedContainerService.HintSize="502,847" sap2010:WorkflowViewState.IdRef="ParallelForEach`1_4" Values="[allTags]">
+                    <ActivityAction x:TypeArguments="ui:UiElement">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="ui:UiElement" Name="item" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="sequence" sap:VirtualizedContainerService.HintSize="452,676" sap2010:WorkflowViewState.IdRef="Sequence_4">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
+                        <WriteLine DisplayName="寫入行" sap:VirtualizedContainerService.HintSize="418,122" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[item.Get(&quot;innerText&quot;).ToString()]" />
+                        <If Condition="[item.Get(&quot;innerText&quot;).ToString() = selectTagName]" sap:VirtualizedContainerService.HintSize="418,494" sap2010:WorkflowViewState.IdRef="If_1">
+                          <If.Then>
+                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,276" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="按一下 '下拉清單'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,216" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V4">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable BrowserURL="192.168.138.210/job/S073/build" CVScreenId="ffb8ae9b-800b-4be1-90cc-85a4a6835b82" CvElementArea="383, 487, 99, 24" CvType="InputBox" DesignTimeRectangle="384, 488, 97, 22" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' class='' aaname='' /&gt;" Guid="cce52f84-c08f-4d13-9574-2f9df0593ee3" InformativeScreenshot="ca688b6ee76b9e8e3f58aa9c9ef2db89.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Jenkins' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                    <uix:TargetAnchorable.PointOffset>
+                                      <uix:PointOffset X="[item.GetPosition().Rectangle.Value.X]" Y="[item.GetPosition().Rectangle.Value.Y]" />
+                                    </uix:TargetAnchorable.PointOffset>
+                                  </uix:TargetAnchorable>
+                                </uix:NClick.Target>
+                                <uix:NClick.VerifyOptions>
+                                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                    <uix:VerifyExecutionOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionOptions.Retry>
+                                    <uix:VerifyExecutionOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionOptions.Timeout>
+                                  </uix:VerifyExecutionOptions>
+                                </uix:NClick.VerifyOptions>
+                              </uix:NClick>
+                            </Sequence>
+                          </If.Then>
+                          <If.Else>
+                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Sequence>
+                          </If.Else>
+                        </If>
+                      </Sequence>
+                    </ActivityAction>
+                  </ParallelForEach>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+            <If Condition="[string.IsNullOrEmpty(selectGameDLLTag) = false]" DisplayName="選擇GameDLL判斷" sap:VirtualizedContainerService.HintSize="454,57" sap2010:WorkflowViewState.IdRef="If_2">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,690" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DisplayName="按一下 'msedge.exe Jenkins'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="192.168.138.210/job/S073/build" CVScreenId="475dcbef-26fe-41a2-a243-ff76ccc6676d" CvElementArea="383, 721, 151, 23" CvType="InputBox" DesignTimeRectangle="384, 722, 149, 22" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl idx='2' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='SELECT' class='' aaname='' /&gt;" Guid="fc1149ad-117e-4b4b-844a-954be3638378" InformativeScreenshot="3b243a4724952e55959d15e8e2af045a.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Jenkins' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NSelectItem DisplayName="選取項目 '下拉清單'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,189" sap2010:WorkflowViewState.IdRef="NSelectItem_4" Item="[selectGameDLLTag]" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V4">
+                    <uix:NSelectItem.Items>
+                      <scg:List x:TypeArguments="x:String" Capacity="6">
+                        <x:String>-</x:String>
+                        <x:String>01.00.01.01</x:String>
+                        <x:String>01.00.01.00</x:String>
+                        <x:String>01.00.00.00</x:String>
+                        <x:String>00.00.01.00(DEMO)</x:String>
+                        <x:String>00.00.00.00</x:String>
+                      </scg:List>
+                    </uix:NSelectItem.Items>
+                    <uix:NSelectItem.Target>
+                      <uix:TargetAnchorable BrowserURL="192.168.138.210/job/S073/build" CVScreenId="83709909-05eb-4d37-bfa6-00505a0699ac" ContentHash="48-dXF3w502aHVVzFgd_LQ" CvElementArea="383, 721, 151, 23" CvType="InputBox" DesignTimeRectangle="384, 722, 149, 22" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl idx='2' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='SELECT' class='' aaname='' /&gt;" Guid="4b73b621-d0c2-4a47-97e1-385502f59e2e" InformativeScreenshot="b6f015ee5be250b4be01fc493db18ef6.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/o_QTJv98SEK8WfSZwYs6Xg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Jenkins' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                    </uix:NSelectItem.Target>
+                  </uix:NSelectItem>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DisplayName="按一下 'msedge.exe Jenkins'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,216" sap2010:WorkflowViewState.IdRef="NClick_11" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="192.168.138.210/job/S073/build" CVScreenId="83709909-05eb-4d37-bfa6-00505a0699ac" ContentHash="48-dXF3w502aHVVzFgd_LQ" CvElementArea="383, 721, 151, 23" CvType="InputBox" DesignTimeRectangle="384, 722, 149, 22" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl idx='2' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='SELECT' class='' aaname='' /&gt;" Guid="4b73b621-d0c2-4a47-97e1-385502f59e2e" InformativeScreenshot="b6f015ee5be250b4be01fc493db18ef6.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/o_QTJv98SEK8WfSZwYs6Xg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Jenkins' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+            <If Condition="[string.IsNullOrEmpty(selectMathDLLTag) = false]" DisplayName="選擇MathDLL判斷" sap:VirtualizedContainerService.HintSize="454,57" sap2010:WorkflowViewState.IdRef="If_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,690" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DisplayName="按一下 'msedge.exe Jenkins'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_9" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="192.168.138.210/job/S073/build" CVScreenId="91b1f785-63aa-408e-8df2-ff138b67fd3c" ContentHash="7g9jdfubpUCDnTKsrFDC1A" CvElementArea="383, 555, 99, 24" CvType="InputBox" DesignTimeRectangle="384, 556, 97, 22" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl idx='3' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='SELECT' class='' aaname='' /&gt;" Guid="cc308e9f-35d7-45ce-90f8-66d61c3ee911" InformativeScreenshot="5306c5f81fa8eaf8a43b3c5cc85083df.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/ZZjE4N9BwESR6UFxeTA8Tw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Jenkins' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NSelectItem DisplayName="選取項目 '下拉清單'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,189" sap2010:WorkflowViewState.IdRef="NSelectItem_5" Item="[selectMathDLLTag]" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V4">
+                    <uix:NSelectItem.Items>
+                      <scg:List x:TypeArguments="x:String" Capacity="26">
+                        <x:String>-</x:String>
+                        <x:String>01.00.05.01</x:String>
+                        <x:String>01.00.05.00</x:String>
+                        <x:String>01.00.04.04</x:String>
+                        <x:String>01.00.04.03</x:String>
+                        <x:String>01.00.04.02</x:String>
+                        <x:String>01.00.04.01</x:String>
+                        <x:String>01.00.04.00</x:String>
+                        <x:String>01.00.03.03</x:String>
+                        <x:String>01.00.03.02</x:String>
+                        <x:String>01.00.03.01</x:String>
+                        <x:String>01.00.03.00</x:String>
+                        <x:String>01.00.02.00</x:String>
+                        <x:String>01.00.01.01</x:String>
+                        <x:String>01.00.01.00</x:String>
+                        <x:String>01.00.00.02</x:String>
+                        <x:String>01.00.00.01</x:String>
+                        <x:String>01.00.00.00</x:String>
+                        <x:String>00.00.02.00</x:String>
+                        <x:String>00.00.01.01</x:String>
+                        <x:String>00.00.01.00</x:String>
+                        <x:String>00.00.00.06</x:String>
+                        <x:String>00.00.00.04</x:String>
+                        <x:String>00.00.00.03</x:String>
+                        <x:String>00.00.00.02</x:String>
+                        <x:String>00.00.00.01</x:String>
+                      </scg:List>
+                    </uix:NSelectItem.Items>
+                    <uix:NSelectItem.Target>
+                      <uix:TargetAnchorable BrowserURL="192.168.138.210/job/S073/build" CVScreenId="91b1f785-63aa-408e-8df2-ff138b67fd3c" ContentHash="7g9jdfubpUCDnTKsrFDC1A" CvElementArea="383, 555, 99, 24" CvType="InputBox" DesignTimeRectangle="384, 556, 97, 22" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl idx='3' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='SELECT' class='' aaname='' /&gt;" Guid="cc308e9f-35d7-45ce-90f8-66d61c3ee911" InformativeScreenshot="5306c5f81fa8eaf8a43b3c5cc85083df.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/ZZjE4N9BwESR6UFxeTA8Tw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Jenkins' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                    </uix:NSelectItem.Target>
+                  </uix:NSelectItem>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DisplayName="按一下 'msedge.exe Jenkins'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,216" sap2010:WorkflowViewState.IdRef="NClick_12" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="192.168.138.210/job/S073/build" CVScreenId="91b1f785-63aa-408e-8df2-ff138b67fd3c" ContentHash="7g9jdfubpUCDnTKsrFDC1A" CvElementArea="383, 555, 99, 24" CvType="InputBox" DesignTimeRectangle="384, 556, 97, 22" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl idx='3' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='SELECT' class='' aaname='' /&gt;" Guid="cc308e9f-35d7-45ce-90f8-66d61c3ee911" InformativeScreenshot="5306c5f81fa8eaf8a43b3c5cc85083df.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/ZZjE4N9BwESR6UFxeTA8Tw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Jenkins' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+            <uix:NHover CursorMotionType="Smooth" DisplayName="懸停 '建置'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="454,225" HoverTime="1" sap2010:WorkflowViewState.IdRef="NHover_4" InteractionMode="HardwareEvents" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V4">
+              <uix:NHover.Target>
+                <uix:TargetAnchorable BrowserURL="192.168.138.210/job/S073/build" CVScreenId="b72ad126-5b73-4234-b412-a79290f9dd07" ContentHash="R8W_RPVyk0KXoCv9rCrnYg" CvElementArea="382, 462, 95, 40" CvType="Button" DesignTimeRectangle="384, 465, 90, 36" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='             建置           ' tag='BUTTON' type='' class='jenkins-button jenkins-button--primary jenkins-!-build-color' check:innerText='建置' /&gt;" Guid="13275aae-923c-44d7-8787-8a58d57e6685" InformativeScreenshot="8a5d0e9d170a7a273e7581ab0c22b39b.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/DDcCp4dScEypYXMTSZuP6A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Jenkins' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NHover.Target>
+              <uix:NHover.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NHover.VerifyOptions>
+            </uix:NHover>
+            <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DisplayName="按一下 '建置'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="454,225" sap2010:WorkflowViewState.IdRef="NClick_13" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="192.168.138.210/job/S073/build" CVScreenId="b72ad126-5b73-4234-b412-a79290f9dd07" ContentHash="R8W_RPVyk0KXoCv9rCrnYg" CvElementArea="382, 462, 95, 40" CvType="Button" DesignTimeRectangle="384, 465, 90, 36" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='             建置           ' tag='BUTTON' type='' class='jenkins-button jenkins-button--primary jenkins-!-build-color' check:innerText='建置' /&gt;" Guid="13275aae-923c-44d7-8787-8a58d57e6685" InformativeScreenshot="8a5d0e9d170a7a273e7581ab0c22b39b.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/DDcCp4dScEypYXMTSZuP6A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Jenkins' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <ui:CommentOut DisplayName="註解化" sap:VirtualizedContainerService.HintSize="454,57" sap2010:WorkflowViewState.IdRef="CommentOut_10">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="已忽略的活動" sap:VirtualizedContainerService.HintSize="488,893" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[building = True]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="454,833" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+                    <ui:InterruptibleDoWhile.Body>
+                      <Sequence DisplayName="本文" sap:VirtualizedContainerService.HintSize="452,712" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:UiElementExists DisplayName="Element Exists 'TD'" Exists="[building]" sap:VirtualizedContainerService.HintSize="418,139" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+                          <ui:UiElementExists.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="78e7c931-5abc-438b-81d4-cb62c3c51e66" InformativeScreenshot="6f9cf942656200c849fb5e3c0600294e" Selector="&lt;webctrl tableRow='2' tag='TABLE' /&gt;&lt;webctrl class='progress-bar-left' tableRow='1' tag='TD' /&gt;">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                              <ui:Target.WaitForReady>
+                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                              </ui:Target.WaitForReady>
+                            </ui:Target>
+                          </ui:UiElementExists.Target>
+                        </ui:UiElementExists>
+                        <If Condition="[building = True]" sap:VirtualizedContainerService.HintSize="418,513" sap2010:WorkflowViewState.IdRef="If_4">
+                          <If.Then>
+                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,295" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <WriteLine DisplayName="寫入行" sap:VirtualizedContainerService.HintSize="382,122" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="[string.Format(&quot;Check building : {0}&quot;,building)]" />
+                              <Delay DisplayName="延遲" Duration="00:00:05" sap:VirtualizedContainerService.HintSize="382,113" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                            </Sequence>
+                          </If.Then>
+                          <If.Else>
+                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Sequence>
+                          </If.Else>
+                        </If>
+                      </Sequence>
+                    </ui:InterruptibleDoWhile.Body>
+                  </ui:InterruptibleDoWhile>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[building = True]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="454,720" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_2">
+              <ui:InterruptibleDoWhile.Body>
+                <Sequence DisplayName="本文" sap:VirtualizedContainerService.HintSize="452,590" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:UiElementExists DisplayName="存在元素 'DIV'" Exists="[building]" sap:VirtualizedContainerService.HintSize="418,139" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
+                    <ui:UiElementExists.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="afe46121-1aa0-4865-b805-8035ff25cd21" InformativeScreenshot="3ff0f6845142d27a699edeac1c60c28f" Selector="&lt;webctrl class='jobsTable' tag='TABLE' /&gt;&lt;webctrl aria-role='progressbar' tableRow='4' tag='DIV' /&gt;" TimeoutMS="500">
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:UiElementExists.Target>
+                  </ui:UiElementExists>
+                  <If Condition="[building = True]" sap:VirtualizedContainerService.HintSize="418,391" sap2010:WorkflowViewState.IdRef="If_12">
+                    <If.Then>
+                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,173" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Delay DisplayName="延遲" Duration="00:00:05" sap:VirtualizedContainerService.HintSize="382,113" sap2010:WorkflowViewState.IdRef="Delay_2" />
                       </Sequence>
                     </If.Then>
                     <If.Else>
-                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_37">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -443,13 +833,301 @@
                     </If.Else>
                   </If>
                 </Sequence>
-              </ActivityAction>
-            </ParallelForEach>
+              </ui:InterruptibleDoWhile.Body>
+            </ui:InterruptibleDoWhile>
+            <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DisplayName="按一下 'Download'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="454,225" sap2010:WorkflowViewState.IdRef="NClick_14" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="192.168.138.210/job/S073" CVScreenId="89dba01b-ffc0-4b8a-b912-cfe36de454ed" ContentHash="l-j60GhHjUqo9ozdtRY8dA" CvTextArea="384, 471, 69, 14" CvTextArgument="Download" CvType="Text" DesignTimeRectangle="384, 470, 69, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Download' tag='A' /&gt;" Guid="6a72d05d-5ec5-45e4-a63d-3d15120105e0" InformativeScreenshot="a108415eef27634c9b2be36f046299ee.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/eC6EEcfhkUOeI2cUE4yiGQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='S073 [Jenkins]' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DisplayName="按一下 'Game'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="454,225" sap2010:WorkflowViewState.IdRef="NClick_15" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="192.168.138.210/userContent/S073" CVScreenId="06b4f273-6946-4f9b-ab10-8754de0dd597" ContentHash="ze7xJrfODkCJC0zXdR-iBw" CvTextArea="413, 363, 41, 14" CvTextArgument="Game" CvType="Text" DesignTimeRectangle="414, 362, 40, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl class='fileList' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='A' /&gt;" Guid="7b6aba9e-e5bf-4c07-a6d7-8d174856b630" InformativeScreenshot="da5ff8dc39170f9f0ccafb914d2792fa.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/jfZtMFGQFUK5ciPEdxnGsw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='User content : /S073 [Jenkins]' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DisplayName="按一下 'Game-S073-01.00.02.04.7z'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="454,225" sap2010:WorkflowViewState.IdRef="NClick_16" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="192.168.138.210/userContent/S073/Game" CVScreenId="d98a8f78-9151-4a8d-aca4-32132e8eae43" ContentHash="H8jIa69QQEem5_rCoyVuvQ" CvTextArea="404, 363, 185, 14" CvTextArgument="[String.Format(&quot;Game-{0}-{1}.7z&quot;, projectName, selectTagName)]" CvType="Text" DesignTimeRectangle="406, 362, 181, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl class='fileList' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='A' /&gt;" Guid="939011e8-dabb-4063-a2db-edf24d2ffeaf" InformativeScreenshot="a5e6904f2afb7774b88503845fc5de5b.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/-YJGthU7hUG5__2GGEI8WA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='User content : /S073/Game [Jenkins]' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <If Condition="[string.IsNullOrEmpty(selectGameDLLTag) = False]" DisplayName="下載GameDLL判斷" sap:VirtualizedContainerService.HintSize="454,57" sap2010:WorkflowViewState.IdRef="If_5">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,726" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DisplayName="按一下 'S073'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_17" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="192.168.138.210/userContent/S073/Game" CVScreenId="49e98852-b2f4-4872-8459-bcb66faedab4" ContentHash="_Tvkg2JdykyASv16irSIWg" CvTextArea="404, 331, 36, 14" CvTextArgument="[projectName]" CvType="Text" DesignTimeRectangle="406, 329, 33, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='S073' tag='A' /&gt;" Guid="5cc36971-0bcd-4cfe-9d0b-452135595d01" InformativeScreenshot="1d1acaac43b8d51acd733ab48e926ed2.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/PPHw0MvadkifSqjU2hGcuw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='User content : /S073/Game [Jenkins]' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DisplayName="按一下 'Game Dll'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_18" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="192.168.138.210/userContent/S073" CVScreenId="e54d0f10-6bbc-4254-ac3b-377cedd6f069" ContentHash="xecXhSbyYEiysBbALkV9hw" CvTextArea="413, 388, 63, 14" CvTextArgument="Game DII" CvType="Text" DesignTimeRectangle="414, 387, 62, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl class='fileList' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='A' /&gt;" Guid="39d23111-4b65-4846-a393-818c541abf8a" InformativeScreenshot="639e2a000c32f118f74d2122d5d3c5d9.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/6wgF1ivQv0qNEElJeLKNbQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='User content : /S073 [Jenkins]' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DisplayName="按一下 'GameDll-S073-01.00.01.0…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,216" sap2010:WorkflowViewState.IdRef="NClick_19" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="192.168.138.210/userContent/S073/Game%20Dll" CVScreenId="8fb84392-793b-4239-b1f2-94fde4459b56" ContentHash="0RI71trPVUeCSqswUmd1Ug" CvTextArea="406, 463, 200, 14" CvTextArgument="[string.Format(&quot;GameDIl-{0}-{1}.7z&quot;, projectName, selectGameDLLTag)]" CvType="Text" DesignTimeRectangle="406, 462, 200, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl class='fileList' tag='TABLE' /&gt;&lt;webctrl tableRow='5' tag='A' /&gt;" Guid="85f3d4f7-030c-40c8-9708-b743edd237ae" InformativeScreenshot="07dc33ddd50feff9e192daaa9adf9273.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/kWS0ugRmaEachngUKRbOcA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='User content : /S073/Game Dll [Jenkins]' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+            <If Condition="[string.IsNullOrEmpty(selectMathDLLTag) = False]" DisplayName="下載MathDLL判斷" sap:VirtualizedContainerService.HintSize="454,57" sap2010:WorkflowViewState.IdRef="If_8">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,726" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DisplayName="按一下 'S073'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_20" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="192.168.138.210/userContent/S073/Game" CVScreenId="49e98852-b2f4-4872-8459-bcb66faedab4" ContentHash="_Tvkg2JdykyASv16irSIWg" CvTextArea="404, 331, 36, 14" CvTextArgument="[projectName]" CvType="Text" DesignTimeRectangle="406, 329, 33, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='S073' tag='A' /&gt;" Guid="5cc36971-0bcd-4cfe-9d0b-452135595d01" InformativeScreenshot="1d1acaac43b8d51acd733ab48e926ed2.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/PPHw0MvadkifSqjU2hGcuw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='User content : /S073/Game [Jenkins]' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DisplayName="按一下 'Math Dll'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_21" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="192.168.138.210/userContent/S074" CVScreenId="cfa31603-3854-4071-8c52-7b54c5e9073c" ContentHash="80387n44VUavdWGh-wM4Yw" CvTextArea="414, 413, 58, 14" CvTextArgument="Math DII" CvType="Text" DesignTimeRectangle="414, 412, 58, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl class='fileList' tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='A' /&gt;" Guid="79d3e5a6-c6fc-4792-9181-80fee5743f52" InformativeScreenshot="a5a79b8c92df8394c6649084a7e4636f.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/pjTclCWA_0GdXQFJ2IJy3g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='User content : /S074 [Jenkins]' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DisplayName="按一下 'Math-S074-01.00.02.01(R…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,216" sap2010:WorkflowViewState.IdRef="NClick_22" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="192.168.138.210/userContent/S074/Math%20Dll" CVScreenId="b600fdf4-daa2-4910-963b-530a1a64ee48" ContentHash="Iirbk_CEdUCbqbRSGEf_IQ" CvTextArea="405, 663, 240, 17" CvTextArgument="[string.Format(&quot;Math-{0}-(1)({2}).7z&quot;, projectName, selectMathDLLTag, gameMode)]" CvType="Text" DesignTimeRectangle="406, 662, 239, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl class='fileList' tag='TABLE' /&gt;&lt;webctrl tableRow='13' tag='A' /&gt;" Guid="813e874c-fb23-44eb-812b-0725d5d58c53" InformativeScreenshot="b797940db878d3b96eb8b68c34781a72.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/umc0nyFBPkesb5fHOBimdQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='User content : /S074/Math Dll [Jenkins]' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+            <If Condition="[string.IsNullOrEmpty(selectSJPDLLTag) = False]" DisplayName="下載SJPDLL判斷" sap:VirtualizedContainerService.HintSize="454,50" sap2010:WorkflowViewState.IdRef="If_11">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,1240" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DisplayName="按一下 '資訊主頁'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_23" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="192.168.138.210/userContent/S074/Math%20Dll" ContentHash="UTKXKZDgpUuNF7W6SS4sZw" DesignTimeRectangle="30, 196, 55, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='資訊主頁' class='model-link' tag='A' /&gt;" Guid="742e4186-29d4-4d24-8e27-fcd17e445f8c" InformativeScreenshot="6cbd00f17b6b2e1a550902937829e459.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/KGqiS5-_90yzS8dv0VrMsA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='User content : /S074/Math Dll [Jenkins]' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NMouseScroll KeyModifiers="{x:Null}" CursorMotionType="Smooth" Direction="Down" DisplayName="滑鼠捲動 '滑鼠捲動(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,289" sap2010:WorkflowViewState.IdRef="NMouseScroll_2" InteractionMode="HardwareEvents" MovementUnits="10" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V5">
+                    <uix:NMouseScroll.SearchedElement>
+                      <uix:SearchedElement>
+                        <uix:SearchedElement.Target>
+                          <uix:TargetAnchorable BrowserURL="192.168.138.210" CVScreenId="32aa8d71-7b7e-4d05-8d51-ad25a592935b" ContentHash="sfLG9epZJ0Cv_ZsHv1sD3Q" CvTextArea="541, 518, 58, 14" CvTextArgument="[SJPDLLType]" CvType="Text" DesignTimeRectangle="543, 519, 56, 14" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='S W 名稱  ↓ 上次成功 上次失敗 上次費時 Fav' tag='TABLE' /&gt;&lt;webctrl aaname='SJPD002' tableRow='74' tag='SPAN' /&gt;" Guid="455e609f-460d-40a6-a9d5-621769ed6c79" InformativeScreenshot="5b66d421c8ae7da27ae9c1980f2becad.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/ZHvV-9DLRUWQH-ecsg4aLA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='資訊主頁 [Jenkins]' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                        </uix:SearchedElement.Target>
+                        <uix:SearchedElement.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:SearchedElement.Timeout>
+                      </uix:SearchedElement>
+                    </uix:NMouseScroll.SearchedElement>
+                    <uix:NMouseScroll.Target>
+                      <uix:TargetAnchorable BrowserURL="192.168.138.210" CVScreenId="32aa8d71-7b7e-4d05-8d51-ad25a592935b" ContentHash="sfLG9epZJ0Cv_ZsHv1sD3Q" CvTextArea="541, 518, 58, 14" CvTextArgument="[SJPDLLType]" CvType="Text" DesignTimeRectangle="543, 519, 56, 14" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='S W 名稱  ↓ 上次成功 上次失敗 上次費時 Fav' tag='TABLE' /&gt;&lt;webctrl aaname='SJPD002' tableRow='74' tag='SPAN' /&gt;" Guid="455e609f-460d-40a6-a9d5-621769ed6c79" InformativeScreenshot="5b66d421c8ae7da27ae9c1980f2becad.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/ZHvV-9DLRUWQH-ecsg4aLA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='資訊主頁 [Jenkins]' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                    </uix:NMouseScroll.Target>
+                  </uix:NMouseScroll>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DisplayName="按一下 'SJPD002'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_24" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="192.168.138.210" CVScreenId="e26a7b92-4156-4f65-aff0-76874bea2014" ContentHash="7U3cWd2G_EWzYatInbsa5g" CvTextArea="541, 405, 59, 14" CvTextArgument="[SJPDLLType]" CvType="Text" DesignTimeRectangle="543, 406, 56, 14" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='S W 名稱  ↓ 上次成功 上次失敗 上次費時 Fav' tag='TABLE' /&gt;&lt;webctrl aaname='SJPD002' tableRow='74' tag='SPAN' /&gt;" Guid="da76aafb-936c-4905-a48c-84f6b9a840de" InformativeScreenshot="b3b969d87fe83e0128523cff710aca11.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/L0ys-3JWNU-rVdDbQOWiaA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='資訊主頁 [Jenkins]' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DisplayName="按一下 'Download'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_25" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="192.168.138.210/job/S073" CVScreenId="89dba01b-ffc0-4b8a-b912-cfe36de454ed" ContentHash="l-j60GhHjUqo9ozdtRY8dA" CvTextArea="384, 471, 69, 14" CvTextArgument="Download" CvType="Text" DesignTimeRectangle="384, 470, 69, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Download' tag='A' /&gt;" Guid="6a72d05d-5ec5-45e4-a63d-3d15120105e0" InformativeScreenshot="a108415eef27634c9b2be36f046299ee.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/eC6EEcfhkUOeI2cUE4yiGQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='S073 [Jenkins]' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DisplayName="按一下 'SJPD002(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,216" sap2010:WorkflowViewState.IdRef="NClick_26" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="843a1574-9888-4dc5-95ed-b6e4f79529c7" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="192.168.138.210/userContent/JP" CVScreenId="3eb68b79-cd52-42b6-af25-e6b6f7aa8662" ContentHash="7tQThcmBSUqGy9yS2Mrbbw" CvTextArea="408, 363, 57, 14" CvTextArgument="[selectSJPDLLTag]" CvType="Text" DesignTimeRectangle="406, 362, 59, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl class='fileList' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='A' /&gt;" Guid="52fcacba-024b-4911-9e10-1be2390769b5" InformativeScreenshot="c3d2dbd04457c898aee263ef9183572b.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/64hqv57iSkCDrhqMKlo5Mw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='User content : /JP [Jenkins]' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
       <uix:NApplicationCard.TargetApp>
-        <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Edge" ContentHash="Yxvfd5SGAEm3V_MIPhEekw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALxSURBVDhPbZFrTJJRGMfJ1oc+14f6ZFtbTU2Iy5Q0BTTY0OYtE1HRUClKRc3Uhllm5pVMs9IUzEtmXiZWXtCMXObMvC2vldoyS5yYF0AzJZ9e4EVH87f9t7P3fX7/c84OZicOmx/ab0sg5diRiLLwYD+lIJSjjuRxplkeLnHIv73o2M4EsP0q+KGhmoSYcI1iWL6pnnwL6ol2WP4ih7aqB4t0Rzs5UrIHHTeFxw2pvpl4fTP5qmBG87UDlsdk+iyNNm+lT1aqZVDs61BlG6qDA4VOc9rgBYf87W+r1CyNtYA4Owkay+6aFLwoEYEbg7qAnGIfqhpg0hlDaSmpwA3iQtfL4rW5wUYYaCnRS4sjTSYlP3qkEB3KjkJVA+yzPt8jwiIgKCBINdMn3RpWj7fDQGuZft3bKIEl5EqtlXkgCGblo6oBpjN1Jj3x8irb22t++HX5b2PBu/p8SIm9oF83l9+BptIseF6cDrF8Timq6p9tV86teE2G8BIUZgoXprprtcaC/yNKFMBEZxXEXeSIUN1A9HnOuHKwYUdJl8nOGuhuKIScpGgYkZeDvyfTF1UN+Li5uJ9xcf7WXldkIi5/agV51T24HccHSZYQrgm4uispkVMfQNVtkI821UWijaVRGUy9r9UXzH1sgMyEMHj2MBlqHqXAz14peLue6kIVU5ACM5Y7U6mZ7IDpnjpoeZKtL1H01SNP+hjG2ivgRgx/weoYVooq2yCyuQWWOII7QfsTH8lfHX5Toe2sL0Ceyxee3k9SS0TCKTc6RUG0xq/YMH20ljhSrlE0O3LUMhVLpqiceAngEHQF3P1CfmWmZ6hicFiVGI9VsiwtZtm0k4MFJIImj4hfJ7kHAoF6egVxD+oKcCSG17pOJHoGA9GDqw/BLRCQYcUQmQivbAjL5/D4uTQcdj6XRFgjuPqDFZnar9tcV7Ab78ictw+I2pKNiSDZfpbgrce9HGkfZE1N62Jx8SwrJklznO4FFnhyDQaDwfwDb/XrcmjdftIAAAAASUVORK5CYII=" InformativeScreenshot="8efc6952739a0256c0b9ac520bce358d.jpg" Reference="EdNSm3KZAUmUdwdO1xTKrw/jsVsafqMIkSe-ge6mxMYrg" Selector="&lt;html app='msedge.exe' title='資訊主頁 [Jenkins]' /&gt;" Title="資訊主頁 [Jenkins]" Url="http://192.168.138.210:8080/" Version="V1" />
+        <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Edge" ContentHash="JrZ_VhYCgEuAapIihh3EbQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALxSURBVDhPbZFrTJJRGMfJ1oc+14f6ZFtbTU2Iy5Q0BTTY0OYtE1HRUClKRc3Uhllm5pVMs9IUzEtmXiZWXtCMXObMvC2vldoyS5yYF0AzJZ9e4EVH87f9t7P3fX7/c84OZicOmx/ab0sg5diRiLLwYD+lIJSjjuRxplkeLnHIv73o2M4EsP0q+KGhmoSYcI1iWL6pnnwL6ol2WP4ih7aqB4t0Rzs5UrIHHTeFxw2pvpl4fTP5qmBG87UDlsdk+iyNNm+lT1aqZVDs61BlG6qDA4VOc9rgBYf87W+r1CyNtYA4Owkay+6aFLwoEYEbg7qAnGIfqhpg0hlDaSmpwA3iQtfL4rW5wUYYaCnRS4sjTSYlP3qkEB3KjkJVA+yzPt8jwiIgKCBINdMn3RpWj7fDQGuZft3bKIEl5EqtlXkgCGblo6oBpjN1Jj3x8irb22t++HX5b2PBu/p8SIm9oF83l9+BptIseF6cDrF8Timq6p9tV86teE2G8BIUZgoXprprtcaC/yNKFMBEZxXEXeSIUN1A9HnOuHKwYUdJl8nOGuhuKIScpGgYkZeDvyfTF1UN+Li5uJ9xcf7WXldkIi5/agV51T24HccHSZYQrgm4uispkVMfQNVtkI821UWijaVRGUy9r9UXzH1sgMyEMHj2MBlqHqXAz14peLue6kIVU5ACM5Y7U6mZ7IDpnjpoeZKtL1H01SNP+hjG2ivgRgx/weoYVooq2yCyuQWWOII7QfsTH8lfHX5Toe2sL0Ceyxee3k9SS0TCKTc6RUG0xq/YMH20ljhSrlE0O3LUMhVLpqiceAngEHQF3P1CfmWmZ6hicFiVGI9VsiwtZtm0k4MFJIImj4hfJ7kHAoF6egVxD+oKcCSG17pOJHoGA9GDqw/BLRCQYcUQmQivbAjL5/D4uTQcdj6XRFgjuPqDFZnar9tcV7Ab78ictw+I2pKNiSDZfpbgrce9HGkfZE1N62Jx8SwrJklznO4FFnhyDQaDwfwDb/XrcmjdftIAAAAASUVORK5CYII=" InformativeScreenshot="b40872efc8744cf95c240ac0aa0d7e78.jpg" Reference="EdNSm3KZAUmUdwdO1xTKrw/jsVsafqMIkSe-ge6mxMYrg" Selector="&lt;html app='msedge.exe' title='資訊主頁 [Jenkins]' /&gt;" Url="http://192.168.138.210:8080/" Version="V1" />
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
   </Sequence>

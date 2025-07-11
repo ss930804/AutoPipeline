@@ -1,0 +1,13 @@
+﻿{
+  "Name": "msedge.exe Jenkins(1)",
+  "Type": "Element",
+  "Id": "CFOi8CmXWEqgXbL6oNDIxg",
+  "Reference": "EdNSm3KZAUmUdwdO1xTKrw/CFOi8CmXWEqgXbL6oNDIxg",
+  "ParentRef": "EdNSm3KZAUmUdwdO1xTKrw/jsVsafqMIkSe-ge6mxMYrg",
+  "Created": "2025-07-09T08:53:27.7156684Z",
+  "Updated": "2025-07-09T08:53:27.7156684Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

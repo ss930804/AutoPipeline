@@ -1,0 +1,14 @@
+﻿{
+  "Name": "S073",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "PPHw0MvadkifSqjU2hGcuw",
+  "Reference": "EdNSm3KZAUmUdwdO1xTKrw/PPHw0MvadkifSqjU2hGcuw",
+  "ParentRef": "EdNSm3KZAUmUdwdO1xTKrw/jsVsafqMIkSe-ge6mxMYrg",
+  "Created": "2025-07-10T05:33:15.6528549Z",
+  "Updated": "2025-07-10T05:33:15.6528549Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

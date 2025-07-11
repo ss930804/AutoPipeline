@@ -1,0 +1,14 @@
+﻿{
+  "Name": "下拉清單(1)",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "o_QTJv98SEK8WfSZwYs6Xg",
+  "Reference": "EdNSm3KZAUmUdwdO1xTKrw/o_QTJv98SEK8WfSZwYs6Xg",
+  "ParentRef": "EdNSm3KZAUmUdwdO1xTKrw/jsVsafqMIkSe-ge6mxMYrg",
+  "Created": "2025-07-09T08:14:03.6146582Z",
+  "Updated": "2025-07-09T08:14:03.6146582Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

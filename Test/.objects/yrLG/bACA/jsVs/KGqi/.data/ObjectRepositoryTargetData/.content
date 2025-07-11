@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="UTKXKZDgpUuNF7W6SS4sZw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="192.168.138.210/userContent/S074/Math%20Dll" DesignTimeRectangle="30, 196, 55, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='資訊主頁' class='model-link' tag='A' /&gt;" Guid="742e4186-29d4-4d24-8e27-fcd17e445f8c" ScopeSelectorArgument="&lt;html app='msedge.exe' title='User content : /S074/Math Dll [Jenkins]' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="6cbd00f17b6b2e1a550902937829e459.png" xmlns="">0NK4FMQIw7kqMuvW_OZXlUg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="3E5fLkJQh02lbzj9h6NG-Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="192.168.138.210/job/S073" DesignTimeRectangle="24, 805, 151, 16" DesignTimeScaleFactor="1" Guid="f13f5def-ae9b-4993-9406-8d5cb88c71af" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJcAAAAQCAYAAAAbKu0ZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE8SURBVGhD7dSxbsIwFAXQ/hk/050FdenCgsTCwFIJqeqQoR27ojCizvQDUD+AbpmyubpIDwXnmoJC+pB7hyPAsZ8dvyvu6roOsee399ZYymbzGYbDhxaM43lVVWE+fzqML5er/fhu9x3G48nRGiiKV1rX6qWgrq1l8Bz7Yd/muJ0vVR/zp9NZ2G6/9r/xORo9Hs5l72Pi942xMzCYgzrnzDWn7iA+F75jDM/sneI7QK3mPMAeVgNr7F6YzuG6Fb+FKwUXytY1Q3RuIACNWCxe6KVfEphrh8tD53BZiuV/W68/WtnI5p9Lbo/CJb1RuKQ3ncM1uC9OKstS/hDrkReFKzOsR14UrsywHnlRuDLDeuRF4coM65EXhSszrEdeFK7MsB55oeG6BAtUE7sA6Q/rkZfO4RJJUbikJ3X4AeN2JJGKEGoIAAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;html app='msedge.exe' title='S073 [Jenkins]' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="191487029802f0d4f6680601c2376edf.png" xmlns="">0u4erj8xbSkmeTUjULPOE7g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckElement</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

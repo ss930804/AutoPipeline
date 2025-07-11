@@ -6,8 +6,20 @@
   "OriginalIconFileName": null,
   "Arguments": [
     {
-      "Name": "in_JenkinsURL",
-      "DisplayName": "in_JenkinsURL",
+      "Name": "projectName",
+      "DisplayName": "projectName",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "S073",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "selectSJPDLLTag",
+      "DisplayName": "selectSJPDLLTag",
       "Category": null,
       "Tooltip": null,
       "Placeholder": null,
@@ -18,8 +30,20 @@
       "DataSourceItems": null
     },
     {
-      "Name": "in_ProjectName",
-      "DisplayName": "in_ProjectName",
+      "Name": "selectTagName",
+      "DisplayName": "selectTagName",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "01.00.02.03",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "selectGameDLLTag",
+      "DisplayName": "selectGameDLLTag",
       "Category": null,
       "Tooltip": null,
       "Placeholder": null,
@@ -30,8 +54,32 @@
       "DataSourceItems": null
     },
     {
-      "Name": "in_TagName",
-      "DisplayName": "in_TagName",
+      "Name": "selectMathDLLTag",
+      "DisplayName": "selectMathDLLTag",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "gameMode",
+      "DisplayName": "gameMode",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "Debug",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "SJPDLLType",
+      "DisplayName": "SJPDLLType",
       "Category": null,
       "Tooltip": null,
       "Placeholder": null,

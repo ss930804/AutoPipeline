@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="R8W_RPVyk0KXoCv9rCrnYg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="192.168.138.210/job/S073/build" CVScreenId="b72ad126-5b73-4234-b412-a79290f9dd07" CvElementArea="382, 462, 95, 40" CvType="Button" DesignTimeRectangle="384, 465, 90, 36" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='             建置           ' tag='BUTTON' type='' class='jenkins-button jenkins-button--primary jenkins-!-build-color' check:innerText='建置' /&gt;" Guid="13275aae-923c-44d7-8787-8a58d57e6685" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Jenkins' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="8a5d0e9d170a7a273e7581ab0c22b39b.png" xmlns="">0wofZIukVHUeLTYdhoLIEzg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Hover</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -3570,20 +3570,20 @@
           }
         }
       },
-      "System.Threading.Tasks.Dataflow/6.0.0": {
+      "System.Threading.Tasks.Dataflow/8.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net8.0/_._": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.Threading.Tasks.Dataflow.dll": {
+          "lib/net8.0/System.Threading.Tasks.Dataflow.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Threading.Tasks.Extensions/4.5.4": {
@@ -3746,7 +3746,7 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "UiPath/24.10.112.56016": {
+      "UiPath/25.6.140.65296": {
         "type": "package",
         "compile": {
           "lib/net6.0-windows7.0/_._": {}
@@ -3761,16 +3761,28 @@
           "build/_._": {}
         }
       },
-      "UiPath.Activities.RuntimeGovernance/1.1.6": {
+      "UiPath.Activities.RuntimeGovernance/1.1.7": {
         "type": "package",
         "dependencies": {
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
-          "lib/net5.0-windows7.0/_._": {}
+          "lib/net6.0-windows7.0/_._": {}
         },
         "runtime": {
-          "lib/net5.0-windows7.0/UiPath.Activities.RuntimeGovernance.dll": {}
+          "lib/net6.0-windows7.0/UiPath.Activities.RuntimeGovernance.dll": {}
+        }
+      },
+      "UiPath.AppSignatures/25.6.140.65296": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows7.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/AppSignatures.Locator.dll": {}
+        },
+        "build": {
+          "build/_._": {}
         }
       },
       "UiPath.CodedWorkflows/24.10.1": {
@@ -3865,7 +3877,7 @@
           "lib/net6.0-windows7.0/UiPath.ImageProcessingInterop.dll": {}
         }
       },
-      "UiPath.OCR.Activities/3.21.2": {
+      "UiPath.OCR.Activities/3.22.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Azure.CognitiveServices.Vision.ComputerVision": "7.0.1",
@@ -3878,7 +3890,7 @@
           "System.Text.RegularExpressions": "4.3.1",
           "System.ValueTuple": "4.5.0",
           "UiPath.EmguCVBundle": "1.3.0",
-          "UiPath.OCR.Contracts": "2.16.0",
+          "UiPath.OCR.Contracts": "2.17.1",
           "UiPath.Platform": "23.4.0"
         },
         "compile": {
@@ -3970,7 +3982,7 @@
           }
         }
       },
-      "UiPath.OCR.Contracts/2.16.0": {
+      "UiPath.OCR.Contracts/2.17.1": {
         "type": "package",
         "dependencies": {
           "System.Drawing.Common": "5.0.3"
@@ -3989,7 +4001,7 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
-      "UiPath.OpenTelemetry.Contracts/2.3.3": {
+      "UiPath.OpenTelemetry.Contracts/2.5.26": {
         "type": "package",
         "dependencies": {
           "System.Diagnostics.DiagnosticSource": "6.0.0"
@@ -4213,13 +4225,13 @@
           }
         }
       },
-      "UiPath.Telemetry.Client/2.3.3": {
+      "UiPath.Telemetry.Client/2.5.26": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
-          "System.Threading.Tasks.Dataflow": "5.0.0",
+          "System.Threading.Tasks.Dataflow": "8.0.0",
           "System.ValueTuple": "4.5.0",
-          "UiPath.OpenTelemetry.Contracts": "2.3.3"
+          "UiPath.OpenTelemetry.Contracts": "2.5.26"
         },
         "compile": {
           "lib/netstandard2.0/_._": {}
@@ -4228,11 +4240,11 @@
           "lib/netstandard2.0/TelemetryClient.dll": {}
         }
       },
-      "UiPath.UIAutomation.Activities/24.10.8": {
+      "UiPath.UIAutomation.Activities/25.10.8": {
         "type": "package",
         "dependencies": {
-          "UiPath.UIAutomation.Activities.Design.RecoveryPanel": "[24.10.8]",
-          "UiPath.UIAutomation.Activities.Runtime": "[24.10.8]"
+          "UiPath.UIAutomation.Activities.Runtime": "[25.10.8]",
+          "UiPath.UIAutomation.Design.RecoveryPanel": "[25.10.8]"
         },
         "compile": {
           "lib/net6.0-windows7.0/_._": {}
@@ -4383,9 +4395,6 @@
           "lib/net6.0-windows7.0/zh-TW/UiPath.UIAutomation.Activities.Design.resources.dll": {
             "locale": "zh-TW"
           },
-          "lib/net6.0-windows7.0/zh-TW/UiPath.UIAutomationNext.Activities.Design.resources.dll": {
-            "locale": "zh-TW"
-          },
           "lib/net6.0-windows7.0/zh-TW/UiPath.Wizards.resources.dll": {
             "locale": "zh-TW"
           },
@@ -4400,30 +4409,22 @@
           }
         }
       },
-      "UiPath.UIAutomation.Activities.Design.RecoveryPanel/24.10.8": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/_._": {}
-        },
-        "runtime": {
-          "lib/net6.0/UiPath.UIAutomation.Activities.Design.RecoveryPanel.dll": {}
-        }
-      },
-      "UiPath.UIAutomation.Activities.Runtime/24.10.8": {
+      "UiPath.UIAutomation.Activities.Runtime/25.10.8": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
           "System.IO.Abstractions": "3.0.10",
-          "UiPath": "[24.10.112.56016]",
-          "UiPath.Activities.RuntimeGovernance": "1.1.6",
+          "UiPath": "[25.6.140.65296]",
+          "UiPath.Activities.RuntimeGovernance": "1.1.7",
+          "UiPath.AppSignatures": "25.6.140.65296",
           "UiPath.CodedWorkflows": "24.10.1",
           "UiPath.ImageProcessing": "23.4.0",
-          "UiPath.OCR.Activities": "3.21.2",
-          "UiPath.OCR.Contracts": "2.16.0",
-          "UiPath.Platform": "24.11.1",
-          "UiPath.Telemetry.Client": "2.1.3",
-          "UiPath.UIAutomation.Activities.Runtime.Design": "[24.10.8]",
-          "UiPath.Vision": "3.14.2"
+          "UiPath.OCR.Activities": "3.22.0",
+          "UiPath.OCR.Contracts": "2.17.1",
+          "UiPath.Platform": "25.4.0",
+          "UiPath.Telemetry.Client": "2.5.26",
+          "UiPath.UIAutomation.Activities.Runtime.Design": "[25.10.8]",
+          "UiPath.Vision": "3.15.0"
         },
         "compile": {
           "lib/net6.0-windows7.0/_._": {}
@@ -4604,7 +4605,7 @@
           }
         }
       },
-      "UiPath.UIAutomation.Activities.Runtime.Design/24.10.8": {
+      "UiPath.UIAutomation.Activities.Runtime.Design/25.10.8": {
         "type": "package",
         "compile": {
           "lib/net6.0-windows7.0/_._": {}
@@ -4613,11 +4614,20 @@
           "lib/net6.0-windows7.0/UiPath.UIAutomation.Activities.Runtime.Design.dll": {}
         }
       },
-      "UiPath.Vision/3.14.2": {
+      "UiPath.UIAutomation.Design.RecoveryPanel/25.10.8": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0/UiPath.UIAutomation.Design.RecoveryPanel.dll": {}
+        }
+      },
+      "UiPath.Vision/3.15.0": {
         "type": "package",
         "dependencies": {
           "UiPath.EmguCVBundle": "1.3.0",
-          "UiPath.OCR.Contracts": "2.16.0"
+          "UiPath.OCR.Contracts": "2.17.1"
         },
         "compile": {
           "lib/net6.0-windows7.0/_._": {}
@@ -8075,20 +8085,20 @@
           }
         }
       },
-      "System.Threading.Tasks.Dataflow/6.0.0": {
+      "System.Threading.Tasks.Dataflow/8.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net8.0/_._": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.Threading.Tasks.Dataflow.dll": {
+          "lib/net8.0/System.Threading.Tasks.Dataflow.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Threading.Tasks.Extensions/4.5.4": {
@@ -8246,7 +8256,7 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "UiPath/24.10.112.56016": {
+      "UiPath/25.6.140.65296": {
         "type": "package",
         "compile": {
           "lib/net6.0-windows7.0/_._": {}
@@ -8261,16 +8271,28 @@
           "build/_._": {}
         }
       },
-      "UiPath.Activities.RuntimeGovernance/1.1.6": {
+      "UiPath.Activities.RuntimeGovernance/1.1.7": {
         "type": "package",
         "dependencies": {
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
-          "lib/net5.0-windows7.0/_._": {}
+          "lib/net6.0-windows7.0/_._": {}
         },
         "runtime": {
-          "lib/net5.0-windows7.0/UiPath.Activities.RuntimeGovernance.dll": {}
+          "lib/net6.0-windows7.0/UiPath.Activities.RuntimeGovernance.dll": {}
+        }
+      },
+      "UiPath.AppSignatures/25.6.140.65296": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows7.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/AppSignatures.Locator.dll": {}
+        },
+        "build": {
+          "build/_._": {}
         }
       },
       "UiPath.CodedWorkflows/24.10.1": {
@@ -8365,7 +8387,7 @@
           "lib/net6.0-windows7.0/UiPath.ImageProcessingInterop.dll": {}
         }
       },
-      "UiPath.OCR.Activities/3.21.2": {
+      "UiPath.OCR.Activities/3.22.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Azure.CognitiveServices.Vision.ComputerVision": "7.0.1",
@@ -8378,7 +8400,7 @@
           "System.Text.RegularExpressions": "4.3.1",
           "System.ValueTuple": "4.5.0",
           "UiPath.EmguCVBundle": "1.3.0",
-          "UiPath.OCR.Contracts": "2.16.0",
+          "UiPath.OCR.Contracts": "2.17.1",
           "UiPath.Platform": "23.4.0"
         },
         "compile": {
@@ -8470,7 +8492,7 @@
           }
         }
       },
-      "UiPath.OCR.Contracts/2.16.0": {
+      "UiPath.OCR.Contracts/2.17.1": {
         "type": "package",
         "dependencies": {
           "System.Drawing.Common": "5.0.3"
@@ -8489,7 +8511,7 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
-      "UiPath.OpenTelemetry.Contracts/2.3.3": {
+      "UiPath.OpenTelemetry.Contracts/2.5.26": {
         "type": "package",
         "dependencies": {
           "System.Diagnostics.DiagnosticSource": "6.0.0"
@@ -8713,13 +8735,13 @@
           }
         }
       },
-      "UiPath.Telemetry.Client/2.3.3": {
+      "UiPath.Telemetry.Client/2.5.26": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
-          "System.Threading.Tasks.Dataflow": "5.0.0",
+          "System.Threading.Tasks.Dataflow": "8.0.0",
           "System.ValueTuple": "4.5.0",
-          "UiPath.OpenTelemetry.Contracts": "2.3.3"
+          "UiPath.OpenTelemetry.Contracts": "2.5.26"
         },
         "compile": {
           "lib/netstandard2.0/_._": {}
@@ -8728,11 +8750,11 @@
           "lib/netstandard2.0/TelemetryClient.dll": {}
         }
       },
-      "UiPath.UIAutomation.Activities/24.10.8": {
+      "UiPath.UIAutomation.Activities/25.10.8": {
         "type": "package",
         "dependencies": {
-          "UiPath.UIAutomation.Activities.Design.RecoveryPanel": "[24.10.8]",
-          "UiPath.UIAutomation.Activities.Runtime": "[24.10.8]"
+          "UiPath.UIAutomation.Activities.Runtime": "[25.10.8]",
+          "UiPath.UIAutomation.Design.RecoveryPanel": "[25.10.8]"
         },
         "compile": {
           "lib/net6.0-windows7.0/_._": {}
@@ -8883,9 +8905,6 @@
           "lib/net6.0-windows7.0/zh-TW/UiPath.UIAutomation.Activities.Design.resources.dll": {
             "locale": "zh-TW"
           },
-          "lib/net6.0-windows7.0/zh-TW/UiPath.UIAutomationNext.Activities.Design.resources.dll": {
-            "locale": "zh-TW"
-          },
           "lib/net6.0-windows7.0/zh-TW/UiPath.Wizards.resources.dll": {
             "locale": "zh-TW"
           },
@@ -8900,30 +8919,22 @@
           }
         }
       },
-      "UiPath.UIAutomation.Activities.Design.RecoveryPanel/24.10.8": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/_._": {}
-        },
-        "runtime": {
-          "lib/net6.0/UiPath.UIAutomation.Activities.Design.RecoveryPanel.dll": {}
-        }
-      },
-      "UiPath.UIAutomation.Activities.Runtime/24.10.8": {
+      "UiPath.UIAutomation.Activities.Runtime/25.10.8": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
           "System.IO.Abstractions": "3.0.10",
-          "UiPath": "[24.10.112.56016]",
-          "UiPath.Activities.RuntimeGovernance": "1.1.6",
+          "UiPath": "[25.6.140.65296]",
+          "UiPath.Activities.RuntimeGovernance": "1.1.7",
+          "UiPath.AppSignatures": "25.6.140.65296",
           "UiPath.CodedWorkflows": "24.10.1",
           "UiPath.ImageProcessing": "23.4.0",
-          "UiPath.OCR.Activities": "3.21.2",
-          "UiPath.OCR.Contracts": "2.16.0",
-          "UiPath.Platform": "24.11.1",
-          "UiPath.Telemetry.Client": "2.1.3",
-          "UiPath.UIAutomation.Activities.Runtime.Design": "[24.10.8]",
-          "UiPath.Vision": "3.14.2"
+          "UiPath.OCR.Activities": "3.22.0",
+          "UiPath.OCR.Contracts": "2.17.1",
+          "UiPath.Platform": "25.4.0",
+          "UiPath.Telemetry.Client": "2.5.26",
+          "UiPath.UIAutomation.Activities.Runtime.Design": "[25.10.8]",
+          "UiPath.Vision": "3.15.0"
         },
         "compile": {
           "lib/net6.0-windows7.0/_._": {}
@@ -9104,7 +9115,7 @@
           }
         }
       },
-      "UiPath.UIAutomation.Activities.Runtime.Design/24.10.8": {
+      "UiPath.UIAutomation.Activities.Runtime.Design/25.10.8": {
         "type": "package",
         "compile": {
           "lib/net6.0-windows7.0/_._": {}
@@ -9113,11 +9124,20 @@
           "lib/net6.0-windows7.0/UiPath.UIAutomation.Activities.Runtime.Design.dll": {}
         }
       },
-      "UiPath.Vision/3.14.2": {
+      "UiPath.UIAutomation.Design.RecoveryPanel/25.10.8": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0/UiPath.UIAutomation.Design.RecoveryPanel.dll": {}
+        }
+      },
+      "UiPath.Vision/3.15.0": {
         "type": "package",
         "dependencies": {
           "UiPath.EmguCVBundle": "1.3.0",
-          "UiPath.OCR.Contracts": "2.16.0"
+          "UiPath.OCR.Contracts": "2.17.1"
         },
         "compile": {
           "lib/net6.0-windows7.0/_._": {}
@@ -16513,27 +16533,33 @@
         "system.threading.tasks.nuspec"
       ]
     },
-    "System.Threading.Tasks.Dataflow/6.0.0": {
-      "sha512": "+tyDCU3/B1lDdOOAJywHQoFwyXIUghIaP2BxG79uvhfTnO+D9qIgjVlL/JV2NTliYbMHpd6eKDmHp2VHpij7MA==",
+    "System.Threading.Tasks.Dataflow/8.0.0": {
+      "sha512": "7V0I8tPa9V7UxMx/+7DIwkhls5ouaEMQx6l/GwGm1Y8kJQ61On9B/PxCXFLbgu5/C47g0BP2CUYs+nMv1+Oaqw==",
       "type": "package",
-      "path": "system.threading.tasks.dataflow/6.0.0",
+      "path": "system.threading.tasks.dataflow/8.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Threading.Tasks.Dataflow.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
         "buildTransitive/netcoreapp2.0/System.Threading.Tasks.Dataflow.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/System.Threading.Tasks.Dataflow.dll",
-        "lib/net461/System.Threading.Tasks.Dataflow.xml",
+        "lib/net462/System.Threading.Tasks.Dataflow.dll",
+        "lib/net462/System.Threading.Tasks.Dataflow.xml",
         "lib/net6.0/System.Threading.Tasks.Dataflow.dll",
         "lib/net6.0/System.Threading.Tasks.Dataflow.xml",
+        "lib/net7.0/System.Threading.Tasks.Dataflow.dll",
+        "lib/net7.0/System.Threading.Tasks.Dataflow.xml",
+        "lib/net8.0/System.Threading.Tasks.Dataflow.dll",
+        "lib/net8.0/System.Threading.Tasks.Dataflow.xml",
         "lib/netstandard2.0/System.Threading.Tasks.Dataflow.dll",
         "lib/netstandard2.0/System.Threading.Tasks.Dataflow.xml",
         "lib/netstandard2.1/System.Threading.Tasks.Dataflow.dll",
         "lib/netstandard2.1/System.Threading.Tasks.Dataflow.xml",
-        "system.threading.tasks.dataflow.6.0.0.nupkg.sha512",
+        "system.threading.tasks.dataflow.8.0.0.nupkg.sha512",
         "system.threading.tasks.dataflow.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -16870,10 +16896,10 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "UiPath/24.10.112.56016": {
-      "sha512": "EGM7ZQ0h3dwhYVwwcXY9YM8QOmn4ORCm98mpfwlFrBQgXg4vNvbiJE3XL58duRohxfL4QghHDiXDxtpL97x87g==",
+    "UiPath/25.6.140.65296": {
+      "sha512": "OyxGLDMzaNTEdP7ZNGl0S+qAAREizia4thXWta6I7gHUC/5Xq5ud0y34PIK4KLvBeA8AHM3nAwl7gncpgvuToQ==",
       "type": "package",
-      "path": "uipath/24.10.112.56016",
+      "path": "uipath/25.6.140.65296",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -16887,12 +16913,19 @@
         "build/UiPath/AppSignatures/AppSignatures.dll",
         "build/UiPath/AppSignatures/AppSignatures_x64.dll",
         "build/UiPath/BrowserNativeMessagingImpl.dll",
+        "build/UiPath/CdpBridge/CdpBridge.deps.json",
+        "build/UiPath/CdpBridge/CdpBridge.dll",
+        "build/UiPath/CdpBridge/CdpBridge.exe",
+        "build/UiPath/CdpBridge/CdpBridge.runtimeconfig.json",
+        "build/UiPath/CdpBridge/Newtonsoft.Json.dll",
+        "build/UiPath/CdpBridge/UiPath.CdpGenerator.deps.json",
+        "build/UiPath/CdpBridge/UiPath.CdpGenerator.exe",
+        "build/UiPath/CdpBridge/UiPath.CdpGenerator.runtimeconfig.json",
         "build/UiPath/CenturaBridge.dll",
+        "build/UiPath/CurlAutoHook.dll",
         "build/UiPath/EvtServer.exe",
         "build/UiPath/GenericInProc.dll",
         "build/UiPath/GenericInProc_x64.dll",
-        "build/UiPath/IeBridge.dll",
-        "build/UiPath/IeBridge_x64.dll",
         "build/UiPath/InProcRunner.dll",
         "build/UiPath/InProcRunner_x64.dll",
         "build/UiPath/Injector.exe",
@@ -16937,9 +16970,12 @@
         "build/UiPath/aahook_x64.dll",
         "build/UiPath/fghelper.dll",
         "build/UiPath/fghelper_x64.dll",
+        "build/UiPath/iebridge.dll",
+        "build/UiPath/iebridge_x64.dll",
         "build/UiPath/libcurl_x64.dll",
         "build/UiPath/libcurl_x86.dll",
         "build/UiPath/net30/WpfHook.dll",
+        "build/UiPath/net6.0-windows/ManagedDotNetCoreHook_25_6_140_65296.dll",
         "build/UiPath/slinject.exe",
         "build/net461/SapAutomationConnectivitySdk.dll",
         "build/net461/SapAutomationLogger.dll",
@@ -16954,22 +16990,40 @@
         "lib/net6.0-windows7.0/SapWinGuiSdk.dll",
         "lib/net6.0-windows7.0/UiPath.Interop.dll",
         "lib/net6.0/UiPath.Locator.dll",
-        "uipath.24.10.112.56016.nupkg.sha512",
+        "uipath.25.6.140.65296.nupkg.sha512",
         "uipath.nuspec"
       ]
     },
-    "UiPath.Activities.RuntimeGovernance/1.1.6": {
-      "sha512": "y9q2bavqIkAngr1sTX6YYmenmq5aCqjRgNEDxy5UuVZOP0pFnGNmaxRtYqSPJLBVBFzyxPa4B1Ox0c23ueta7w==",
+    "UiPath.Activities.RuntimeGovernance/1.1.7": {
+      "sha512": "hO9XlgiWlAnfYTB5080d53wKaLX1/VsAFKe5vAZed7V5oxDYp8K8s0zhNOO3puJhxDfqd8IfzfmHX+xlm/8Y3Q==",
       "type": "package",
-      "path": "uipath.activities.runtimegovernance/1.1.6",
+      "path": "uipath.activities.runtimegovernance/1.1.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net461/UiPath.Activities.RuntimeGovernance.dll",
-        "lib/net5.0-windows7.0/UiPath.Activities.RuntimeGovernance.dll",
-        "lib/net5.0/UiPath.Activities.RuntimeGovernance.dll",
-        "uipath.activities.runtimegovernance.1.1.6.nupkg.sha512",
+        "lib/net6.0-windows7.0/UiPath.Activities.RuntimeGovernance.dll",
+        "lib/net6.0/UiPath.Activities.RuntimeGovernance.dll",
+        "uipath.activities.runtimegovernance.1.1.7.nupkg.sha512",
         "uipath.activities.runtimegovernance.nuspec"
+      ]
+    },
+    "UiPath.AppSignatures/25.6.140.65296": {
+      "sha512": "Otvzlw7rzQFtIRsEkOSnjmMjaXAQ6cIL0+Onv0sb93PK2GhmXoYi6GVVuxN3UBSEWRxHnWpGI6VRiiTsMGor0g==",
+      "type": "package",
+      "path": "uipath.appsignatures/25.6.140.65296",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "NOTICE.txt",
+        "build/AppSignatures/AppSignatures.dll",
+        "build/AppSignatures/AppSignatures_x64.dll",
+        "build/UiPath.AppSignatures.targets",
+        "lib/net461/AppSignatures.Locator.dll",
+        "lib/net6.0-windows7.0/AppSignatures.Locator.dll",
+        "uipath.appsignatures.25.6.140.65296.nupkg.sha512",
+        "uipath.appsignatures.nuspec"
       ]
     },
     "UiPath.CodedWorkflows/24.10.1": {
@@ -17071,10 +17125,10 @@
         "uipath.imageprocessing.nuspec"
       ]
     },
-    "UiPath.OCR.Activities/3.21.2": {
-      "sha512": "yEgRACNTnGGL5HyxMzr5jSM/uOp7nPWf2zyrlLqeboHrbHRVHcNXV8P+X2mWfbHs2NnkQRbD/R1IyyJ47Nm8oQ==",
+    "UiPath.OCR.Activities/3.22.0": {
+      "sha512": "AGdvIXW5cUkTMoo4YuFZ39vfaKkeHDfJl4QBn+kXE2ODZ5wJe8RiDSCFdAf6J4InXxOwbjGeM6VNVohZRhTZfQ==",
       "type": "package",
-      "path": "uipath.ocr.activities/3.21.2",
+      "path": "uipath.ocr.activities/3.22.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -17389,14 +17443,14 @@
         "lib/net6.0/zh-CN/UiPath.OCR.Activities.resources.dll",
         "lib/net6.0/zh-TW/UiPath.OCR.Activities.resources.dll",
         "lib/net6.0/zu/UiPath.OCR.Activities.resources.dll",
-        "uipath.ocr.activities.3.21.2.nupkg.sha512",
+        "uipath.ocr.activities.3.22.0.nupkg.sha512",
         "uipath.ocr.activities.nuspec"
       ]
     },
-    "UiPath.OCR.Contracts/2.16.0": {
-      "sha512": "1d4fOKNLPNMPHbbZkUTHZbfNeX49l9KwR8U1vyvQcEyAlCj+NHNAryYlob2SsGebAre+nh/xRSTBQJ0YRGrNng==",
+    "UiPath.OCR.Contracts/2.17.1": {
+      "sha512": "FzdfistHGCM1Y/oB/tXC1SqCzWAfe9J7leHtws7npeb061n2iqhaMZasyPJUU2h6x/BSkSw0SYVyzrExqt+vSg==",
       "type": "package",
-      "path": "uipath.ocr.contracts/2.16.0",
+      "path": "uipath.ocr.contracts/2.17.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -17406,21 +17460,20 @@
         "lib/net6.0-windows7.0/UiPath.OCR.Contracts.xml",
         "lib/net6.0/UiPath.OCR.Contracts.dll",
         "lib/net6.0/UiPath.OCR.Contracts.xml",
-        "uipath.ocr.contracts.2.16.0.nupkg.sha512",
+        "uipath.ocr.contracts.2.17.1.nupkg.sha512",
         "uipath.ocr.contracts.nuspec"
       ]
     },
-    "UiPath.OpenTelemetry.Contracts/2.3.3": {
-      "sha512": "ur3hOgQgeHjI7lbnNzevgS9wUa60semWnMks++RZCow4YQRSBL3O8IedENZh8WsPIl13mvlwIDLgovgkHFT/Eg==",
+    "UiPath.OpenTelemetry.Contracts/2.5.26": {
+      "sha512": "Is7bcovyujzgWjQDEUeohOECXcddIjd0wgkmJkFPhBi5Y6vweL8nkkZyAniMpz1iVmEPmsK3QZ0sGyICAD7Cfg==",
       "type": "package",
-      "path": "uipath.opentelemetry.contracts/2.3.3",
+      "path": "uipath.opentelemetry.contracts/2.5.26",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "UI_icon.png",
-        "lib/net461/UiPath.OpenTelemetry.Contracts.dll",
         "lib/netstandard2.0/UiPath.OpenTelemetry.Contracts.dll",
-        "uipath.opentelemetry.contracts.2.3.3.nupkg.sha512",
+        "uipath.opentelemetry.contracts.2.5.26.nupkg.sha512",
         "uipath.opentelemetry.contracts.nuspec"
       ]
     },
@@ -17562,29 +17615,26 @@
         "uipath.system.activities.runtime.windows.nuspec"
       ]
     },
-    "UiPath.Telemetry.Client/2.3.3": {
-      "sha512": "ZEGLex036Ne5wyuWp/9ccbMFMEhwamyD+V/7jPq8+FwtYhN7Kq/cQQxhbDFQLfen/ehRoahRDB9P9M6PX818/g==",
+    "UiPath.Telemetry.Client/2.5.26": {
+      "sha512": "uW0sAAvRv139c+grH1lo5PZvCrpB575bXSMQqTykvZ9+JuWVRhDYv5/OzQjBI02uHw43zm/aUu1jTkAmJP1C2Q==",
       "type": "package",
-      "path": "uipath.telemetry.client/2.3.3",
+      "path": "uipath.telemetry.client/2.5.26",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "UI_icon.png",
-        "lib/net461/TelemetryClient.dll",
         "lib/netstandard2.0/TelemetryClient.dll",
-        "uipath.telemetry.client.2.3.3.nupkg.sha512",
+        "uipath.telemetry.client.2.5.26.nupkg.sha512",
         "uipath.telemetry.client.nuspec"
       ]
     },
-    "UiPath.UIAutomation.Activities/24.10.8": {
-      "sha512": "IHhk30GYe5KFoK3SJuM/NgQhjKKtS7r24H/VuUvbN5D8WBYeaM9aEyRPwgxot/FebpMDumzhVA7O2OW6qT6rSA==",
+    "UiPath.UIAutomation.Activities/25.10.8": {
+      "sha512": "/TXygKGKC85If1mRNSPFjZ7LxR5O3j86vibvI3K4OPHnVkYUtgQ88wckpxFE4arv+fe92LORx2jQedxhw4FUMg==",
       "type": "package",
-      "path": "uipath.uiautomation.activities/24.10.8",
+      "path": "uipath.uiautomation.activities/25.10.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "content/.objects/.metadata",
-        "content/.objects/.type",
         "content/Runtime.Mapping.json",
         "lib/net461/UiPath.CV.Activities.Design.dll",
         "lib/net461/UiPath.UIAutomation.Activities.Design.dll",
@@ -17637,7 +17687,6 @@
         "lib/net461/zh-CN/UiPath.Wizards.resources.dll",
         "lib/net461/zh-TW/UiPath.CV.Activities.Design.resources.dll",
         "lib/net461/zh-TW/UiPath.UIAutomation.Activities.Design.resources.dll",
-        "lib/net461/zh-TW/UiPath.UIAutomationNext.Activities.Design.resources.dll",
         "lib/net461/zh-TW/UiPath.Wizards.resources.dll",
         "lib/net461/zu/UiPath.CV.Activities.Design.resources.dll",
         "lib/net461/zu/UiPath.UIAutomation.Activities.Design.resources.dll",
@@ -17693,7 +17742,6 @@
         "lib/net6.0-windows7.0/zh-CN/UiPath.Wizards.resources.dll",
         "lib/net6.0-windows7.0/zh-TW/UiPath.CV.Activities.Design.resources.dll",
         "lib/net6.0-windows7.0/zh-TW/UiPath.UIAutomation.Activities.Design.resources.dll",
-        "lib/net6.0-windows7.0/zh-TW/UiPath.UIAutomationNext.Activities.Design.resources.dll",
         "lib/net6.0-windows7.0/zh-TW/UiPath.Wizards.resources.dll",
         "lib/net6.0-windows7.0/zu/UiPath.CV.Activities.Design.resources.dll",
         "lib/net6.0-windows7.0/zu/UiPath.UIAutomation.Activities.Design.resources.dll",
@@ -17710,239 +17758,14 @@
         "lib/net6.0/ru/UiPath.UIAutomationNext.Activities.Design.resources.dll",
         "lib/net6.0/tr/UiPath.UIAutomationNext.Activities.Design.resources.dll",
         "lib/net6.0/zh-CN/UiPath.UIAutomationNext.Activities.Design.resources.dll",
-        "uipath.uiautomation.activities.24.10.8.nupkg.sha512",
+        "uipath.uiautomation.activities.25.10.8.nupkg.sha512",
         "uipath.uiautomation.activities.nuspec"
       ]
     },
-    "UiPath.UIAutomation.Activities.Design.RecoveryPanel/24.10.8": {
-      "sha512": "WCXFy6sEiDYMrBVT6Y6m4Hq6/oUdFE7H1K9eS2i+svNx3A5fEFN/cx9c10lFDtdh9eqYueGzOdLDNXLF9HfynQ==",
+    "UiPath.UIAutomation.Activities.Runtime/25.10.8": {
+      "sha512": "Be1Z7zM12XP2nCsinUiBoiMUgH5pdCvHYa8XdQtHO4aqftXv1jPwVVH5y3yXAvJYeJ3ZNc2T4buzn7gWZ6Y+xQ==",
       "type": "package",
-      "path": "uipath.uiautomation.activities.design.recoverypanel/24.10.8",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "content/118.js",
-        "content/1239.js",
-        "content/1285.js",
-        "content/1415.js",
-        "content/1565.js",
-        "content/1643.js",
-        "content/192.js",
-        "content/2031.js",
-        "content/2034.js",
-        "content/2145.js",
-        "content/2246.js",
-        "content/2284.js",
-        "content/2294.js",
-        "content/2304.js",
-        "content/2359.js",
-        "content/2483.js",
-        "content/2512.js",
-        "content/2593.js",
-        "content/2627.js",
-        "content/2658.js",
-        "content/2663.js",
-        "content/270.js",
-        "content/271.js",
-        "content/2739.js",
-        "content/2763.js",
-        "content/2777.js",
-        "content/2892.js",
-        "content/2933.js",
-        "content/3007.js",
-        "content/3109.js",
-        "content/3150.js",
-        "content/3471.js",
-        "content/4149.js",
-        "content/4191.js",
-        "content/4239.js",
-        "content/4305.js",
-        "content/4729.js",
-        "content/4789.js",
-        "content/4845.js",
-        "content/4974.js",
-        "content/5044.js",
-        "content/5065.js",
-        "content/5082.js",
-        "content/5158.js",
-        "content/5165.js",
-        "content/5259.js",
-        "content/5287.js",
-        "content/5328.js",
-        "content/5374.js",
-        "content/543.js",
-        "content/5490.js",
-        "content/5709.js",
-        "content/6617.js",
-        "content/6621.js",
-        "content/6731.js",
-        "content/6761.js",
-        "content/6766.js",
-        "content/6998.js",
-        "content/7341.js",
-        "content/7483.js",
-        "content/7543.js",
-        "content/7620.js",
-        "content/7696.js",
-        "content/7723.js",
-        "content/7743.js",
-        "content/7919.js",
-        "content/7998.js",
-        "content/8209.js",
-        "content/8299.js",
-        "content/8329.js",
-        "content/844.js",
-        "content/8932.js",
-        "content/9104.js",
-        "content/9291.js",
-        "content/9459.js",
-        "content/9652.js",
-        "content/966.js",
-        "content/9908.js",
-        "content/assets/NClick.svg",
-        "content/assets/NGetAttribute.svg",
-        "content/assets/NGetText.svg",
-        "content/assets/NGetUrl.svg",
-        "content/assets/NHover.svg",
-        "content/assets/NMouseScroll.svg",
-        "content/assets/NSelectItem.svg",
-        "content/assets/NTakeScreenshot.svg",
-        "content/assets/NTypeInto.svg",
-        "content/assets/icons.json",
-        "content/assets/monaco/min/vs/base/browser/ui/codicons/codicon/codicon.ttf",
-        "content/assets/monaco/min/vs/base/common/worker/simpleWorker.nls.de.js",
-        "content/assets/monaco/min/vs/base/common/worker/simpleWorker.nls.es.js",
-        "content/assets/monaco/min/vs/base/common/worker/simpleWorker.nls.fr.js",
-        "content/assets/monaco/min/vs/base/common/worker/simpleWorker.nls.it.js",
-        "content/assets/monaco/min/vs/base/common/worker/simpleWorker.nls.ja.js",
-        "content/assets/monaco/min/vs/base/common/worker/simpleWorker.nls.js",
-        "content/assets/monaco/min/vs/base/common/worker/simpleWorker.nls.ko.js",
-        "content/assets/monaco/min/vs/base/common/worker/simpleWorker.nls.ru.js",
-        "content/assets/monaco/min/vs/base/common/worker/simpleWorker.nls.zh-cn.js",
-        "content/assets/monaco/min/vs/base/common/worker/simpleWorker.nls.zh-tw.js",
-        "content/assets/monaco/min/vs/base/worker/workerMain.js",
-        "content/assets/monaco/min/vs/basic-languages/abap/abap.js",
-        "content/assets/monaco/min/vs/basic-languages/apex/apex.js",
-        "content/assets/monaco/min/vs/basic-languages/azcli/azcli.js",
-        "content/assets/monaco/min/vs/basic-languages/bat/bat.js",
-        "content/assets/monaco/min/vs/basic-languages/bicep/bicep.js",
-        "content/assets/monaco/min/vs/basic-languages/cameligo/cameligo.js",
-        "content/assets/monaco/min/vs/basic-languages/clojure/clojure.js",
-        "content/assets/monaco/min/vs/basic-languages/coffee/coffee.js",
-        "content/assets/monaco/min/vs/basic-languages/cpp/cpp.js",
-        "content/assets/monaco/min/vs/basic-languages/csharp/csharp.js",
-        "content/assets/monaco/min/vs/basic-languages/csp/csp.js",
-        "content/assets/monaco/min/vs/basic-languages/css/css.js",
-        "content/assets/monaco/min/vs/basic-languages/cypher/cypher.js",
-        "content/assets/monaco/min/vs/basic-languages/dart/dart.js",
-        "content/assets/monaco/min/vs/basic-languages/dockerfile/dockerfile.js",
-        "content/assets/monaco/min/vs/basic-languages/ecl/ecl.js",
-        "content/assets/monaco/min/vs/basic-languages/elixir/elixir.js",
-        "content/assets/monaco/min/vs/basic-languages/flow9/flow9.js",
-        "content/assets/monaco/min/vs/basic-languages/freemarker2/freemarker2.js",
-        "content/assets/monaco/min/vs/basic-languages/fsharp/fsharp.js",
-        "content/assets/monaco/min/vs/basic-languages/go/go.js",
-        "content/assets/monaco/min/vs/basic-languages/graphql/graphql.js",
-        "content/assets/monaco/min/vs/basic-languages/handlebars/handlebars.js",
-        "content/assets/monaco/min/vs/basic-languages/hcl/hcl.js",
-        "content/assets/monaco/min/vs/basic-languages/html/html.js",
-        "content/assets/monaco/min/vs/basic-languages/ini/ini.js",
-        "content/assets/monaco/min/vs/basic-languages/java/java.js",
-        "content/assets/monaco/min/vs/basic-languages/javascript/javascript.js",
-        "content/assets/monaco/min/vs/basic-languages/julia/julia.js",
-        "content/assets/monaco/min/vs/basic-languages/kotlin/kotlin.js",
-        "content/assets/monaco/min/vs/basic-languages/less/less.js",
-        "content/assets/monaco/min/vs/basic-languages/lexon/lexon.js",
-        "content/assets/monaco/min/vs/basic-languages/liquid/liquid.js",
-        "content/assets/monaco/min/vs/basic-languages/lua/lua.js",
-        "content/assets/monaco/min/vs/basic-languages/m3/m3.js",
-        "content/assets/monaco/min/vs/basic-languages/markdown/markdown.js",
-        "content/assets/monaco/min/vs/basic-languages/mdx/mdx.js",
-        "content/assets/monaco/min/vs/basic-languages/mips/mips.js",
-        "content/assets/monaco/min/vs/basic-languages/msdax/msdax.js",
-        "content/assets/monaco/min/vs/basic-languages/mysql/mysql.js",
-        "content/assets/monaco/min/vs/basic-languages/objective-c/objective-c.js",
-        "content/assets/monaco/min/vs/basic-languages/pascal/pascal.js",
-        "content/assets/monaco/min/vs/basic-languages/pascaligo/pascaligo.js",
-        "content/assets/monaco/min/vs/basic-languages/perl/perl.js",
-        "content/assets/monaco/min/vs/basic-languages/pgsql/pgsql.js",
-        "content/assets/monaco/min/vs/basic-languages/php/php.js",
-        "content/assets/monaco/min/vs/basic-languages/pla/pla.js",
-        "content/assets/monaco/min/vs/basic-languages/postiats/postiats.js",
-        "content/assets/monaco/min/vs/basic-languages/powerquery/powerquery.js",
-        "content/assets/monaco/min/vs/basic-languages/powershell/powershell.js",
-        "content/assets/monaco/min/vs/basic-languages/protobuf/protobuf.js",
-        "content/assets/monaco/min/vs/basic-languages/pug/pug.js",
-        "content/assets/monaco/min/vs/basic-languages/python/python.js",
-        "content/assets/monaco/min/vs/basic-languages/qsharp/qsharp.js",
-        "content/assets/monaco/min/vs/basic-languages/r/r.js",
-        "content/assets/monaco/min/vs/basic-languages/razor/razor.js",
-        "content/assets/monaco/min/vs/basic-languages/redis/redis.js",
-        "content/assets/monaco/min/vs/basic-languages/redshift/redshift.js",
-        "content/assets/monaco/min/vs/basic-languages/restructuredtext/restructuredtext.js",
-        "content/assets/monaco/min/vs/basic-languages/ruby/ruby.js",
-        "content/assets/monaco/min/vs/basic-languages/rust/rust.js",
-        "content/assets/monaco/min/vs/basic-languages/sb/sb.js",
-        "content/assets/monaco/min/vs/basic-languages/scala/scala.js",
-        "content/assets/monaco/min/vs/basic-languages/scheme/scheme.js",
-        "content/assets/monaco/min/vs/basic-languages/scss/scss.js",
-        "content/assets/monaco/min/vs/basic-languages/shell/shell.js",
-        "content/assets/monaco/min/vs/basic-languages/solidity/solidity.js",
-        "content/assets/monaco/min/vs/basic-languages/sophia/sophia.js",
-        "content/assets/monaco/min/vs/basic-languages/sparql/sparql.js",
-        "content/assets/monaco/min/vs/basic-languages/sql/sql.js",
-        "content/assets/monaco/min/vs/basic-languages/st/st.js",
-        "content/assets/monaco/min/vs/basic-languages/swift/swift.js",
-        "content/assets/monaco/min/vs/basic-languages/systemverilog/systemverilog.js",
-        "content/assets/monaco/min/vs/basic-languages/tcl/tcl.js",
-        "content/assets/monaco/min/vs/basic-languages/twig/twig.js",
-        "content/assets/monaco/min/vs/basic-languages/typescript/typescript.js",
-        "content/assets/monaco/min/vs/basic-languages/typespec/typespec.js",
-        "content/assets/monaco/min/vs/basic-languages/vb/vb.js",
-        "content/assets/monaco/min/vs/basic-languages/wgsl/wgsl.js",
-        "content/assets/monaco/min/vs/basic-languages/xml/xml.js",
-        "content/assets/monaco/min/vs/basic-languages/yaml/yaml.js",
-        "content/assets/monaco/min/vs/editor/editor.main.css",
-        "content/assets/monaco/min/vs/editor/editor.main.js",
-        "content/assets/monaco/min/vs/editor/editor.main.nls.de.js",
-        "content/assets/monaco/min/vs/editor/editor.main.nls.es.js",
-        "content/assets/monaco/min/vs/editor/editor.main.nls.fr.js",
-        "content/assets/monaco/min/vs/editor/editor.main.nls.it.js",
-        "content/assets/monaco/min/vs/editor/editor.main.nls.ja.js",
-        "content/assets/monaco/min/vs/editor/editor.main.nls.js",
-        "content/assets/monaco/min/vs/editor/editor.main.nls.ko.js",
-        "content/assets/monaco/min/vs/editor/editor.main.nls.ru.js",
-        "content/assets/monaco/min/vs/editor/editor.main.nls.zh-cn.js",
-        "content/assets/monaco/min/vs/editor/editor.main.nls.zh-tw.js",
-        "content/assets/monaco/min/vs/language/css/cssMode.js",
-        "content/assets/monaco/min/vs/language/css/cssWorker.js",
-        "content/assets/monaco/min/vs/language/html/htmlMode.js",
-        "content/assets/monaco/min/vs/language/html/htmlWorker.js",
-        "content/assets/monaco/min/vs/language/json/jsonMode.js",
-        "content/assets/monaco/min/vs/language/json/jsonWorker.js",
-        "content/assets/monaco/min/vs/language/typescript/tsMode.js",
-        "content/assets/monaco/min/vs/language/typescript/tsWorker.js",
-        "content/assets/monaco/min/vs/loader.js",
-        "content/common.js",
-        "content/favicon.ico",
-        "content/index.html",
-        "content/main.js",
-        "content/material-icons.woff",
-        "content/material-icons.woff2",
-        "content/polyfills-core-js.js",
-        "content/polyfills-dom.js",
-        "content/polyfills.js",
-        "content/runtime.js",
-        "content/styles.css",
-        "lib/net6.0/UiPath.UIAutomation.Activities.Design.RecoveryPanel.dll",
-        "uipath.uiautomation.activities.design.recoverypanel.24.10.8.nupkg.sha512",
-        "uipath.uiautomation.activities.design.recoverypanel.nuspec"
-      ]
-    },
-    "UiPath.UIAutomation.Activities.Runtime/24.10.8": {
-      "sha512": "zEH4BlPDHZ0gr7gkmI7tsIKAcO0AvDqwuESUNO3ultIkDGp9oz64BLBeKvT36PvmsJJxdiA6dV2sP+RdAyV0lw==",
-      "type": "package",
-      "path": "uipath.uiautomation.activities.runtime/24.10.8",
+      "path": "uipath.uiautomation.activities.runtime/25.10.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -17952,7 +17775,6 @@
         "lib/net461/UiPath.UIAutomationNext.Activities.Contracts.dll",
         "lib/net461/UiPath.UIAutomationNext.Activities.dll",
         "lib/net461/UiPath.UIAutomationNext.Activities.xml",
-        "lib/net461/UiPath.UIAutomationNext.ExternalIntegrations.dll",
         "lib/net461/UiPath.UIAutomationNext.dll",
         "lib/net461/UiPath.UiAutomation.Activities.dll",
         "lib/net461/de/UiPath.CV.Activities.resources.dll",
@@ -18070,14 +17892,14 @@
         "lib/net6.0-windows7.0/zu/UiPath.CV.resources.dll",
         "lib/net6.0-windows7.0/zu/UiPath.UIAutomationNext.resources.dll",
         "lib/net6.0-windows7.0/zu/UiPath.UiAutomation.Activities.resources.dll",
-        "uipath.uiautomation.activities.runtime.24.10.8.nupkg.sha512",
+        "uipath.uiautomation.activities.runtime.25.10.8.nupkg.sha512",
         "uipath.uiautomation.activities.runtime.nuspec"
       ]
     },
-    "UiPath.UIAutomation.Activities.Runtime.Design/24.10.8": {
-      "sha512": "S7jnXVO1H5osrlYtAt/WSZZ7ssIggkBdLtBt0+iGfrRtivRFWhXXkVS0kWJAsb2Dknu03FIE/JFUaj1kh0cMtw==",
+    "UiPath.UIAutomation.Activities.Runtime.Design/25.10.8": {
+      "sha512": "Ma0+K/2yM1cW4RqwIaGpZ0ah1R2CTERVDxsoyeBLx5dapyN3zLCdfoMI7qqkJB82jGGdRXQRIihFcsIBuJb7DQ==",
       "type": "package",
-      "path": "uipath.uiautomation.activities.runtime.design/24.10.8",
+      "path": "uipath.uiautomation.activities.runtime.design/25.10.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -18101,29 +17923,15 @@
         "build/net461/ActiproSoftware.Text.Wpf.dll",
         "build/net461/ActiproSoftware.Views.Wpf.dll",
         "build/net461/ActiproSoftware.Wizard.Wpf.dll",
-        "build/net461/Microsoft.Bcl.AsyncInterfaces.dll",
-        "build/net461/Microsoft.Web.WebView2.Core.dll",
-        "build/net461/Microsoft.Web.WebView2.WinForms.dll",
-        "build/net461/Microsoft.Web.WebView2.Wpf.dll",
         "build/net461/Newtonsoft.Json.dll",
-        "build/net461/System.Net.Http.dll",
-        "build/net461/System.Threading.Tasks.Extensions.dll",
         "build/net461/System.ValueTuple.dll",
         "build/net461/UiExplorer.exe",
         "build/net461/UiExplorer.exe.config",
         "build/net461/UiExplorer_x64.exe",
         "build/net461/UiExplorer_x64.exe.config",
-        "build/net461/UiPath.Activities.Api.Base.dll",
         "build/net461/UiPath.Activities.Contracts.dll",
-        "build/net461/UiPath.Api.Base.dll",
         "build/net461/UiPath.Platform.dll",
-        "build/net461/UiPath.Studio.Activities.Api.dll",
-        "build/net461/UiPath.Studio.Api.Base.dll",
-        "build/net461/UiPath.UIAutomation.exe",
-        "build/net461/UiPath.UIAutomation.exe.config",
         "build/net461/UiPath.UIAutomationCore.dll",
-        "build/net461/UiPath.UIAutomationNext.Activities.Design.dll",
-        "build/net461/UiPath.UIAutomationNext.Activities.dll",
         "build/net461/UiPath.UIAutomationNext.dll",
         "build/net461/UiPath.UiAutomation.Activities.dll",
         "build/net461/de/UiExplorer.resources.dll",
@@ -18153,9 +17961,6 @@
         "build/net461/ru/UiExplorer.resources.dll",
         "build/net461/ru/UiPath.UIAutomationNext.resources.dll",
         "build/net461/ru/UiPath.UiAutomation.Activities.resources.dll",
-        "build/net461/runtimes/win-arm64/native/WebView2Loader.dll",
-        "build/net461/runtimes/win-x64/native/WebView2Loader.dll",
-        "build/net461/runtimes/win-x86/native/WebView2Loader.dll",
         "build/net461/tr/UiExplorer.resources.dll",
         "build/net461/tr/UiPath.UIAutomationNext.resources.dll",
         "build/net461/tr/UiPath.UiAutomation.Activities.resources.dll",
@@ -18188,9 +17993,14 @@
         "build/net6.0-windows/ActiproSoftware.Text.Wpf.dll",
         "build/net6.0-windows/ActiproSoftware.Views.Wpf.dll",
         "build/net6.0-windows/ActiproSoftware.Wizard.Wpf.dll",
+        "build/net6.0-windows/Microsoft.Web.WebView2.Core.dll",
+        "build/net6.0-windows/Microsoft.Web.WebView2.Wpf.dll",
         "build/net6.0-windows/Newtonsoft.Json.dll",
+        "build/net6.0-windows/System.Activities.Core.Presentation.dll",
         "build/net6.0-windows/System.Activities.Metadata.dll",
+        "build/net6.0-windows/System.Activities.Presentation.dll",
         "build/net6.0-windows/System.Activities.dll",
+        "build/net6.0-windows/System.ServiceModel.Activities.dll",
         "build/net6.0-windows/Themes/Apollo/Fonts/NotoSans-Bold.ttf",
         "build/net6.0-windows/Themes/Apollo/Fonts/NotoSans-BoldItalic.ttf",
         "build/net6.0-windows/Themes/Apollo/Fonts/NotoSans-ExtraBold.ttf",
@@ -18208,99 +18018,278 @@
         "build/net6.0-windows/Themes/Tutorial/tuto-src.png",
         "build/net6.0-windows/Themes/Tutorial/tuto-video.png",
         "build/net6.0-windows/Themes/Tutorial/tuto-welcome.png",
+        "build/net6.0-windows/UiPath.Activities.Api.Base.dll",
+        "build/net6.0-windows/UiPath.Api.Base.dll",
         "build/net6.0-windows/UiPath.ClipboardAI.dll",
         "build/net6.0-windows/UiPath.ClipboardAI.exe",
         "build/net6.0-windows/UiPath.ClipboardAI.runtimeconfig.json",
         "build/net6.0-windows/UiPath.DriverExtensions.Loader.dll",
+        "build/net6.0-windows/UiPath.Platform.dll",
+        "build/net6.0-windows/UiPath.Studio.Activities.Api.dll",
+        "build/net6.0-windows/UiPath.Studio.Api.Base.dll",
+        "build/net6.0-windows/UiPath.UIAutomation.dll",
+        "build/net6.0-windows/UiPath.UIAutomation.exe",
+        "build/net6.0-windows/UiPath.UIAutomation.runtimeconfig.json",
+        "build/net6.0-windows/UiPath.UIAutomationCore.dll",
         "build/net6.0-windows/UiPath.UIAutomationNext.Activities.Design.dll",
+        "build/net6.0-windows/UiPath.UIAutomationNext.Activities.dll",
+        "build/net6.0-windows/UiPath.UIAutomationNext.dll",
+        "build/net6.0-windows/UiPath.UiAutomation.Activities.dll",
+        "build/net6.0-windows/UiPath.Workflow.dll",
+        "build/net6.0-windows/WebView2Loader.dll",
         "build/net6.0-windows/de/UiPath.ClipboardAI.resources.dll",
-        "build/net6.0-windows/de/UiPath.UIAutomation.Activities.Design.resources.dll",
         "build/net6.0-windows/de/UiPath.UIAutomationNext.Activities.Design.resources.dll",
         "build/net6.0-windows/de/UiPath.UIAutomationNext.Activities.resources.dll",
         "build/net6.0-windows/de/UiPath.UIAutomationNext.resources.dll",
         "build/net6.0-windows/de/UiPath.UiAutomation.Activities.resources.dll",
         "build/net6.0-windows/es-MX/UiPath.ClipboardAI.resources.dll",
-        "build/net6.0-windows/es-MX/UiPath.UIAutomation.Activities.Design.resources.dll",
         "build/net6.0-windows/es-MX/UiPath.UIAutomationNext.Activities.Design.resources.dll",
         "build/net6.0-windows/es-MX/UiPath.UIAutomationNext.Activities.resources.dll",
         "build/net6.0-windows/es-MX/UiPath.UIAutomationNext.resources.dll",
         "build/net6.0-windows/es-MX/UiPath.UiAutomation.Activities.resources.dll",
         "build/net6.0-windows/es/UiPath.ClipboardAI.resources.dll",
-        "build/net6.0-windows/es/UiPath.UIAutomation.Activities.Design.resources.dll",
         "build/net6.0-windows/es/UiPath.UIAutomationNext.Activities.Design.resources.dll",
         "build/net6.0-windows/es/UiPath.UIAutomationNext.Activities.resources.dll",
         "build/net6.0-windows/es/UiPath.UIAutomationNext.resources.dll",
         "build/net6.0-windows/es/UiPath.UiAutomation.Activities.resources.dll",
         "build/net6.0-windows/fr/UiPath.ClipboardAI.resources.dll",
-        "build/net6.0-windows/fr/UiPath.UIAutomation.Activities.Design.resources.dll",
         "build/net6.0-windows/fr/UiPath.UIAutomationNext.Activities.Design.resources.dll",
         "build/net6.0-windows/fr/UiPath.UIAutomationNext.Activities.resources.dll",
         "build/net6.0-windows/fr/UiPath.UIAutomationNext.resources.dll",
         "build/net6.0-windows/fr/UiPath.UiAutomation.Activities.resources.dll",
         "build/net6.0-windows/ja/UiPath.ClipboardAI.resources.dll",
-        "build/net6.0-windows/ja/UiPath.UIAutomation.Activities.Design.resources.dll",
         "build/net6.0-windows/ja/UiPath.UIAutomationNext.Activities.Design.resources.dll",
         "build/net6.0-windows/ja/UiPath.UIAutomationNext.Activities.resources.dll",
         "build/net6.0-windows/ja/UiPath.UIAutomationNext.resources.dll",
         "build/net6.0-windows/ja/UiPath.UiAutomation.Activities.resources.dll",
         "build/net6.0-windows/ko/UiPath.ClipboardAI.resources.dll",
-        "build/net6.0-windows/ko/UiPath.UIAutomation.Activities.Design.resources.dll",
         "build/net6.0-windows/ko/UiPath.UIAutomationNext.Activities.Design.resources.dll",
         "build/net6.0-windows/ko/UiPath.UIAutomationNext.Activities.resources.dll",
         "build/net6.0-windows/ko/UiPath.UIAutomationNext.resources.dll",
         "build/net6.0-windows/ko/UiPath.UiAutomation.Activities.resources.dll",
         "build/net6.0-windows/pt-BR/UiPath.ClipboardAI.resources.dll",
-        "build/net6.0-windows/pt-BR/UiPath.UIAutomation.Activities.Design.resources.dll",
         "build/net6.0-windows/pt-BR/UiPath.UIAutomationNext.Activities.Design.resources.dll",
         "build/net6.0-windows/pt-BR/UiPath.UIAutomationNext.Activities.resources.dll",
         "build/net6.0-windows/pt-BR/UiPath.UIAutomationNext.resources.dll",
         "build/net6.0-windows/pt-BR/UiPath.UiAutomation.Activities.resources.dll",
         "build/net6.0-windows/pt/UiPath.ClipboardAI.resources.dll",
-        "build/net6.0-windows/pt/UiPath.UIAutomation.Activities.Design.resources.dll",
         "build/net6.0-windows/pt/UiPath.UIAutomationNext.Activities.Design.resources.dll",
         "build/net6.0-windows/pt/UiPath.UIAutomationNext.Activities.resources.dll",
         "build/net6.0-windows/pt/UiPath.UIAutomationNext.resources.dll",
         "build/net6.0-windows/pt/UiPath.UiAutomation.Activities.resources.dll",
         "build/net6.0-windows/ru/UiPath.ClipboardAI.resources.dll",
-        "build/net6.0-windows/ru/UiPath.UIAutomation.Activities.Design.resources.dll",
         "build/net6.0-windows/ru/UiPath.UIAutomationNext.Activities.Design.resources.dll",
         "build/net6.0-windows/ru/UiPath.UIAutomationNext.Activities.resources.dll",
         "build/net6.0-windows/ru/UiPath.UIAutomationNext.resources.dll",
         "build/net6.0-windows/ru/UiPath.UiAutomation.Activities.resources.dll",
         "build/net6.0-windows/tr/UiPath.ClipboardAI.resources.dll",
-        "build/net6.0-windows/tr/UiPath.UIAutomation.Activities.Design.resources.dll",
         "build/net6.0-windows/tr/UiPath.UIAutomationNext.Activities.Design.resources.dll",
         "build/net6.0-windows/tr/UiPath.UIAutomationNext.Activities.resources.dll",
         "build/net6.0-windows/tr/UiPath.UIAutomationNext.resources.dll",
         "build/net6.0-windows/tr/UiPath.UiAutomation.Activities.resources.dll",
         "build/net6.0-windows/zh-CN/UiPath.ClipboardAI.resources.dll",
-        "build/net6.0-windows/zh-CN/UiPath.UIAutomation.Activities.Design.resources.dll",
         "build/net6.0-windows/zh-CN/UiPath.UIAutomationNext.Activities.Design.resources.dll",
         "build/net6.0-windows/zh-CN/UiPath.UIAutomationNext.Activities.resources.dll",
         "build/net6.0-windows/zh-CN/UiPath.UIAutomationNext.resources.dll",
         "build/net6.0-windows/zh-CN/UiPath.UiAutomation.Activities.resources.dll",
         "build/net6.0-windows/zh-TW/UiPath.ClipboardAI.resources.dll",
-        "build/net6.0-windows/zh-TW/UiPath.UIAutomation.Activities.Design.resources.dll",
-        "build/net6.0-windows/zh-TW/UiPath.UIAutomationNext.Activities.Design.resources.dll",
         "build/net6.0-windows/zh-TW/UiPath.UIAutomationNext.Activities.resources.dll",
         "build/net6.0-windows/zh-TW/UiPath.UIAutomationNext.resources.dll",
         "build/net6.0-windows/zh-TW/UiPath.UiAutomation.Activities.resources.dll",
         "build/net6.0-windows/zu/UiPath.ClipboardAI.resources.dll",
-        "build/net6.0-windows/zu/UiPath.UIAutomation.Activities.Design.resources.dll",
         "build/net6.0-windows/zu/UiPath.UIAutomationNext.Activities.resources.dll",
         "build/net6.0-windows/zu/UiPath.UIAutomationNext.resources.dll",
         "build/net6.0-windows/zu/UiPath.UiAutomation.Activities.resources.dll",
+        "build/net6.0/Newtonsoft.Json.dll",
+        "build/net6.0/Nito.AsyncEx.Context.dll",
+        "build/net6.0/Nito.AsyncEx.Coordination.dll",
+        "build/net6.0/Nito.AsyncEx.Interop.WaitHandles.dll",
+        "build/net6.0/Nito.AsyncEx.Oop.dll",
+        "build/net6.0/Nito.AsyncEx.Tasks.dll",
+        "build/net6.0/Nito.Cancellation.dll",
+        "build/net6.0/Nito.Collections.Deque.dll",
+        "build/net6.0/Nito.Disposables.dll",
+        "build/net6.0/System.CodeDom.dll",
+        "build/net6.0/System.Xaml.dll",
+        "build/net6.0/UiPath.Activities.Api.Base.dll",
+        "build/net6.0/UiPath.Api.Base.dll",
+        "build/net6.0/UiPath.Platform.dll",
+        "build/net6.0/UiPath.Studio.Activities.Api.dll",
+        "build/net6.0/UiPath.Studio.Api.Base.dll",
+        "build/net6.0/UiPath.UIAutomation.dll",
+        "build/net6.0/UiPath.UIAutomation.exe",
+        "build/net6.0/UiPath.UIAutomation.runtimeconfig.json",
+        "build/net6.0/UiPath.UIAutomationNext.Activities.Design.dll",
+        "build/net6.0/UiPath.UIAutomationNext.Activities.dll",
+        "build/net6.0/UiPath.Workflow.dll",
+        "build/net6.0/de/UiPath.UIAutomationNext.Activities.Design.resources.dll",
+        "build/net6.0/de/UiPath.UIAutomationNext.Activities.resources.dll",
+        "build/net6.0/es-MX/UiPath.UIAutomationNext.Activities.Design.resources.dll",
+        "build/net6.0/es-MX/UiPath.UIAutomationNext.Activities.resources.dll",
+        "build/net6.0/es/UiPath.UIAutomationNext.Activities.Design.resources.dll",
+        "build/net6.0/es/UiPath.UIAutomationNext.Activities.resources.dll",
+        "build/net6.0/fr/UiPath.UIAutomationNext.Activities.Design.resources.dll",
+        "build/net6.0/fr/UiPath.UIAutomationNext.Activities.resources.dll",
+        "build/net6.0/ja/UiPath.UIAutomationNext.Activities.Design.resources.dll",
+        "build/net6.0/ja/UiPath.UIAutomationNext.Activities.resources.dll",
+        "build/net6.0/ko/UiPath.UIAutomationNext.Activities.Design.resources.dll",
+        "build/net6.0/ko/UiPath.UIAutomationNext.Activities.resources.dll",
+        "build/net6.0/pt-BR/UiPath.UIAutomationNext.Activities.Design.resources.dll",
+        "build/net6.0/pt-BR/UiPath.UIAutomationNext.Activities.resources.dll",
+        "build/net6.0/pt/UiPath.UIAutomationNext.Activities.Design.resources.dll",
+        "build/net6.0/pt/UiPath.UIAutomationNext.Activities.resources.dll",
+        "build/net6.0/ru/UiPath.UIAutomationNext.Activities.Design.resources.dll",
+        "build/net6.0/ru/UiPath.UIAutomationNext.Activities.resources.dll",
+        "build/net6.0/tr/UiPath.UIAutomationNext.Activities.Design.resources.dll",
+        "build/net6.0/tr/UiPath.UIAutomationNext.Activities.resources.dll",
+        "build/net6.0/zh-CN/UiPath.UIAutomationNext.Activities.Design.resources.dll",
+        "build/net6.0/zh-CN/UiPath.UIAutomationNext.Activities.resources.dll",
+        "build/net6.0/zh-TW/UiPath.UIAutomationNext.Activities.resources.dll",
+        "build/net6.0/zu/UiPath.UIAutomationNext.Activities.resources.dll",
         "lib/net461/UiPath.UIAutomation.Activities.Runtime.Design.dll",
         "lib/net6.0-windows7.0/UiPath.UIAutomation.Activities.Runtime.Design.dll",
         "lib/net6.0/UiPath.UIAutomation.Activities.Runtime.Design.dll",
-        "uipath.uiautomation.activities.runtime.design.24.10.8.nupkg.sha512",
+        "uipath.uiautomation.activities.runtime.design.25.10.8.nupkg.sha512",
         "uipath.uiautomation.activities.runtime.design.nuspec"
       ]
     },
-    "UiPath.Vision/3.14.2": {
-      "sha512": "nyExUQGUXy4imcioXX7tG/kwc4rtTmhjSnKsC93055TH7Uei/s51SVmDCTP20kkl/wI2U8LVi/ZgiJlsJjUONg==",
+    "UiPath.UIAutomation.Design.RecoveryPanel/25.10.8": {
+      "sha512": "66w+taR63mO1zyrSmf4T2eDheq1Yv8vFuxryedvD2HrmGIGz39t8gf0e+wNJm+58Yp0BF+q664AOU2MK01GwXg==",
       "type": "package",
-      "path": "uipath.vision/3.14.2",
+      "path": "uipath.uiautomation.design.recoverypanel/25.10.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/assets/monaco/min/vs/base/browser/ui/codicons/codicon/codicon.ttf",
+        "content/assets/monaco/min/vs/base/common/worker/simpleWorker.nls.de.js",
+        "content/assets/monaco/min/vs/base/common/worker/simpleWorker.nls.es.js",
+        "content/assets/monaco/min/vs/base/common/worker/simpleWorker.nls.fr.js",
+        "content/assets/monaco/min/vs/base/common/worker/simpleWorker.nls.it.js",
+        "content/assets/monaco/min/vs/base/common/worker/simpleWorker.nls.ja.js",
+        "content/assets/monaco/min/vs/base/common/worker/simpleWorker.nls.js",
+        "content/assets/monaco/min/vs/base/common/worker/simpleWorker.nls.ko.js",
+        "content/assets/monaco/min/vs/base/common/worker/simpleWorker.nls.ru.js",
+        "content/assets/monaco/min/vs/base/common/worker/simpleWorker.nls.zh-cn.js",
+        "content/assets/monaco/min/vs/base/common/worker/simpleWorker.nls.zh-tw.js",
+        "content/assets/monaco/min/vs/base/worker/workerMain.js",
+        "content/assets/monaco/min/vs/basic-languages/abap/abap.js",
+        "content/assets/monaco/min/vs/basic-languages/apex/apex.js",
+        "content/assets/monaco/min/vs/basic-languages/azcli/azcli.js",
+        "content/assets/monaco/min/vs/basic-languages/bat/bat.js",
+        "content/assets/monaco/min/vs/basic-languages/bicep/bicep.js",
+        "content/assets/monaco/min/vs/basic-languages/cameligo/cameligo.js",
+        "content/assets/monaco/min/vs/basic-languages/clojure/clojure.js",
+        "content/assets/monaco/min/vs/basic-languages/coffee/coffee.js",
+        "content/assets/monaco/min/vs/basic-languages/cpp/cpp.js",
+        "content/assets/monaco/min/vs/basic-languages/csharp/csharp.js",
+        "content/assets/monaco/min/vs/basic-languages/csp/csp.js",
+        "content/assets/monaco/min/vs/basic-languages/css/css.js",
+        "content/assets/monaco/min/vs/basic-languages/cypher/cypher.js",
+        "content/assets/monaco/min/vs/basic-languages/dart/dart.js",
+        "content/assets/monaco/min/vs/basic-languages/dockerfile/dockerfile.js",
+        "content/assets/monaco/min/vs/basic-languages/ecl/ecl.js",
+        "content/assets/monaco/min/vs/basic-languages/elixir/elixir.js",
+        "content/assets/monaco/min/vs/basic-languages/flow9/flow9.js",
+        "content/assets/monaco/min/vs/basic-languages/freemarker2/freemarker2.js",
+        "content/assets/monaco/min/vs/basic-languages/fsharp/fsharp.js",
+        "content/assets/monaco/min/vs/basic-languages/go/go.js",
+        "content/assets/monaco/min/vs/basic-languages/graphql/graphql.js",
+        "content/assets/monaco/min/vs/basic-languages/handlebars/handlebars.js",
+        "content/assets/monaco/min/vs/basic-languages/hcl/hcl.js",
+        "content/assets/monaco/min/vs/basic-languages/html/html.js",
+        "content/assets/monaco/min/vs/basic-languages/ini/ini.js",
+        "content/assets/monaco/min/vs/basic-languages/java/java.js",
+        "content/assets/monaco/min/vs/basic-languages/javascript/javascript.js",
+        "content/assets/monaco/min/vs/basic-languages/julia/julia.js",
+        "content/assets/monaco/min/vs/basic-languages/kotlin/kotlin.js",
+        "content/assets/monaco/min/vs/basic-languages/less/less.js",
+        "content/assets/monaco/min/vs/basic-languages/lexon/lexon.js",
+        "content/assets/monaco/min/vs/basic-languages/liquid/liquid.js",
+        "content/assets/monaco/min/vs/basic-languages/lua/lua.js",
+        "content/assets/monaco/min/vs/basic-languages/m3/m3.js",
+        "content/assets/monaco/min/vs/basic-languages/markdown/markdown.js",
+        "content/assets/monaco/min/vs/basic-languages/mdx/mdx.js",
+        "content/assets/monaco/min/vs/basic-languages/mips/mips.js",
+        "content/assets/monaco/min/vs/basic-languages/msdax/msdax.js",
+        "content/assets/monaco/min/vs/basic-languages/mysql/mysql.js",
+        "content/assets/monaco/min/vs/basic-languages/objective-c/objective-c.js",
+        "content/assets/monaco/min/vs/basic-languages/pascal/pascal.js",
+        "content/assets/monaco/min/vs/basic-languages/pascaligo/pascaligo.js",
+        "content/assets/monaco/min/vs/basic-languages/perl/perl.js",
+        "content/assets/monaco/min/vs/basic-languages/pgsql/pgsql.js",
+        "content/assets/monaco/min/vs/basic-languages/php/php.js",
+        "content/assets/monaco/min/vs/basic-languages/pla/pla.js",
+        "content/assets/monaco/min/vs/basic-languages/postiats/postiats.js",
+        "content/assets/monaco/min/vs/basic-languages/powerquery/powerquery.js",
+        "content/assets/monaco/min/vs/basic-languages/powershell/powershell.js",
+        "content/assets/monaco/min/vs/basic-languages/protobuf/protobuf.js",
+        "content/assets/monaco/min/vs/basic-languages/pug/pug.js",
+        "content/assets/monaco/min/vs/basic-languages/python/python.js",
+        "content/assets/monaco/min/vs/basic-languages/qsharp/qsharp.js",
+        "content/assets/monaco/min/vs/basic-languages/r/r.js",
+        "content/assets/monaco/min/vs/basic-languages/razor/razor.js",
+        "content/assets/monaco/min/vs/basic-languages/redis/redis.js",
+        "content/assets/monaco/min/vs/basic-languages/redshift/redshift.js",
+        "content/assets/monaco/min/vs/basic-languages/restructuredtext/restructuredtext.js",
+        "content/assets/monaco/min/vs/basic-languages/ruby/ruby.js",
+        "content/assets/monaco/min/vs/basic-languages/rust/rust.js",
+        "content/assets/monaco/min/vs/basic-languages/sb/sb.js",
+        "content/assets/monaco/min/vs/basic-languages/scala/scala.js",
+        "content/assets/monaco/min/vs/basic-languages/scheme/scheme.js",
+        "content/assets/monaco/min/vs/basic-languages/scss/scss.js",
+        "content/assets/monaco/min/vs/basic-languages/shell/shell.js",
+        "content/assets/monaco/min/vs/basic-languages/solidity/solidity.js",
+        "content/assets/monaco/min/vs/basic-languages/sophia/sophia.js",
+        "content/assets/monaco/min/vs/basic-languages/sparql/sparql.js",
+        "content/assets/monaco/min/vs/basic-languages/sql/sql.js",
+        "content/assets/monaco/min/vs/basic-languages/st/st.js",
+        "content/assets/monaco/min/vs/basic-languages/swift/swift.js",
+        "content/assets/monaco/min/vs/basic-languages/systemverilog/systemverilog.js",
+        "content/assets/monaco/min/vs/basic-languages/tcl/tcl.js",
+        "content/assets/monaco/min/vs/basic-languages/twig/twig.js",
+        "content/assets/monaco/min/vs/basic-languages/typescript/typescript.js",
+        "content/assets/monaco/min/vs/basic-languages/typespec/typespec.js",
+        "content/assets/monaco/min/vs/basic-languages/vb/vb.js",
+        "content/assets/monaco/min/vs/basic-languages/wgsl/wgsl.js",
+        "content/assets/monaco/min/vs/basic-languages/xml/xml.js",
+        "content/assets/monaco/min/vs/basic-languages/yaml/yaml.js",
+        "content/assets/monaco/min/vs/editor/editor.main.css",
+        "content/assets/monaco/min/vs/editor/editor.main.js",
+        "content/assets/monaco/min/vs/editor/editor.main.nls.de.js",
+        "content/assets/monaco/min/vs/editor/editor.main.nls.es.js",
+        "content/assets/monaco/min/vs/editor/editor.main.nls.fr.js",
+        "content/assets/monaco/min/vs/editor/editor.main.nls.it.js",
+        "content/assets/monaco/min/vs/editor/editor.main.nls.ja.js",
+        "content/assets/monaco/min/vs/editor/editor.main.nls.js",
+        "content/assets/monaco/min/vs/editor/editor.main.nls.ko.js",
+        "content/assets/monaco/min/vs/editor/editor.main.nls.ru.js",
+        "content/assets/monaco/min/vs/editor/editor.main.nls.zh-cn.js",
+        "content/assets/monaco/min/vs/editor/editor.main.nls.zh-tw.js",
+        "content/assets/monaco/min/vs/language/css/cssMode.js",
+        "content/assets/monaco/min/vs/language/css/cssWorker.js",
+        "content/assets/monaco/min/vs/language/html/htmlMode.js",
+        "content/assets/monaco/min/vs/language/html/htmlWorker.js",
+        "content/assets/monaco/min/vs/language/json/jsonMode.js",
+        "content/assets/monaco/min/vs/language/json/jsonWorker.js",
+        "content/assets/monaco/min/vs/language/typescript/tsMode.js",
+        "content/assets/monaco/min/vs/language/typescript/tsWorker.js",
+        "content/assets/monaco/min/vs/loader.js",
+        "content/index.html",
+        "content/main.js",
+        "content/material-icons.woff",
+        "content/material-icons.woff2",
+        "content/polyfills.js",
+        "content/runtime.js",
+        "content/styles.css",
+        "lib/net6.0/UiPath.UIAutomation.Design.RecoveryPanel.dll",
+        "uipath.uiautomation.design.recoverypanel.25.10.8.nupkg.sha512",
+        "uipath.uiautomation.design.recoverypanel.nuspec"
+      ]
+    },
+    "UiPath.Vision/3.15.0": {
+      "sha512": "L2PorIsQAnrbVUBnztJyhzSZst0qceEhfKKcIFQhm7vPRcs+r4PiYQAg4ON/M1ZWx39k16DwNAOxyxsHCG9STw==",
+      "type": "package",
+      "path": "uipath.vision/3.15.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -18535,7 +18524,7 @@
         "lib/net6.0/UiPath.Vision.Host.dll",
         "lib/net6.0/UiPath.Vision.Package.dll",
         "lib/net6.0/UiPath.Vision.dll",
-        "uipath.vision.3.14.2.nupkg.sha512",
+        "uipath.vision.3.15.0.nupkg.sha512",
         "uipath.vision.nuspec"
       ]
     }
@@ -18544,7 +18533,7 @@
     "": [],
     "net8.0-windows7.0": [
       "UiPath.System.Activities >= 25.4.4 <= 25.4.4",
-      "UiPath.UIAutomation.Activities >= 24.10.8 <= 24.10.8"
+      "UiPath.UIAutomation.Activities >= 25.10.8 <= 25.10.8"
     ]
   },
   "packageFolders": {
@@ -18554,9 +18543,9 @@
     "restore": {
       "projectUniqueName": "Test",
       "projectName": "Test",
-      "projectPath": "C:\\Users\\philliptsai\\Documents\\UiPath\\Test\\.local",
+      "projectPath": "C:\\Users\\philliptsai\\Documents\\Project\\AutoPipeline\\Test\\.local",
       "packagesPath": "C:\\Users\\philliptsai\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\philliptsai\\Documents\\UiPath\\Test\\.local",
+      "outputPath": "C:\\Users\\philliptsai\\Documents\\Project\\AutoPipeline\\Test\\.local",
       "UsingMicrosoftNETSdk": false,
       "restoreAuditProperties": {
         "enableAudit": "False"
@@ -18573,7 +18562,7 @@
           "UiPath.UIAutomation.Activities": {
             "include": "Runtime",
             "target": "Package",
-            "version": "[24.10.8, 24.10.8]"
+            "version": "[25.10.8, 25.10.8]"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Users\\philliptsai\\AppData\\Local\\Programs\\UiPath\\Studio\\PortableRuntimeIdentifierGraph.json"

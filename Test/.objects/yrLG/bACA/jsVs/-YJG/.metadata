@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Game-S073-01.00.02.04.7z",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "-YJGthU7hUG5__2GGEI8WA",
+  "Reference": "EdNSm3KZAUmUdwdO1xTKrw/-YJGthU7hUG5__2GGEI8WA",
+  "ParentRef": "EdNSm3KZAUmUdwdO1xTKrw/jsVsafqMIkSe-ge6mxMYrg",
+  "Created": "2025-07-10T05:31:23.3860479Z",
+  "Updated": "2025-07-10T05:31:23.3860479Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

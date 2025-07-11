@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="6bx9Le9wIEGv2t4uF1wvbQ" Reference="EdNSm3KZAUmUdwdO1xTKrw/CFOi8CmXWEqgXbL6oNDIxg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="192.168.138.210/job/S073/build" DesignTimeRectangle="33, 853, 128, 12" DesignTimeScaleFactor="1" Guid="230440d8-0b31-4a6d-a30b-21444b1cb1f5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIAAAAAMCAYAAACqTLVoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABkSURBVFhH7dJBDYBAEARBnGEGZchYZfs7DEwuJBMew/ajFHQf3b0wFwMMxwDDbQc4r/tzVYWXVCMXAwRRjVwMEEQ1cjFAENXIxQBBVCMXAwRRjVwMEEQ1cjFAENXItR0Af9frAWFVb+VRIUszAAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Jenkins' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="9e7f103aafac46c74c0fa18d3d2c29d1.png" xmlns="">0DNWnBkbfWkCPiSh0XsQIWQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckElement</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

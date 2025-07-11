@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="H8jIa69QQEem5_rCoyVuvQ" Reference="EdNSm3KZAUmUdwdO1xTKrw/-YJGthU7hUG5__2GGEI8WA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="192.168.138.210/userContent/S073/Game" CVScreenId="d98a8f78-9151-4a8d-aca4-32132e8eae43" CvTextArea="404, 363, 185, 14" CvTextArgument="[String.Format(&quot;Game-{0}-{1}.7z&quot;, projectName, selectTagName)]" CvType="Text" DesignTimeRectangle="406, 362, 181, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl class='fileList' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='A' /&gt;" Guid="939011e8-dabb-4063-a2db-edf24d2ffeaf" ScopeSelectorArgument="&lt;html app='msedge.exe' title='User content : /S073/Game [Jenkins]' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="a5e6904f2afb7774b88503845fc5de5b.png" xmlns="">0fFb-wrJa-E-cXIh2ryHjxA</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="2">
+      <ObjectRepositoryVariableData DefaultValue="S073" Name="projectName" />
+      <ObjectRepositoryVariableData DefaultValue="01.00.02.03" Name="selectTagName" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

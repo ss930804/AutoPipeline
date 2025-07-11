@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Math Dll",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "pjTclCWA_0GdXQFJ2IJy3g",
+  "Reference": "EdNSm3KZAUmUdwdO1xTKrw/pjTclCWA_0GdXQFJ2IJy3g",
+  "ParentRef": "EdNSm3KZAUmUdwdO1xTKrw/jsVsafqMIkSe-ge6mxMYrg",
+  "Created": "2025-07-10T05:44:49.241447Z",
+  "Updated": "2025-07-10T05:44:49.241447Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

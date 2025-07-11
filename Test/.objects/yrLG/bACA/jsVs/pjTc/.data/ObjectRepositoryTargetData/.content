@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="80387n44VUavdWGh-wM4Yw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="192.168.138.210/userContent/S074" CVScreenId="cfa31603-3854-4071-8c52-7b54c5e9073c" CvTextArea="414, 413, 58, 14" CvTextArgument="Math DII" CvType="Text" DesignTimeRectangle="414, 412, 58, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl class='fileList' tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='A' /&gt;" Guid="79d3e5a6-c6fc-4792-9181-80fee5743f52" ScopeSelectorArgument="&lt;html app='msedge.exe' title='User content : /S074 [Jenkins]' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="a5a79b8c92df8394c6649084a7e4636f.png" xmlns="">0kcNjOun3xESDz36jtSpLSQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
