@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="b1dauYdCIE26bZGjrPQe6Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="-1241, 290, 1364, 917" Arguments="c:\users\blakezheng\downloads" FilePath="C:\Windows\explorer.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGWSURBVFhH7ZXLTsJAGIV5AqLREI3GBCOK0IJQSrl4fxKN0ejSjStdKNcVW+92xwO46SOwZOsj9C3G85tOYnSUocxgTDjJt6Ez5ztlAZFJ/k2cK49V2z1WGUAZ2JceC66pS6XVY/uuL0UJZ4Nr6kKley++FE5TwwAHA3ZRLkNRxwAqFclE2A0NA2wM2Hn2pSjoGECl2yiXwdIxgEq3nnwp8nUNA6hUJBOR0zGASjdRLsNGTcMAKq0++lJkdQyg0grKZTBvNAzIoFQkE2GEHRA/67rJC+/jDb5idd5Y+cGXIo+z6eveN5bPX9niSdcNdOLET7tutt1nJRSpxGz12cIgOc8SRmRwwcFFFRjompeV89AIs4kR9ygZAQMdQ8t56CujgiKKwpDG3bnjkHIeWk9FNgqHIYU7sVHlPDQi1eizwh3+6SRYx9nYkSI5D70NFVsQ/EYSZ2ZVy3norZL1n0es4dmMLjkPCUiUv8UPzidW8dm0bjkPiRIQ5iAmEjXID8ck5yHhCsTE1LjlPFGIowd/JJ9ETSKRd69zcJ9ZGXRqAAAAAElFTkSuQmCC" Selector="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='Downloads' /&gt;" Version="V2">
+      <imageRef attrName="InformativeScreenshot" originalValue="5704fe2f833c23a1e734ccf2c4e9b1c8.png" xmlns="">0aBcKWyy-PEeSHubg53kvOQ</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

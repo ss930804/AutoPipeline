@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="9quNTEqRi0e0JAqbH8e1Mw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="5d6fbb77-e2aa-41fd-9369-f4a5a0f5014b" CvElementArea="201, 93, 15, 17" CvTextArea="33, 95, 32, 15" CvTextArgument="7-Zip" CvType="ArrowButton" DesignTimeRectangle="3, 91, 217, 22" FullSelectorArgument="&lt;ctrl name='路徑位置' role='popup menu' /&gt;&lt;ctrl name='7-Zip' role='menu item' /&gt;" Guid="2c8c7dd5-384b-403c-81c1-af3ef28ba8fa" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='#32768' idx='*' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="72a80728f84fb150d587799cc5f67e64.png" xmlns="">0-XFfgAnbLEqeA2Ui5wgS6g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Hover</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

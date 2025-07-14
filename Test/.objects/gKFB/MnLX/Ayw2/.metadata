@@ -1,0 +1,13 @@
+﻿{
+  "Name": "解壓縮檔案",
+  "Type": "Screen",
+  "Id": "Ayw2KjPTwEShwjWIVaqQsg",
+  "Reference": "EdNSm3KZAUmUdwdO1xTKrw/Ayw2KjPTwEShwjWIVaqQsg",
+  "ParentRef": "EdNSm3KZAUmUdwdO1xTKrw/MnLXZWecvUiVOduYnYxcjg",
+  "Created": "2025-07-14T06:48:16.8062107Z",
+  "Updated": "2025-07-14T06:48:16.8062107Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

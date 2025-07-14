@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Build",
+  "Type": "Screen",
+  "Id": "bXYRgUJ5e0SIRB1o-_O6KQ",
+  "Reference": "EdNSm3KZAUmUdwdO1xTKrw/bXYRgUJ5e0SIRB1o-_O6KQ",
+  "ParentRef": "EdNSm3KZAUmUdwdO1xTKrw/MnLXZWecvUiVOduYnYxcjg",
+  "Created": "2025-07-14T07:01:13.3672937Z",
+  "Updated": "2025-07-14T07:01:13.3672937Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
