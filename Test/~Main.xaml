@@ -259,6 +259,7 @@
       <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>GlobalVariablesT1PNoYwrqg</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
@@ -266,7 +267,7 @@
       <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1051,5520" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1051,5542" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="downloading" />
     </Sequence.Variables>
@@ -1504,13 +1505,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="覆蓋Game檔案" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,2901" sap2010:WorkflowViewState.IdRef="NApplicationCard_10" ScopeGuid="915b031c-9c53-4797-84e5-bc11d961f35b" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="覆蓋Game檔案" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,2923" sap2010:WorkflowViewState.IdRef="NApplicationCard_10" ScopeGuid="915b031c-9c53-4797-84e5-bc11d961f35b" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,2602" sap2010:WorkflowViewState.IdRef="Sequence_54">
+          <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,2624" sap2010:WorkflowViewState.IdRef="Sequence_54">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1651,11 +1652,8 @@
               </uix:NKeyboardShortcuts.VerifyOptions>
             </uix:NKeyboardShortcuts>
             <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="416,122" sap2010:WorkflowViewState.IdRef="Delay_12" />
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '取代目的地中的檔案(R)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_47" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="915b031c-9c53-4797-84e5-bc11d961f35b" Version="V5">
-              <uix:NClick.Target>
-                <uix:TargetAnchorable CVScreenId="88540d6f-f50d-4e38-86fd-4f8357d10908" ContentHash="uPiDzVRkCUOUJUY5jNVyjg" CvElementArea="32, 100, 397, 41" CvType="InputBox" DesignTimeRectangle="34, 101, 395, 40" ElementType="Button" FullSelectorArgument="&lt;wnd cls='DirectUIHWND' /&gt;&lt;ctrl name='正在將 172 個項目從 Game 複製到 Data - 0% 已完成' role='grouping' /&gt;&lt;ctrl name='取代目的地中的檔案(R)' role='push button' /&gt;" Guid="03c287ea-13af-4645-9d2f-39c431a8bbfa" InformativeScreenshot="9e943cfb9c916a0ec00abfd10fb34a2d.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/iYzB5nIWY0SG0njn3MTvSA" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='OperationStatusWindow' title='取代或略過檔案' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
-              </uix:NClick.Target>
-              <uix:NClick.VerifyOptions>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,240" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_7" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V5">
+              <uix:NKeyboardShortcuts.VerifyOptions>
                 <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
                   <uix:VerifyExecutionOptions.Retry>
                     <InArgument x:TypeArguments="x:Boolean" />
@@ -1664,8 +1662,8 @@
                     <InArgument x:TypeArguments="x:Double" />
                   </uix:VerifyExecutionOptions.Timeout>
                 </uix:VerifyExecutionOptions>
-              </uix:NClick.VerifyOptions>
-            </uix:NClick>
+              </uix:NKeyboardShortcuts.VerifyOptions>
+            </uix:NKeyboardShortcuts>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
