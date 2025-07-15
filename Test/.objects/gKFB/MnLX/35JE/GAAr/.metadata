@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Game",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "GAArPb6XOUmmQBcPCQZk6w",
+  "Reference": "EdNSm3KZAUmUdwdO1xTKrw/GAArPb6XOUmmQBcPCQZk6w",
+  "ParentRef": "EdNSm3KZAUmUdwdO1xTKrw/35JE-CD-tU--g-rALXuPqw",
+  "Created": "2025-07-14T09:40:50.1154265Z",
+  "Updated": "2025-07-14T09:40:50.1154265Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="lThD9VGbHEeswtyfMNq-mg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="30a0eb1d-61d1-4d11-a32b-43d7597145a5" CvTextArea="359, 223, 36, 12" CvTextArgument="Game" CvType="Text" DesignTimeRectangle="358, 219, 236, 22" ElementType="Text" FullSelectorArgument="&lt;wnd cls='ShellTabWindowClass' title='Data' /&gt;&lt;wnd aaname='檔案總管窗格' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Shell 資料夾檢視' cls='SHELLDLL_DefView' title='ShellView' /&gt;&lt;wnd aaname='項目檢視' cls='DirectUIHWND' /&gt;&lt;ctrl name='項目檢視' role='list' /&gt;&lt;ctrl automationid='0' /&gt;&lt;ctrl automationid='System.ItemNameDisplay' /&gt;" Guid="5e6bc137-7419-4c4a-94e6-c97ed2157dfe" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='Data' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="7feb33c63829bab3c3edb54d691aa7fd.png" xmlns="">01gZlnv-MtkieqfdqdhUddw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Hover</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

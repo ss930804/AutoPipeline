@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="wj-gaDRWuEWPTIePACkgbQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="358, 219, 236, 22" ElementType="Text" FullSelectorArgument="&lt;wnd cls='ShellTabWindowClass' title='s036' /&gt;&lt;wnd aaname='檔案總管窗格' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Shell 資料夾檢視' cls='SHELLDLL_DefView' title='ShellView' /&gt;&lt;wnd aaname='項目檢視' cls='DirectUIHWND' /&gt;&lt;ctrl name='項目檢視' role='list' /&gt;&lt;ctrl automationid='0' /&gt;&lt;ctrl automationid='System.ItemNameDisplay' /&gt;" Guid="65d32295-49e7-4121-a1f0-a7d7b620f97a" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='s036' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="0028902b578da817dd923446833b9a22.png" xmlns="">0o1rzYv8xIE-vhB8hE9Xvsw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Hover</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

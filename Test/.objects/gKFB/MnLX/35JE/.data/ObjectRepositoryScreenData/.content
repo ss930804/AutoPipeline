@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="7GEPOHKXnUuP_MxJbfUP6g" Reference="EdNSm3KZAUmUdwdO1xTKrw/35JE-CD-tU--g-rALXuPqw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="-1990, 287, 1364, 917" Arguments="[&quot;&quot;&quot;&quot; + dataPath + &quot;&quot;&quot;&quot;]" ContentHash="0H0i4TeqXUaCn34KABX0rw" FilePath="C:\Windows\explorer.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGWSURBVFhH7ZXLTsJAGIV5AqLREI3GBCOK0IJQSrl4fxKN0ejSjStdKNcVW+92xwO46SOwZOsj9C3G85tOYnSUocxgTDjJt6Ez5ztlAZFJ/k2cK49V2z1WGUAZ2JceC66pS6XVY/uuL0UJZ4Nr6kKley++FE5TwwAHA3ZRLkNRxwAqFclE2A0NA2wM2Hn2pSjoGECl2yiXwdIxgEq3nnwp8nUNA6hUJBOR0zGASjdRLsNGTcMAKq0++lJkdQyg0grKZTBvNAzIoFQkE2GEHRA/67rJC+/jDb5idd5Y+cGXIo+z6eveN5bPX9niSdcNdOLET7tutt1nJRSpxGz12cIgOc8SRmRwwcFFFRjompeV89AIs4kR9ygZAQMdQ8t56CujgiKKwpDG3bnjkHIeWk9FNgqHIYU7sVHlPDQi1eizwh3+6SRYx9nYkSI5D70NFVsQ/EYSZ2ZVy3norZL1n0es4dmMLjkPCUiUv8UPzidW8dm0bjkPiRIQ5iAmEjXID8ck5yHhCsTE1LjlPFGIowd/JJ9ETSKRd69zcJ9ZGXRqAAAAAElFTkSuQmCC" Reference="EdNSm3KZAUmUdwdO1xTKrw/35JE-CD-tU--g-rALXuPqw" Selector="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='Downloads' /&gt;" Version="V2">
+      <imageRef attrName="InformativeScreenshot" originalValue="563c86e6863f7fb363279925aa09372c.png" xmlns="">0ukjATdi770i6s4uQESKEmQ</imageRef>
+    </TargetApp>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="dataPath" />
+    </scg:List>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

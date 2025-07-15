@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Downloads",
+  "Type": "Screen",
+  "Id": "35JE-CD-tU--g-rALXuPqw",
+  "Reference": "EdNSm3KZAUmUdwdO1xTKrw/35JE-CD-tU--g-rALXuPqw",
+  "ParentRef": "EdNSm3KZAUmUdwdO1xTKrw/MnLXZWecvUiVOduYnYxcjg",
+  "Created": "2025-07-14T09:22:01.0090096Z",
+  "Updated": "2025-07-14T09:22:01.0090096Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="a0ywGfySt0yXjw_ZODVq5w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="-1480, 446, 463, 288" FilePath="C:\Windows\explorer.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFZSURBVFhHYxgFo2AUjIJRAANr1679T08MtRYBQIKxh+Lx4urTNf9fv35NMcbrAIONRjhx2J7w/8+ePaMIjzqA7g4onbMPhU93BxhXbPpfguQIujvAvO34f8ue8/+LZkMcQXcHmLYe/28/98V/8+7z/wtm7RuAKAA6wA7oABA27QI6YvYB/A7Ah7EVRHqV28GWgHHL8f9GaNh8wo3/NnNewLEJ0BHhLSuxO4AcbAi0xHr2C5KwUef5/0qZy+ZDraYM6Dcf/28FNJRUbNBx/r98BhUcodcETOWzXpCM9drP/5elhgN0gA4wBxpICtYFWi6dTqUoUCnZ/l+r4Tgca6Jh/Z4b/81mvoBj7bbz/yXTqGQ5MUC9/vh/U6DFIKzVev6/eCodLQcB1brj/01mvPivAbRcNIXOloOAMtAB6i3n/4skD4DlICCRs+m/4EBZDgICSQNoOWHAwAAAY63B9NZR774AAAAASUVORK5CYII=" Selector="&lt;wnd app='explorer.exe' cls='OperationStatusWindow' title='取代或略過檔案' /&gt;" Version="V2">
+      <imageRef attrName="InformativeScreenshot" originalValue="91a78c94a937e23d89fe66e5777bde0e.png" xmlns="">0aBlkMYhbkEy6UF3bRBFSYA</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>
