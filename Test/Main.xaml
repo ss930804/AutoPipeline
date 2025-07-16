@@ -266,8 +266,9 @@
       <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1051,5520" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1051,3020" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
+      <Variable x:TypeArguments="x:Boolean" Default="True" Name="isUnzip" />
       <Variable x:TypeArguments="x:Boolean" Name="downloading" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
@@ -275,7 +276,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard DisplayName="Edge 資訊主頁 [Jenkins]" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="843a1574-9888-4dc5-95ed-b6e4f79529c7" WindowResize="Maximize">
+    <uix:NApplicationCard DisplayName="Edge 資訊主頁 [Jenkins]" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="843a1574-9888-4dc5-95ed-b6e4f79529c7" WindowResize="Maximize">
       <uix:NApplicationCard.AutoGenerationOptions>
         <uix:GenerationOptions ExpectedInputs="{x:Null}" Url="{x:Null}" Prompt="Open a web browser">
           <uix:GenerationOptions.ExpectedOutputs>
@@ -1179,20 +1180,20 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard DisplayName="解壓縮檔案" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="6b2cc2ef-9d4b-4fe3-983c-61297438357d">
+    <uix:NApplicationCard DisplayName="解壓縮檔案" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486,2721" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="6b2cc2ef-9d4b-4fe3-983c-61297438357d">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence sap:VirtualizedContainerService.HintSize="450,1630" sap2010:WorkflowViewState.IdRef="Sequence_45">
+          <Sequence sap:VirtualizedContainerService.HintSize="452,2422" sap2010:WorkflowViewState.IdRef="Sequence_45">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NHover CursorMotionType="Smooth" DisplayName="Hover 'Game'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" HoverTime="0.5" sap2010:WorkflowViewState.IdRef="NHover_5" ScopeIdentifier="6b2cc2ef-9d4b-4fe3-983c-61297438357d" Version="V5">
+            <uix:NHover CursorMotionType="Smooth" DisplayName="Hover 'Game'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" HoverTime="0.5" sap2010:WorkflowViewState.IdRef="NHover_5" ScopeIdentifier="6b2cc2ef-9d4b-4fe3-983c-61297438357d" Version="V5">
               <uix:NHover.Target>
                 <uix:TargetAnchorable CVScreenId="5697a62a-70f4-4b1d-b1a3-cd7a3cda58a3" ContentHash="USyfYJGk8EWIz_y4w2KvNQ" CvTextArea="359, 250, 155, 12" CvTextArgument="Game-S073-01.00.02.04.7z" CvType="Text" DesignTimeRectangle="358, 246, 618, 22" ElementType="Text" FullSelectorArgument="&lt;wnd cls='ShellTabWindowClass' title='Downloads' /&gt;&lt;wnd aaname='檔案總管窗格' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Shell 資料夾檢視' cls='SHELLDLL_DefView' title='ShellView' /&gt;&lt;wnd aaname='項目檢視' cls='DirectUIHWND' /&gt;&lt;ctrl name='項目檢視' role='list' /&gt;&lt;ctrl automationid='0' /&gt;&lt;ctrl automationid='0' /&gt;&lt;ctrl automationid='System.ItemNameDisplay' /&gt;" Guid="f05ee223-a6b5-4956-a173-8b7bb3554947" InformativeScreenshot="e832ea0717ab8852bbbfb708340b1761.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/H9vM2fmZ6EyB3KHaj7phIA" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='Downloads' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
               </uix:NHover.Target>
@@ -1207,7 +1208,7 @@
                 </uix:VerifyExecutionOptions>
               </uix:NHover.VerifyOptions>
             </uix:NHover>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Game'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_27" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6b2cc2ef-9d4b-4fe3-983c-61297438357d" Version="V5">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Game'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_27" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6b2cc2ef-9d4b-4fe3-983c-61297438357d" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable CVScreenId="5697a62a-70f4-4b1d-b1a3-cd7a3cda58a3" ContentHash="USyfYJGk8EWIz_y4w2KvNQ" CvTextArea="359, 250, 155, 12" CvTextArgument="Game-S073-01.00.02.04.7z" CvType="Text" DesignTimeRectangle="358, 246, 618, 22" ElementType="Text" FullSelectorArgument="&lt;wnd cls='ShellTabWindowClass' title='Downloads' /&gt;&lt;wnd aaname='檔案總管窗格' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Shell 資料夾檢視' cls='SHELLDLL_DefView' title='ShellView' /&gt;&lt;wnd aaname='項目檢視' cls='DirectUIHWND' /&gt;&lt;ctrl name='項目檢視' role='list' /&gt;&lt;ctrl automationid='0' /&gt;&lt;ctrl automationid='0' /&gt;&lt;ctrl automationid='System.ItemNameDisplay' /&gt;" Guid="f05ee223-a6b5-4956-a173-8b7bb3554947" InformativeScreenshot="e832ea0717ab8852bbbfb708340b1761.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/H9vM2fmZ6EyB3KHaj7phIA" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='Downloads' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
               </uix:NClick.Target>
@@ -1222,7 +1223,7 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Game'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_28" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="6b2cc2ef-9d4b-4fe3-983c-61297438357d" Version="V5">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Game'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_28" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="6b2cc2ef-9d4b-4fe3-983c-61297438357d" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable CVScreenId="5697a62a-70f4-4b1d-b1a3-cd7a3cda58a3" ContentHash="USyfYJGk8EWIz_y4w2KvNQ" CvTextArea="359, 250, 155, 12" CvTextArgument="Game-S073-01.00.02.04.7z" CvType="Text" DesignTimeRectangle="358, 246, 618, 22" ElementType="Text" FullSelectorArgument="&lt;wnd cls='ShellTabWindowClass' title='Downloads' /&gt;&lt;wnd aaname='檔案總管窗格' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Shell 資料夾檢視' cls='SHELLDLL_DefView' title='ShellView' /&gt;&lt;wnd aaname='項目檢視' cls='DirectUIHWND' /&gt;&lt;ctrl name='項目檢視' role='list' /&gt;&lt;ctrl automationid='0' /&gt;&lt;ctrl automationid='0' /&gt;&lt;ctrl automationid='System.ItemNameDisplay' /&gt;" Guid="f05ee223-a6b5-4956-a173-8b7bb3554947" InformativeScreenshot="e832ea0717ab8852bbbfb708340b1761.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/H9vM2fmZ6EyB3KHaj7phIA" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='Downloads' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
               </uix:NClick.Target>
@@ -1237,7 +1238,7 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NHover CursorMotionType="Smooth" DisplayName="Hover '7-Zip'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" HoverTime="0.5" sap2010:WorkflowViewState.IdRef="NHover_6" ScopeIdentifier="6b2cc2ef-9d4b-4fe3-983c-61297438357d" Version="V5">
+            <uix:NHover CursorMotionType="Smooth" DisplayName="Hover '7-Zip'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" HoverTime="0.5" sap2010:WorkflowViewState.IdRef="NHover_6" ScopeIdentifier="6b2cc2ef-9d4b-4fe3-983c-61297438357d" Version="V5">
               <uix:NHover.Target>
                 <uix:TargetAnchorable CVScreenId="5d6fbb77-e2aa-41fd-9369-f4a5a0f5014b" ContentHash="9quNTEqRi0e0JAqbH8e1Mw" CvElementArea="201, 93, 15, 17" CvTextArea="33, 95, 32, 15" CvTextArgument="7-Zip" CvType="ArrowButton" DesignTimeRectangle="3, 91, 217, 22" FullSelectorArgument="&lt;ctrl name='路徑位置' role='popup menu' /&gt;&lt;ctrl name='7-Zip' role='menu item' /&gt;" Guid="2c8c7dd5-384b-403c-81c1-af3ef28ba8fa" InformativeScreenshot="72a80728f84fb150d587799cc5f67e64.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/efakylx9O0Oi1-gQJHPhqw" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='#32768' idx='*' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
               </uix:NHover.Target>
@@ -1252,7 +1253,7 @@
                 </uix:VerifyExecutionOptions>
               </uix:NHover.VerifyOptions>
             </uix:NHover>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '7-Zip'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_29" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6b2cc2ef-9d4b-4fe3-983c-61297438357d" Version="V5">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '7-Zip'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_29" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6b2cc2ef-9d4b-4fe3-983c-61297438357d" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable CVScreenId="5d6fbb77-e2aa-41fd-9369-f4a5a0f5014b" ContentHash="9quNTEqRi0e0JAqbH8e1Mw" CvElementArea="201, 93, 15, 17" CvTextArea="33, 95, 32, 15" CvTextArgument="7-Zip" CvType="ArrowButton" DesignTimeRectangle="3, 91, 217, 22" FullSelectorArgument="&lt;ctrl name='路徑位置' role='popup menu' /&gt;&lt;ctrl name='7-Zip' role='menu item' /&gt;" Guid="2c8c7dd5-384b-403c-81c1-af3ef28ba8fa" InformativeScreenshot="72a80728f84fb150d587799cc5f67e64.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/efakylx9O0Oi1-gQJHPhqw" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='#32768' idx='*' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
               </uix:NClick.Target>
@@ -1267,7 +1268,7 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NHover CursorMotionType="Smooth" DisplayName="Hover '解壓縮至 Game'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" HoverTime="0.5" sap2010:WorkflowViewState.IdRef="NHover_7" ScopeIdentifier="6b2cc2ef-9d4b-4fe3-983c-61297438357d" Version="V5">
+            <uix:NHover CursorMotionType="Smooth" DisplayName="Hover '解壓縮至 Game'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" HoverTime="0.5" sap2010:WorkflowViewState.IdRef="NHover_7" ScopeIdentifier="6b2cc2ef-9d4b-4fe3-983c-61297438357d" Version="V5">
               <uix:NHover.Target>
                 <uix:TargetAnchorable CVScreenId="285f9e4d-ad05-4d90-9aed-89400c30598c" ContentHash="zu2wBbPCgUW4HLFkFOBDhg" CvTextArea="33, 94, 206, 15" CvTextArgument="MEME &quot;Game-S073-01.00.02.04\&quot;" CvType="Text" DesignTimeRectangle="3, 91, 345, 22" FullSelectorArgument="&lt;ctrl name='7-Zip' role='popup menu' /&gt;&lt;ctrl automationid='31101' /&gt;" Guid="7dc73000-6f8a-4cbc-82d4-76fa67e0ae29" InformativeScreenshot="d1c75c1a626cf4451dc742d9040a790a.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/qRiy7i2-S0KoYMFPdWwhlQ" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='#32768' idx='*' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
               </uix:NHover.Target>
@@ -1282,7 +1283,7 @@
                 </uix:VerifyExecutionOptions>
               </uix:NHover.VerifyOptions>
             </uix:NHover>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '解壓縮至 Game'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_30" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6b2cc2ef-9d4b-4fe3-983c-61297438357d" Version="V5">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '解壓縮至 Game'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_30" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6b2cc2ef-9d4b-4fe3-983c-61297438357d" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable CVScreenId="285f9e4d-ad05-4d90-9aed-89400c30598c" ContentHash="zu2wBbPCgUW4HLFkFOBDhg" CvTextArea="33, 94, 206, 15" CvTextArgument="MEME &quot;Game-S073-01.00.02.04\&quot;" CvType="Text" DesignTimeRectangle="3, 91, 345, 22" FullSelectorArgument="&lt;ctrl name='7-Zip' role='popup menu' /&gt;&lt;ctrl automationid='31101' /&gt;" Guid="7dc73000-6f8a-4cbc-82d4-76fa67e0ae29" InformativeScreenshot="d1c75c1a626cf4451dc742d9040a790a.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/qRiy7i2-S0KoYMFPdWwhlQ" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='#32768' idx='*' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
               </uix:NClick.Target>
@@ -1297,50 +1298,19 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-          </Sequence>
-        </ActivityAction>
-      </uix:NApplicationCard.Body>
-      <uix:NApplicationCard.TargetApp>
-        <uix:TargetApp Area="-1241, 290, 1364, 917" Arguments="c:\users\blakezheng\downloads" ContentHash="b1dauYdCIE26bZGjrPQe6Q" FilePath="C:\Windows\explorer.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGWSURBVFhH7ZXLTsJAGIV5AqLREI3GBCOK0IJQSrl4fxKN0ejSjStdKNcVW+92xwO46SOwZOsj9C3G85tOYnSUocxgTDjJt6Ez5ztlAZFJ/k2cK49V2z1WGUAZ2JceC66pS6XVY/uuL0UJZ4Nr6kKley++FE5TwwAHA3ZRLkNRxwAqFclE2A0NA2wM2Hn2pSjoGECl2yiXwdIxgEq3nnwp8nUNA6hUJBOR0zGASjdRLsNGTcMAKq0++lJkdQyg0grKZTBvNAzIoFQkE2GEHRA/67rJC+/jDb5idd5Y+cGXIo+z6eveN5bPX9niSdcNdOLET7tutt1nJRSpxGz12cIgOc8SRmRwwcFFFRjompeV89AIs4kR9ygZAQMdQ8t56CujgiKKwpDG3bnjkHIeWk9FNgqHIYU7sVHlPDQi1eizwh3+6SRYx9nYkSI5D70NFVsQ/EYSZ2ZVy3norZL1n0es4dmMLjkPCUiUv8UPzidW8dm0bjkPiRIQ5iAmEjXID8ck5yHhCsTE1LjlPFGIowd/JJ9ETSKRd69zcJ9ZGXRqAAAAAElFTkSuQmCC" InformativeScreenshot="5704fe2f833c23a1e734ccf2c4e9b1c8.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/Ayw2KjPTwEShwjWIVaqQsg" Selector="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='Downloads' /&gt;" Version="V2" />
-      </uix:NApplicationCard.TargetApp>
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-    </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="等待解壓縮完成" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="c16360a0-0e61-43d6-ae28-25bb1272daea" Version="V2">
-      <uix:NApplicationCard.Body>
-        <ActivityAction x:TypeArguments="x:Object">
-          <ActivityAction.Argument>
-            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
-          </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="452,650" sap2010:WorkflowViewState.IdRef="Sequence_47">
-            <Sequence.Variables>
-              <Variable x:TypeArguments="x:Boolean" Name="isUnzip" />
-            </Sequence.Variables>
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="418,122" sap2010:WorkflowViewState.IdRef="Delay_6" />
-            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[isUnzip=True]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="418,351" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_6">
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="418,175" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Unzip Start&quot;]" />
+            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="418,442" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_7">
               <ui:InterruptibleDoWhile.Body>
-                <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,221" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,312" sap2010:WorkflowViewState.IdRef="Sequence_59">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:UiElementExists DisplayName="Element Exists '7zg.exe'" Exists="[isUnzip]" sap:VirtualizedContainerService.HintSize="382,130" sap2010:WorkflowViewState.IdRef="UiElementExists_3">
+                  <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="382,122" sap2010:WorkflowViewState.IdRef="Delay_19" />
+                  <ui:UiElementExists DisplayName="Element Exists '7zg.exe'" Exists="[isUnzip]" sap:VirtualizedContainerService.HintSize="382,130" sap2010:WorkflowViewState.IdRef="UiElementExists_4">
                     <ui:UiElementExists.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="75e3669d-0799-4691-b6e0-c1ad69eba71b" InformativeScreenshot="9ff9b5e5b813370849104be3eee9d1d6">
-                        <ui:Target.TimeoutMS>
-                          <InArgument x:TypeArguments="x:Int32" />
-                        </ui:Target.TimeoutMS>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="aa92ca87-35de-472b-83b4-b506cc87921d" InformativeScreenshot="7dc2e16a9cd73ec4da56d485bfb4c558" Selector="&lt;wnd app='7zG.exe' cls='#32770' /&gt;&#xD;&#xA;" TimeoutMS="5000">
                         <ui:Target.WaitForReady>
                           <InArgument x:TypeArguments="ui:WaitForReady" />
                         </ui:Target.WaitForReady>
@@ -1349,22 +1319,25 @@
                   </ui:UiElementExists>
                 </Sequence>
               </ui:InterruptibleDoWhile.Body>
+              <ui:InterruptibleDoWhile.Condition>
+                <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="isUnzip" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_1" />
+              </ui:InterruptibleDoWhile.Condition>
             </ui:InterruptibleDoWhile>
-            <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="418,115" sap2010:WorkflowViewState.IdRef="Delay_7" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="418,168" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Unzip Done&quot;]" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
       <uix:NApplicationCard.TargetApp>
-        <uix:TargetApp Area="958, 534, 580, 371" ContentHash="dUwP9SV8CEmU0wXHsg3Ciw" FilePath="C:\Program Files\7-Zip\7z.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACxSURBVFhH7Y5BCgQhDAT9/6d3Z1gitSb2JBedgwUN0tWK7XC4+GxOWK7M77Ca8wH5Ach0quCufwAynSq46x+ATKcK7voHom5GZUvs3pUXf2AWMnbcjSHopXQhUc9uDEEv5V+IcmS2QS9lD3nyhvJwfgDZQ578jXI38H4E2UMqfgY2+oGqj7oI7PwYsocoH3UR2PkxZDpG5CwEvZTpGJGzEPReruB8wH1gY8JyZQ47ae0LNgOnu6nEIhkAAAAASUVORK5CYII=" sap2010:WorkflowViewState.IdRef="TargetApp_1" InformativeScreenshot="adfb5d13c32567bacb8cb35d911e1d3e.png" Selector="&lt;wnd app='7zg.exe' cls='#32770' title='76% 正在解壓縮 C:\Users\blakezhen ... 073-01.00.02.04.7z' /&gt;" Version="V2" />
+        <uix:TargetApp Area="-1241, 290, 1364, 917" Arguments="c:\users\blakezheng\downloads" ContentHash="b1dauYdCIE26bZGjrPQe6Q" FilePath="C:\Windows\explorer.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGWSURBVFhH7ZXLTsJAGIV5AqLREI3GBCOK0IJQSrl4fxKN0ejSjStdKNcVW+92xwO46SOwZOsj9C3G85tOYnSUocxgTDjJt6Ez5ztlAZFJ/k2cK49V2z1WGUAZ2JceC66pS6XVY/uuL0UJZ4Nr6kKley++FE5TwwAHA3ZRLkNRxwAqFclE2A0NA2wM2Hn2pSjoGECl2yiXwdIxgEq3nnwp8nUNA6hUJBOR0zGASjdRLsNGTcMAKq0++lJkdQyg0grKZTBvNAzIoFQkE2GEHRA/67rJC+/jDb5idd5Y+cGXIo+z6eveN5bPX9niSdcNdOLET7tutt1nJRSpxGz12cIgOc8SRmRwwcFFFRjompeV89AIs4kR9ygZAQMdQ8t56CujgiKKwpDG3bnjkHIeWk9FNgqHIYU7sVHlPDQi1eizwh3+6SRYx9nYkSI5D70NFVsQ/EYSZ2ZVy3norZL1n0es4dmMLjkPCUiUv8UPzidW8dm0bjkPiRIQ5iAmEjXID8ck5yHhCsTE1LjlPFGIowd/JJ9ETSKRd69zcJ9ZGXRqAAAAAElFTkSuQmCC" InformativeScreenshot="5704fe2f833c23a1e734ccf2c4e9b1c8.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/Ayw2KjPTwEShwjWIVaqQsg" Selector="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='Downloads' /&gt;" Version="V2" />
       </uix:NApplicationCard.TargetApp>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="打開Game資料夾" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,2320" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" ScopeGuid="e79d1862-315b-4c56-b844-da6d70b21455" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="打開Game資料夾" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" ScopeGuid="e79d1862-315b-4c56-b844-da6d70b21455" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -1499,12 +1472,12 @@
       </uix:NApplicationCard.TargetApp>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="覆蓋Game檔案" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,2901" sap2010:WorkflowViewState.IdRef="NApplicationCard_10" ScopeGuid="915b031c-9c53-4797-84e5-bc11d961f35b" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="覆蓋Game檔案" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_10" ScopeGuid="915b031c-9c53-4797-84e5-bc11d961f35b" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -1674,12 +1647,12 @@
       </uix:NApplicationCard.TargetApp>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Build" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_12" ScopeGuid="b5e91ad3-0e1f-4d19-9bd6-d67e183b811f" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Build" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_12" ScopeGuid="b5e91ad3-0e1f-4d19-9bd6-d67e183b811f" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -1759,7 +1732,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="覆蓋TPC檔案" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,48" sap2010:WorkflowViewState.IdRef="NApplicationCard_13" ScopeGuid="915b031c-9c53-4797-84e5-bc11d961f35b" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="覆蓋TPC檔案" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486,48" sap2010:WorkflowViewState.IdRef="NApplicationCard_13" ScopeGuid="915b031c-9c53-4797-84e5-bc11d961f35b" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
