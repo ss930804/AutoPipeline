@@ -1,0 +1,13 @@
+﻿{
+  "Name": "檔案總管",
+  "Type": "Screen",
+  "Id": "wWdhVPhr-UiJEvROWPmYWQ",
+  "Reference": "EdNSm3KZAUmUdwdO1xTKrw/wWdhVPhr-UiJEvROWPmYWQ",
+  "ParentRef": "EdNSm3KZAUmUdwdO1xTKrw/MnLXZWecvUiVOduYnYxcjg",
+  "Created": "2025-07-17T07:11:54.8485054Z",
+  "Updated": "2025-07-17T07:11:54.8485054Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

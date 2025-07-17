@@ -1,0 +1,13 @@
+﻿{
+  "Name": "取代或略過檔案",
+  "Type": "Element",
+  "Id": "jeutQvsFyUKvBFNluyLAQA",
+  "Reference": "EdNSm3KZAUmUdwdO1xTKrw/jeutQvsFyUKvBFNluyLAQA",
+  "ParentRef": "EdNSm3KZAUmUdwdO1xTKrw/35JE-CD-tU--g-rALXuPqw",
+  "Created": "2025-07-17T05:51:58.7192455Z",
+  "Updated": "2025-07-17T05:51:58.7192455Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

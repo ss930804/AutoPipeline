@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="9K7RAF8MOUu8T4zahnX8BA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="AbVDOF4PgkGIbcAuRyhOYQ" Reference="EdNSm3KZAUmUdwdO1xTKrw/S8FzvtjJskKt_vAWTcR4yg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="88540d6f-f50d-4e38-86fd-4f8357d10908" CvElementArea="32, 100, 397, 41" CvType="InputBox" DesignTimeRectangle="34, 101, 395, 40" ElementType="Button" FullSelectorArgument="&lt;wnd cls='DirectUIHWND' /&gt;&lt;ctrl name='正在將 172 個項目從 Game 複製到 Data - 0% 已完成' role='grouping' /&gt;&lt;ctrl name='取代目的地中的檔案(R)' role='push button' /&gt;" Guid="4a346f36-8362-4f1e-9593-baa74601c316" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='OperationStatusWindow' title='取代或略過檔案' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="08577d9cf12e48e0c3e5d0f9bf4c4824.png" xmlns="">0k6OGg9HtuESj7LjGR46iLw</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="88540d6f-f50d-4e38-86fd-4f8357d10908" CvElementArea="32, 100, 397, 41" CvType="InputBox" DesignTimeRectangle="34, 101, 395, 40" ElementType="Button" FullSelectorArgument="&lt;wnd app='explorer.exe' cls='OperationStatusWindow' title='*取代或略過檔案*' /&gt;&#xD;&#xA;&lt;ctrl name='取代目的地中的檔案(R)' role='push button' /&gt;" Guid="4a346f36-8362-4f1e-9593-baa74601c316" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='OperationStatusWindow' title='取代或略過檔案' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="08577d9cf12e48e0c3e5d0f9bf4c4824.png" xmlns="">0bVB-kTbSbkOfgh5ghFXzBw</imageRef>
     </TargetAnchorable>
-    <x:String x:Key="ActivityType">Click</x:String>
+    <x:String x:Key="ActivityType">Hover</x:String>
   </ObjectRepositoryTargetData.Data>
 </ObjectRepositoryTargetData>
