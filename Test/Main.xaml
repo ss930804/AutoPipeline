@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" this:Main.dataPath="D:\送驗\s036" this:Main.projectName="S073" this:Main.selectTagName="01.00.02.03" this:Main.selectGameDLLTag="01.00.01.01" this:Main.gameMode="Debug" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" this:Main.dataPath="D:\送驗\s036" this:Main.projectName="S073" this:Main.selectTagName="01.00.02.04" this:Main.selectGameDLLTag="01.00.01.01" this:Main.gameMode="Debug" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="dataPath" Type="InArgument(x:String)" />
     <x:Property Name="projectName" Type="InArgument(x:String)" />
@@ -266,7 +266,7 @@
       <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1051,3020" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="748,5718" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Default="True" Name="isUnzip" />
       <Variable x:TypeArguments="x:Boolean" Name="downloading" />
@@ -276,7 +276,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard DisplayName="Edge 資訊主頁 [Jenkins]" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="843a1574-9888-4dc5-95ed-b6e4f79529c7" WindowResize="Maximize">
+    <uix:NApplicationCard DisplayName="Edge 資訊主頁 [Jenkins]" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="843a1574-9888-4dc5-95ed-b6e4f79529c7" WindowResize="Maximize">
       <uix:NApplicationCard.AutoGenerationOptions>
         <uix:GenerationOptions ExpectedInputs="{x:Null}" Url="{x:Null}" Prompt="Open a web browser">
           <uix:GenerationOptions.ExpectedOutputs>
@@ -1180,7 +1180,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard DisplayName="解壓縮檔案" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486,2721" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="6b2cc2ef-9d4b-4fe3-983c-61297438357d">
+    <uix:NApplicationCard DisplayName="解壓縮檔案" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="6b2cc2ef-9d4b-4fe3-983c-61297438357d">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -1195,7 +1195,7 @@
             </sap:WorkflowViewStateService.ViewState>
             <uix:NHover CursorMotionType="Smooth" DisplayName="Hover 'Game'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" HoverTime="0.5" sap2010:WorkflowViewState.IdRef="NHover_5" ScopeIdentifier="6b2cc2ef-9d4b-4fe3-983c-61297438357d" Version="V5">
               <uix:NHover.Target>
-                <uix:TargetAnchorable CVScreenId="5697a62a-70f4-4b1d-b1a3-cd7a3cda58a3" ContentHash="USyfYJGk8EWIz_y4w2KvNQ" CvTextArea="359, 250, 155, 12" CvTextArgument="Game-S073-01.00.02.04.7z" CvType="Text" DesignTimeRectangle="358, 246, 618, 22" ElementType="Text" FullSelectorArgument="&lt;wnd cls='ShellTabWindowClass' title='Downloads' /&gt;&lt;wnd aaname='檔案總管窗格' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Shell 資料夾檢視' cls='SHELLDLL_DefView' title='ShellView' /&gt;&lt;wnd aaname='項目檢視' cls='DirectUIHWND' /&gt;&lt;ctrl name='項目檢視' role='list' /&gt;&lt;ctrl automationid='0' /&gt;&lt;ctrl automationid='0' /&gt;&lt;ctrl automationid='System.ItemNameDisplay' /&gt;" Guid="f05ee223-a6b5-4956-a173-8b7bb3554947" InformativeScreenshot="e832ea0717ab8852bbbfb708340b1761.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/H9vM2fmZ6EyB3KHaj7phIA" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='Downloads' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                <uix:TargetAnchorable CVScreenId="5697a62a-70f4-4b1d-b1a3-cd7a3cda58a3" ContentHash="W14PqdmqjUiMoMbe0QLPXQ" CvTextArea="359, 250, 155, 12" CvTextArgument="[&quot;Game-&quot; &amp; projectName &amp; &quot;-&quot; &amp; selectTagName &amp; &quot;.7z&quot;]" CvType="Text" DesignTimeRectangle="358, 246, 618, 22" ElementType="Text" FullSelectorArgument="&lt;wnd cls='ShellTabWindowClass' title='Downloads' /&gt;&lt;wnd aaname='檔案總管窗格' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Shell 資料夾檢視' cls='SHELLDLL_DefView' title='ShellView' /&gt;&lt;wnd aaname='項目檢視' cls='DirectUIHWND' /&gt;&lt;ctrl name='項目檢視' role='list' /&gt;&lt;ctrl automationid='0' /&gt;&lt;ctrl automationid='0' /&gt;&lt;ctrl automationid='System.ItemNameDisplay' /&gt;" Guid="f05ee223-a6b5-4956-a173-8b7bb3554947" InformativeScreenshot="e832ea0717ab8852bbbfb708340b1761.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/H9vM2fmZ6EyB3KHaj7phIA" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='Downloads' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
               </uix:NHover.Target>
               <uix:NHover.VerifyOptions>
                 <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
@@ -1210,7 +1210,7 @@
             </uix:NHover>
             <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Game'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_27" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6b2cc2ef-9d4b-4fe3-983c-61297438357d" Version="V5">
               <uix:NClick.Target>
-                <uix:TargetAnchorable CVScreenId="5697a62a-70f4-4b1d-b1a3-cd7a3cda58a3" ContentHash="USyfYJGk8EWIz_y4w2KvNQ" CvTextArea="359, 250, 155, 12" CvTextArgument="Game-S073-01.00.02.04.7z" CvType="Text" DesignTimeRectangle="358, 246, 618, 22" ElementType="Text" FullSelectorArgument="&lt;wnd cls='ShellTabWindowClass' title='Downloads' /&gt;&lt;wnd aaname='檔案總管窗格' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Shell 資料夾檢視' cls='SHELLDLL_DefView' title='ShellView' /&gt;&lt;wnd aaname='項目檢視' cls='DirectUIHWND' /&gt;&lt;ctrl name='項目檢視' role='list' /&gt;&lt;ctrl automationid='0' /&gt;&lt;ctrl automationid='0' /&gt;&lt;ctrl automationid='System.ItemNameDisplay' /&gt;" Guid="f05ee223-a6b5-4956-a173-8b7bb3554947" InformativeScreenshot="e832ea0717ab8852bbbfb708340b1761.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/H9vM2fmZ6EyB3KHaj7phIA" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='Downloads' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                <uix:TargetAnchorable CVScreenId="5697a62a-70f4-4b1d-b1a3-cd7a3cda58a3" ContentHash="W14PqdmqjUiMoMbe0QLPXQ" CvTextArea="359, 250, 155, 12" CvTextArgument="[&quot;Game-&quot; &amp; projectName &amp; &quot;-&quot; &amp; selectTagName &amp; &quot;.7z&quot;]" CvType="Text" DesignTimeRectangle="358, 246, 618, 22" ElementType="Text" FullSelectorArgument="&lt;wnd cls='ShellTabWindowClass' title='Downloads' /&gt;&lt;wnd aaname='檔案總管窗格' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Shell 資料夾檢視' cls='SHELLDLL_DefView' title='ShellView' /&gt;&lt;wnd aaname='項目檢視' cls='DirectUIHWND' /&gt;&lt;ctrl name='項目檢視' role='list' /&gt;&lt;ctrl automationid='0' /&gt;&lt;ctrl automationid='0' /&gt;&lt;ctrl automationid='System.ItemNameDisplay' /&gt;" Guid="f05ee223-a6b5-4956-a173-8b7bb3554947" InformativeScreenshot="e832ea0717ab8852bbbfb708340b1761.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/H9vM2fmZ6EyB3KHaj7phIA" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='Downloads' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
               </uix:NClick.Target>
               <uix:NClick.VerifyOptions>
                 <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
@@ -1225,7 +1225,7 @@
             </uix:NClick>
             <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Game'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_28" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="6b2cc2ef-9d4b-4fe3-983c-61297438357d" Version="V5">
               <uix:NClick.Target>
-                <uix:TargetAnchorable CVScreenId="5697a62a-70f4-4b1d-b1a3-cd7a3cda58a3" ContentHash="USyfYJGk8EWIz_y4w2KvNQ" CvTextArea="359, 250, 155, 12" CvTextArgument="Game-S073-01.00.02.04.7z" CvType="Text" DesignTimeRectangle="358, 246, 618, 22" ElementType="Text" FullSelectorArgument="&lt;wnd cls='ShellTabWindowClass' title='Downloads' /&gt;&lt;wnd aaname='檔案總管窗格' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Shell 資料夾檢視' cls='SHELLDLL_DefView' title='ShellView' /&gt;&lt;wnd aaname='項目檢視' cls='DirectUIHWND' /&gt;&lt;ctrl name='項目檢視' role='list' /&gt;&lt;ctrl automationid='0' /&gt;&lt;ctrl automationid='0' /&gt;&lt;ctrl automationid='System.ItemNameDisplay' /&gt;" Guid="f05ee223-a6b5-4956-a173-8b7bb3554947" InformativeScreenshot="e832ea0717ab8852bbbfb708340b1761.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/H9vM2fmZ6EyB3KHaj7phIA" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='Downloads' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                <uix:TargetAnchorable CVScreenId="5697a62a-70f4-4b1d-b1a3-cd7a3cda58a3" ContentHash="W14PqdmqjUiMoMbe0QLPXQ" CvTextArea="359, 250, 155, 12" CvTextArgument="[&quot;Game-&quot; &amp; projectName &amp; &quot;-&quot; &amp; selectTagName &amp; &quot;.7z&quot;]" CvType="Text" DesignTimeRectangle="358, 246, 618, 22" ElementType="Text" FullSelectorArgument="&lt;wnd cls='ShellTabWindowClass' title='Downloads' /&gt;&lt;wnd aaname='檔案總管窗格' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Shell 資料夾檢視' cls='SHELLDLL_DefView' title='ShellView' /&gt;&lt;wnd aaname='項目檢視' cls='DirectUIHWND' /&gt;&lt;ctrl name='項目檢視' role='list' /&gt;&lt;ctrl automationid='0' /&gt;&lt;ctrl automationid='0' /&gt;&lt;ctrl automationid='System.ItemNameDisplay' /&gt;" Guid="f05ee223-a6b5-4956-a173-8b7bb3554947" InformativeScreenshot="e832ea0717ab8852bbbfb708340b1761.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/H9vM2fmZ6EyB3KHaj7phIA" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='Downloads' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
               </uix:NClick.Target>
               <uix:NClick.VerifyOptions>
                 <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
@@ -1310,7 +1310,7 @@
                   <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="382,122" sap2010:WorkflowViewState.IdRef="Delay_19" />
                   <ui:UiElementExists DisplayName="Element Exists '7zg.exe'" Exists="[isUnzip]" sap:VirtualizedContainerService.HintSize="382,130" sap2010:WorkflowViewState.IdRef="UiElementExists_4">
                     <ui:UiElementExists.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="aa92ca87-35de-472b-83b4-b506cc87921d" InformativeScreenshot="7dc2e16a9cd73ec4da56d485bfb4c558" Selector="&lt;wnd app='7zG.exe' cls='#32770' /&gt;&#xD;&#xA;" TimeoutMS="5000">
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="aa92ca87-35de-472b-83b4-b506cc87921d" InformativeScreenshot="7dc2e16a9cd73ec4da56d485bfb4c558" Selector="&lt;wnd app='7zG.exe' cls='#32770' /&gt;&#xA;" TimeoutMS="5000">
                         <ui:Target.WaitForReady>
                           <InArgument x:TypeArguments="ui:WaitForReady" />
                         </ui:Target.WaitForReady>
@@ -1332,26 +1332,27 @@
       </uix:NApplicationCard.TargetApp>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="打開Game資料夾" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" ScopeGuid="e79d1862-315b-4c56-b844-da6d70b21455" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="打開Game資料夾" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,2535" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" ScopeGuid="e79d1862-315b-4c56-b844-da6d70b21455" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,2021" sap2010:WorkflowViewState.IdRef="Sequence_48">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,2196" sap2010:WorkflowViewState.IdRef="Sequence_48">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Game-&quot; &amp; projectName &amp; &quot;-&quot; &amp; selectTagName]" />
             <uix:NHover CursorMotionType="Smooth" DisplayName="Hover 'Game-Unzip'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" HoverTime="0.5" sap2010:WorkflowViewState.IdRef="NHover_8" ScopeIdentifier="e79d1862-315b-4c56-b844-da6d70b21455" Version="V5">
               <uix:NHover.Target>
-                <uix:TargetAnchorable CVScreenId="d42a5c88-e04f-46ae-a975-153e7c9a9e41" ContentHash="ulo_6yN12Eup8VwqRY7pLA" CvTextArea="360, 292, 137, 12" CvTextArgument="Game-S073-01.00.02.04" CvType="Text" DesignTimeRectangle="358, 288, 618, 22" ElementType="Text" FullSelectorArgument="&lt;wnd cls='ShellTabWindowClass' title='Downloads' /&gt;&lt;wnd aaname='檔案總管窗格' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Shell 資料夾檢視' cls='SHELLDLL_DefView' title='ShellView' /&gt;&lt;wnd aaname='項目檢視' cls='DirectUIHWND' /&gt;&lt;ctrl name='項目檢視' role='list' /&gt;&lt;ctrl automationid='0' /&gt;&lt;ctrl automationid='2' /&gt;&lt;ctrl automationid='System.ItemNameDisplay' /&gt;" Guid="715d904a-ad2d-4046-803a-fb0132ec9954" InformativeScreenshot="341e32380775d70f89ca915ece4b8685.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/ngnKqOc2Zk-Hs3El7wzH1A" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='Downloads' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                <uix:TargetAnchorable CVScreenId="d42a5c88-e04f-46ae-a975-153e7c9a9e41" ContentHash="r4yOgIPjYkeWC-aDTTKApg" CvTextArea="360, 292, 137, 12" CvType="Text" DesignTimeRectangle="358, 288, 618, 22" ElementType="Text" FullSelectorArgument="[&quot;&lt;wnd cls='ShellTabWindowClass' title='Downloads' /&gt;&quot; &amp;&#xA;&quot;&lt;wnd aaname='檔案總管窗格' cls='DirectUIHWND' /&gt;&quot; &amp;&#xA;&quot;&lt;wnd aaname='Shell 資料夾檢視' cls='SHELLDLL_DefView' title='ShellView' /&gt;&quot; &amp;&#xA;&quot;&lt;wnd aaname='項目檢視' cls='DirectUIHWND' /&gt;&quot; &amp;&#xA;&quot;&lt;ctrl name='Game-&quot; &amp; projectName &amp; &quot;-&quot; &amp; selectTagName &amp; &quot;' role='list item' /&gt;&quot;]" Guid="715d904a-ad2d-4046-803a-fb0132ec9954" InformativeScreenshot="341e32380775d70f89ca915ece4b8685.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/ngnKqOc2Zk-Hs3El7wzH1A" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='Downloads' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
               </uix:NHover.Target>
               <uix:NHover.VerifyOptions>
                 <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
@@ -1366,7 +1367,7 @@
             </uix:NHover>
             <uix:NClick ActivateBefore="True" ClickType="Double" DisplayName="Click 'Game-Unzip'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_31" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e79d1862-315b-4c56-b844-da6d70b21455" Version="V5">
               <uix:NClick.Target>
-                <uix:TargetAnchorable CVScreenId="d42a5c88-e04f-46ae-a975-153e7c9a9e41" ContentHash="ulo_6yN12Eup8VwqRY7pLA" CvTextArea="360, 292, 137, 12" CvTextArgument="Game-S073-01.00.02.04" CvType="Text" DesignTimeRectangle="358, 288, 618, 22" ElementType="Text" FullSelectorArgument="&lt;wnd cls='ShellTabWindowClass' title='Downloads' /&gt;&lt;wnd aaname='檔案總管窗格' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Shell 資料夾檢視' cls='SHELLDLL_DefView' title='ShellView' /&gt;&lt;wnd aaname='項目檢視' cls='DirectUIHWND' /&gt;&lt;ctrl name='項目檢視' role='list' /&gt;&lt;ctrl automationid='0' /&gt;&lt;ctrl automationid='2' /&gt;&lt;ctrl automationid='System.ItemNameDisplay' /&gt;" Guid="715d904a-ad2d-4046-803a-fb0132ec9954" InformativeScreenshot="341e32380775d70f89ca915ece4b8685.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/ngnKqOc2Zk-Hs3El7wzH1A" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='Downloads' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                <uix:TargetAnchorable CVScreenId="d42a5c88-e04f-46ae-a975-153e7c9a9e41" ContentHash="r4yOgIPjYkeWC-aDTTKApg" CvTextArea="360, 292, 137, 12" CvType="Text" DesignTimeRectangle="358, 288, 618, 22" ElementType="Text" FullSelectorArgument="[&quot;&lt;wnd cls='ShellTabWindowClass' title='Downloads' /&gt;&quot; &amp;&#xA;&quot;&lt;wnd aaname='檔案總管窗格' cls='DirectUIHWND' /&gt;&quot; &amp;&#xA;&quot;&lt;wnd aaname='Shell 資料夾檢視' cls='SHELLDLL_DefView' title='ShellView' /&gt;&quot; &amp;&#xA;&quot;&lt;wnd aaname='項目檢視' cls='DirectUIHWND' /&gt;&quot; &amp;&#xA;&quot;&lt;ctrl name='Game-&quot; &amp; projectName &amp; &quot;-&quot; &amp; selectTagName &amp; &quot;' role='list item' /&gt;&quot;]" Guid="715d904a-ad2d-4046-803a-fb0132ec9954" InformativeScreenshot="341e32380775d70f89ca915ece4b8685.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/ngnKqOc2Zk-Hs3El7wzH1A" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='Downloads' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
               </uix:NClick.Target>
               <uix:NClick.VerifyOptions>
                 <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
@@ -1472,12 +1473,12 @@
       </uix:NApplicationCard.TargetApp>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="覆蓋Game檔案" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_10" ScopeGuid="915b031c-9c53-4797-84e5-bc11d961f35b" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="覆蓋Game檔案" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,2941" sap2010:WorkflowViewState.IdRef="NApplicationCard_10" ScopeGuid="915b031c-9c53-4797-84e5-bc11d961f35b" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -1623,10 +1624,10 @@
                 </uix:VerifyExecutionOptions>
               </uix:NKeyboardShortcuts.VerifyOptions>
             </uix:NKeyboardShortcuts>
-            <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="416,122" sap2010:WorkflowViewState.IdRef="Delay_12" />
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '取代目的地中的檔案(R)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_47" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="915b031c-9c53-4797-84e5-bc11d961f35b" Version="V5">
+            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="416,122" sap2010:WorkflowViewState.IdRef="Delay_12" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="1" DisplayName="Click '取代目的地中的檔案(R)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_47" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="915b031c-9c53-4797-84e5-bc11d961f35b" Version="V5">
               <uix:NClick.Target>
-                <uix:TargetAnchorable CVScreenId="88540d6f-f50d-4e38-86fd-4f8357d10908" ContentHash="uPiDzVRkCUOUJUY5jNVyjg" CvElementArea="32, 100, 397, 41" CvType="InputBox" DesignTimeRectangle="34, 101, 395, 40" ElementType="Button" FullSelectorArgument="&lt;wnd cls='DirectUIHWND' /&gt;&lt;ctrl name='正在將 172 個項目從 Game 複製到 Data - 0% 已完成' role='grouping' /&gt;&lt;ctrl name='取代目的地中的檔案(R)' role='push button' /&gt;" Guid="03c287ea-13af-4645-9d2f-39c431a8bbfa" InformativeScreenshot="9e943cfb9c916a0ec00abfd10fb34a2d.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/iYzB5nIWY0SG0njn3MTvSA" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='OperationStatusWindow' title='取代或略過檔案' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                <uix:TargetAnchorable CVScreenId="88540d6f-f50d-4e38-86fd-4f8357d10908" ContentHash="MUkMcdg1S0OvqwZ3IvOUIQ" CvElementArea="32, 100, 397, 41" CvType="InputBox" DesignTimeRectangle="34, 101, 395, 40" ElementType="Button" FullSelectorArgument="&lt;wnd app='explorer.exe' cls='#32770' title='取代或略過檔案' /&gt;&#xA;&lt;ctrl name='取代目的地中的檔案(R)' role='push button' /&gt;" Guid="03c287ea-13af-4645-9d2f-39c431a8bbfa" InformativeScreenshot="9e943cfb9c916a0ec00abfd10fb34a2d.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/iYzB5nIWY0SG0njn3MTvSA" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='OperationStatusWindow' title='取代或略過檔案' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Complete" />
               </uix:NClick.Target>
               <uix:NClick.VerifyOptions>
                 <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
@@ -1647,12 +1648,12 @@
       </uix:NApplicationCard.TargetApp>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Build" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_12" ScopeGuid="b5e91ad3-0e1f-4d19-9bd6-d67e183b811f" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Build" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_12" ScopeGuid="b5e91ad3-0e1f-4d19-9bd6-d67e183b811f" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -1732,7 +1733,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="覆蓋TPC檔案" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486,48" sap2010:WorkflowViewState.IdRef="NApplicationCard_13" ScopeGuid="915b031c-9c53-4797-84e5-bc11d961f35b" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="覆蓋TPC檔案" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,48" sap2010:WorkflowViewState.IdRef="NApplicationCard_13" ScopeGuid="915b031c-9c53-4797-84e5-bc11d961f35b" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
