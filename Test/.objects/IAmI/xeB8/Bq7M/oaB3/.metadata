@@ -1,0 +1,13 @@
+﻿{
+  "Name": "新增磁碟區 (D)",
+  "Type": "Element",
+  "Id": "oaB30ZYuH0OgRvlDuOK9Ug",
+  "Reference": "EdNSm3KZAUmUdwdO1xTKrw/oaB30ZYuH0OgRvlDuOK9Ug",
+  "ParentRef": "EdNSm3KZAUmUdwdO1xTKrw/Bq7MIXNn9kWjmMuTp7x_AA",
+  "Created": "2025-07-17T07:34:49.2217359Z",
+  "Updated": "2025-07-17T07:34:49.2217359Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,12 @@
+﻿{
+  "Name": "WinMerge",
+  "Type": "App",
+  "Id": "HJRCuQrZVUWhKEkc0d2XLg",
+  "Reference": "EdNSm3KZAUmUdwdO1xTKrw/HJRCuQrZVUWhKEkc0d2XLg",
+  "Created": "2025-07-17T08:11:07.9517488Z",
+  "Updated": "2025-07-17T08:11:07.9517488Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

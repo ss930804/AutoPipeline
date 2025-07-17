@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="X--zVlOrHUKkKmWJLMXq7g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="5e0f57ad-21e7-4af4-8d29-4915a8c107dd" CvElementArea="273, 37, 108, 29" CvTextArea="279, 44, 94, 13" CvTextArgument="Select File Folder" CvType="Button" DesignTimeRectangle="273, 38, 107, 28" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='1' title='Select File Folder' /&gt;" Guid="c900c60a-4a98-4b78-b42c-596675065f88" ScopeSelectorArgument="&lt;wnd app='gen signature dat.exe' cls='#32770' title='Gen Signature-NA-NA-NA-00.00.02.00' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="ce01bbfc07e9d490a929e6cd868e1e6c.png" xmlns="">0QXtjpIPtZkG0VDfqSWHE0w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Hover</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

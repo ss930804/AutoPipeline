@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="dC0rg7QV20qags9UxPAo9Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="4a44ff8b-f9f5-4d13-9ffd-dbabb3c33013" CvTextArea="194, 120, 28, 12" CvTextArgument="Data" CvType="Text" DesignTimeRectangle="193, 573, 31, 19" FullSelectorArgument="&lt;wnd ctrlid='14145' /&gt;&lt;ctrl idx='2' name='Data' role='outline item' /&gt;" Guid="5862609e-4e07-4d09-9806-1f77cb8494a3" ScopeSelectorArgument="&lt;wnd app='gen signature dat.exe' cls='#32770' title='瀏覽資料夾' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="9e913f24-52f0-4344-a8e0-fac7d3fa8a88" CvTextArea="143, 177, 21, 14" CvTextArgument="(D:)" CvType="Text" DesignTimeRectangle="79, 174, 87, 19" FuzzySelectorArgument="&lt;wnd ctrlid='14145' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;&lt;ctrl name='新增磁碟區 (D:)' role='outline item' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='新增磁碟區 (D:)' /&gt;" Guid="e6bac0ba-7525-4a4b-8301-b48240e99efc" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="2844b2812886dc4e37e19e0e844c69b8.png" xmlns="">05ThMJGPbuUiXe20--J3GXw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

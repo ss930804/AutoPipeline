@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="6FN-jMAtikS7CMxJMbgO7Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="be51eab9-80bf-494a-9bab-0eff6d223b29" CvElementArea="178, 337, 89, 26" CvType="Button" DesignTimeRectangle="178, 337, 88, 26" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='1' title='確定' /&gt;" Guid="9a205e84-cb0a-43b2-a2ed-1270bb33dc64" ScopeSelectorArgument="&lt;wnd app='gen signature dat.exe' cls='#32770' title='瀏覽資料夾' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="2f4194785ed7f55e220e7e2d74440515.png" xmlns="">0VNxOLycGaUybMTC7UelGSg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

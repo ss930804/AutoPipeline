@@ -1,0 +1,14 @@
+﻿{
+  "Name": "split button",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "PwUnSbywSkCIhBbFdqAnug",
+  "Reference": "EdNSm3KZAUmUdwdO1xTKrw/PwUnSbywSkCIhBbFdqAnug",
+  "ParentRef": "EdNSm3KZAUmUdwdO1xTKrw/EswRR5in4U6A7nOW0oTouw",
+  "Created": "2025-07-17T08:11:23.9043196Z",
+  "Updated": "2025-07-17T08:11:23.9043196Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

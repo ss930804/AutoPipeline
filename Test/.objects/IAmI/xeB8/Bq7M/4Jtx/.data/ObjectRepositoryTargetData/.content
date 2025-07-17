@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="zer4dKjJgE-x3kNQgg7V9g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="5e0f57ad-21e7-4af4-8d29-4915a8c107dd" CvElementArea="308, 241, 15, 16" CvTextArea="326, 242, 70, 13" CvTextArgument="Game Folder" CvType="RadioButton" DesignTimeRectangle="309, 241, 96, 18" ElementType="RadioButton" FullSelectorArgument="&lt;wnd ctrlid='1009' title='Game Folder' /&gt;" Guid="2912c1cc-b391-445b-a13c-b43ec9c99019" ScopeSelectorArgument="&lt;wnd app='gen signature dat.exe' cls='#32770' title='Gen Signature-NA-NA-NA-00.00.02.00' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="50aedb73e66260b5e53134eb8f5beee7.png" xmlns="">0yw-ehJi4gEqfgzluknbWEw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Hover</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

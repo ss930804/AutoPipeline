@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="pk6JNZwm_UaD6idWfFxj4Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="19, 51, 39, 24" ElementType="Button" FullSelectorArgument="&lt;wnd cls='ToolbarWindow32' /&gt;&lt;ctrl role='split button' /&gt;" Guid="029fca53-dfb8-47ca-a97c-7931a076987f" ScopeSelectorArgument="&lt;wnd app='winmergeu.exe' cls='WinMergeWindowClassW' title='WinMerge' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="be75c08a2653ce7f99e3b00c73ff737b.png" xmlns="">0phkeUBzHRkOqe-Jz7GYwgg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

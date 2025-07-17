@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" this:Main.signaturePath="D:\相關工具\Gen Signature" this:Main.dataPath="D:\送驗\s036" this:Main.projectName="S073" this:Main.selectTagName="01.00.02.04" this:Main.selectGameDLLTag="01.00.01.01" this:Main.gameMode="Debug" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" this:Main.signaturePath="D:\相關工具\Gen Signature\gen signature dat.exe" this:Main.dataPath="D:\送驗\s036" this:Main.projectName="S073" this:Main.selectTagName="01.00.02.04" this:Main.selectGameDLLTag="01.00.01.01" this:Main.gameMode="Debug" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="argument1" Type="InArgument(x:String)" />
     <x:Property Name="signaturePath" Type="InArgument(x:String)" />
@@ -268,7 +268,7 @@
       <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1297,6557" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1297,7147" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Default="True" Name="isUnzip" />
       <Variable x:TypeArguments="x:Boolean" Name="downloading" />
@@ -1776,7 +1776,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="覆蓋TPC檔案" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1022,48" sap2010:WorkflowViewState.IdRef="NApplicationCard_15" ScopeGuid="915b031c-9c53-4797-84e5-bc11d961f35b" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="覆蓋TPC檔案" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1022,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_15" ScopeGuid="915b031c-9c53-4797-84e5-bc11d961f35b" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -1991,6 +1991,233 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="檔案總管" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1022,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_16" ScopeGuid="0315f6e0-2b05-4a60-9742-408f44b2afb7" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,534" sap2010:WorkflowViewState.IdRef="Sequence_67">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NHover DisplayName="Hover 'Gen Signature Dat.exe'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NHover_28" ScopeIdentifier="0315f6e0-2b05-4a60-9742-408f44b2afb7" Version="V5">
+              <uix:NHover.Target>
+                <uix:TargetAnchorable CVScreenId="f9b96b06-24d4-4f6e-bbf3-4046626056be" ContentHash="0VxIzZ5G7ESvKIgDtq3NzQ" CvTextArea="359, 223, 128, 12" CvTextArgument="Gen Signature Dat.exe" CvType="Text" DesignTimeRectangle="358, 219, 236, 22" ElementType="Text" FullSelectorArgument="&lt;wnd cls='ShellTabWindowClass' title='Gen Signature' /&gt;&lt;wnd aaname='檔案總管窗格' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Shell 資料夾檢視' cls='SHELLDLL_DefView' title='ShellView' /&gt;&lt;wnd aaname='項目檢視' cls='DirectUIHWND' /&gt;&lt;ctrl name='項目檢視' role='list' /&gt;&lt;ctrl automationid='0' /&gt;&lt;ctrl automationid='System.ItemNameDisplay' /&gt;" Guid="1dd63db6-5f48-48ce-b36e-3f6d3d0432a9" InformativeScreenshot="5827cfd2c8dcf75c6a7c41dce6e1ecad.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/pw7f1Gy-zkuA9DTuKIC7Ww" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='Gen Signature' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+              </uix:NHover.Target>
+              <uix:NHover.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NHover.VerifyOptions>
+            </uix:NHover>
+            <uix:NClick ActivateBefore="True" ClickType="Double" DisplayName="Click 'Gen Signature Dat.exe'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,216" sap2010:WorkflowViewState.IdRef="NClick_55" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0315f6e0-2b05-4a60-9742-408f44b2afb7" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="f9b96b06-24d4-4f6e-bbf3-4046626056be" ContentHash="0VxIzZ5G7ESvKIgDtq3NzQ" CvTextArea="359, 223, 128, 12" CvTextArgument="Gen Signature Dat.exe" CvType="Text" DesignTimeRectangle="358, 219, 236, 22" ElementType="Text" FullSelectorArgument="&lt;wnd cls='ShellTabWindowClass' title='Gen Signature' /&gt;&lt;wnd aaname='檔案總管窗格' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Shell 資料夾檢視' cls='SHELLDLL_DefView' title='ShellView' /&gt;&lt;wnd aaname='項目檢視' cls='DirectUIHWND' /&gt;&lt;ctrl name='項目檢視' role='list' /&gt;&lt;ctrl automationid='0' /&gt;&lt;ctrl automationid='System.ItemNameDisplay' /&gt;" Guid="1dd63db6-5f48-48ce-b36e-3f6d3d0432a9" InformativeScreenshot="5827cfd2c8dcf75c6a7c41dce6e1ecad.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/pw7f1Gy-zkuA9DTuKIC7Ww" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='Gen Signature' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-1956, 220, 1364, 917" Arguments="[&quot;&quot;&quot;&quot; + signaturePath + &quot;&quot;&quot;&quot;]" ContentHash="-Xzt-uDyXE6dxNFwrY8_lw" FilePath="C:\Windows\explorer.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMPSURBVFhH7ZbfS1NhHMbPf9G/YKUQmKldGOL81dy0berSiIiIiKCrLoOuoiAiirqJNPBPKDNt/pzb/DE9uplaZi5znjTBzUA9R895+r5nr5xyx3BTdpMPfODl/b7P83w5V0c40pF2FGkSxEizgH3RJKzONQunuPVwZFr0Lw57idmXAlJhucMCzD8G5u6lzvfnIq81NPlUwH6YeXUMS+1WIPIA+HQrPWbugNcawuxd7JvPtyno5oHgtYYwfQOZhNcawtR1ZBJeawhT12iQOXitIUxeRSbhtYYweYUGmYPXGsLHy9iNNmGgpkL4b69ZNq81hIlL2EELN0INNWJrvAHKWAM2xYvYHE0NmTzMyzK2KYtl/tnBaw1hooEGDVTMjG5sjNRjbbAWq34XVvqd+Ol1Ytnr2BfsLfOsBlx6xjplsUyWjXCih9caQtgNLeTG9lgd1oO1iAWcaOnugLPl24FgGTG/Q8/comwtVE9LuM0WoOF4LRTRhV+DDiz12GF7HcHZF7MHgmUs9dr1TGXUBZU6EKozWSDkogWc9MiBeKAa0U6raWA6SF1VeqY84qAFnLSAy2SBcQe0sQtQRmoQ99sQ9VSahqWD1HkecZ8NcrAGKnWwLl5rCOM1tEA1LWCnx1ZEP5SbhqWD1FmhZ8pBO1SxmhaoMVlgzA5NtEEJ0ufqr6QFysj8JYnZ1hJE2iyYby/FQkcCdmZ3X2lm5pE8ZXqmPFxFC9jAunitIYhWaKNWKMP0ufrLEaUfjsJn00kstJdgpacMa74KrA8kYGd2t5dH8lgQ95ZDHqqESh2si9cawmgptGAplEF63FeM6PsiFDwJJxFtL8JqTzE2AiXYGrbosHOstxhSxzlTD7tnmfJACVTqwEipyQJDhdAGC6H48xHvzkO0NRdnHolJLL7LRawrD5v9+VAHCnTYmXmkNnOPRB42l30JD+vitYYQyBE1Xw4UbzbWPCew+CYLeQ+HkvjxNgtxmst9J6H6snXYmXmWWo+be1qz9PmOB/6c5H9CM52+78Nu+GhPpeM50v8sQfgNySA9UWSjAk8AAAAASUVORK5CYII=" InformativeScreenshot="165b37670c909ecdcec153e70d26d41d.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/wWdhVPhr-UiJEvROWPmYWQ" Selector="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='檔案總管' /&gt;" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Gen Signature-NA-NA-NA-00.00.02.00" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1022,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_17" ScopeGuid="2d9e4801-c4c8-4e56-a5ae-34650a24f1e8" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1853" sap2010:WorkflowViewState.IdRef="Sequence_68">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NHover DisplayName="Hover 'Game Folder'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NHover_30" ScopeIdentifier="2d9e4801-c4c8-4e56-a5ae-34650a24f1e8" Version="V5">
+              <uix:NHover.Target>
+                <uix:TargetAnchorable CVScreenId="5e0f57ad-21e7-4af4-8d29-4915a8c107dd" ContentHash="zer4dKjJgE-x3kNQgg7V9g" CvElementArea="308, 241, 15, 16" CvTextArea="326, 242, 70, 13" CvTextArgument="Game Folder" CvType="RadioButton" DesignTimeRectangle="309, 241, 96, 18" ElementType="RadioButton" FullSelectorArgument="&lt;wnd ctrlid='1009' title='Game Folder' /&gt;" Guid="2912c1cc-b391-445b-a13c-b43ec9c99019" InformativeScreenshot="50aedb73e66260b5e53134eb8f5beee7.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/4JtxFwRxEU-Zk7YDCGGN7Q" ScopeSelectorArgument="&lt;wnd app='gen signature dat.exe' cls='#32770' title='Gen Signature-NA-NA-NA-00.00.02.00' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+              </uix:NHover.Target>
+              <uix:NHover.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NHover.VerifyOptions>
+            </uix:NHover>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Game Folder'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_57" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2d9e4801-c4c8-4e56-a5ae-34650a24f1e8" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="5e0f57ad-21e7-4af4-8d29-4915a8c107dd" ContentHash="zer4dKjJgE-x3kNQgg7V9g" CvElementArea="308, 241, 15, 16" CvTextArea="326, 242, 70, 13" CvTextArgument="Game Folder" CvType="RadioButton" DesignTimeRectangle="309, 241, 96, 18" ElementType="RadioButton" FullSelectorArgument="&lt;wnd ctrlid='1009' title='Game Folder' /&gt;" Guid="2912c1cc-b391-445b-a13c-b43ec9c99019" InformativeScreenshot="50aedb73e66260b5e53134eb8f5beee7.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/4JtxFwRxEU-Zk7YDCGGN7Q" ScopeSelectorArgument="&lt;wnd app='gen signature dat.exe' cls='#32770' title='Gen Signature-NA-NA-NA-00.00.02.00' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NHover DisplayName="Hover 'Select File Folder'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NHover_31" ScopeIdentifier="2d9e4801-c4c8-4e56-a5ae-34650a24f1e8" Version="V5">
+              <uix:NHover.Target>
+                <uix:TargetAnchorable CVScreenId="5e0f57ad-21e7-4af4-8d29-4915a8c107dd" ContentHash="X--zVlOrHUKkKmWJLMXq7g" CvElementArea="273, 37, 108, 29" CvTextArea="279, 44, 94, 13" CvTextArgument="Select File Folder" CvType="Button" DesignTimeRectangle="273, 38, 107, 28" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='1' title='Select File Folder' /&gt;" Guid="c900c60a-4a98-4b78-b42c-596675065f88" InformativeScreenshot="ce01bbfc07e9d490a929e6cd868e1e6c.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/yeORqLb9vUSrU3OY28l4uQ" ScopeSelectorArgument="&lt;wnd app='gen signature dat.exe' cls='#32770' title='Gen Signature-NA-NA-NA-00.00.02.00' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+              </uix:NHover.Target>
+              <uix:NHover.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NHover.VerifyOptions>
+            </uix:NHover>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Select File Folder'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_58" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2d9e4801-c4c8-4e56-a5ae-34650a24f1e8" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="5e0f57ad-21e7-4af4-8d29-4915a8c107dd" ContentHash="X--zVlOrHUKkKmWJLMXq7g" CvElementArea="273, 37, 108, 29" CvTextArea="279, 44, 94, 13" CvTextArgument="Select File Folder" CvType="Button" DesignTimeRectangle="273, 38, 107, 28" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='1' title='Select File Folder' /&gt;" Guid="c900c60a-4a98-4b78-b42c-596675065f88" InformativeScreenshot="ce01bbfc07e9d490a929e6cd868e1e6c.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/yeORqLb9vUSrU3OY28l4uQ" ScopeSelectorArgument="&lt;wnd app='gen signature dat.exe' cls='#32770' title='Gen Signature-NA-NA-NA-00.00.02.00' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '新增磁碟區 (D:)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_59" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2d9e4801-c4c8-4e56-a5ae-34650a24f1e8" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="4a44ff8b-f9f5-4d13-9ffd-dbabb3c33013" ContentHash="dC0rg7QV20qags9UxPAo9Q" CvTextArea="194, 120, 28, 12" CvTextArgument="Data" CvType="Text" DesignTimeRectangle="193, 573, 31, 19" FullSelectorArgument="&lt;wnd ctrlid='14145' /&gt;&lt;ctrl idx='2' name='Data' role='outline item' /&gt;" Guid="5862609e-4e07-4d09-9806-1f77cb8494a3" InformativeScreenshot="2844b2812886dc4e37e19e0e844c69b8.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/oaB30ZYuH0OgRvlDuOK9Ug" ScopeSelectorArgument="&lt;wnd app='gen signature dat.exe' cls='#32770' title='瀏覽資料夾' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="9e913f24-52f0-4344-a8e0-fac7d3fa8a88" CvTextArea="143, 177, 21, 14" CvTextArgument="(D:)" CvType="Text" DesignTimeRectangle="79, 174, 87, 19" FuzzySelectorArgument="&lt;wnd ctrlid='14145' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;&lt;ctrl name='新增磁碟區 (D:)' role='outline item' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='新增磁碟區 (D:)' /&gt;" Guid="e6bac0ba-7525-4a4b-8301-b48240e99efc" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '確定'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_60" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2d9e4801-c4c8-4e56-a5ae-34650a24f1e8" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="be51eab9-80bf-494a-9bab-0eff6d223b29" ContentHash="6FN-jMAtikS7CMxJMbgO7Q" CvElementArea="178, 337, 89, 26" CvType="Button" DesignTimeRectangle="178, 337, 88, 26" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='1' title='確定' /&gt;" Guid="9a205e84-cb0a-43b2-a2ed-1270bb33dc64" InformativeScreenshot="2f4194785ed7f55e220e7e2d74440515.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/UqypIKzo-k-f7sYzTD9b4g" ScopeSelectorArgument="&lt;wnd app='gen signature dat.exe' cls='#32770' title='瀏覽資料夾' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NHover DisplayName="Hover 'Gen Dat File'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NHover_32" ScopeIdentifier="2d9e4801-c4c8-4e56-a5ae-34650a24f1e8" Version="V5">
+              <uix:NHover.Target>
+                <uix:TargetAnchorable CVScreenId="190a10ab-a8e8-4286-b741-1f469961ac8f" ContentHash="arWFCRaFV0uher3gkBDDfA" CvElementArea="428, 34, 87, 68" CvTextArea="437, 61, 67, 13" CvTextArgument="Gen Dat File" CvType="Button" DesignTimeRectangle="428, 35, 86, 68" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='1011' title='Gen Dat File' /&gt;" Guid="17e1fff3-172a-4b5e-9b7a-c38380df5ff0" InformativeScreenshot="3328299acbb5d5072b5a21dca0489c36.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/XIsaLVlbUUaNDT13ocq6yQ" ScopeSelectorArgument="&lt;wnd app='gen signature dat.exe' cls='#32770' title='Gen Signature-NA-NA-NA-00.00.02.00' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+              </uix:NHover.Target>
+              <uix:NHover.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NHover.VerifyOptions>
+            </uix:NHover>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Gen Dat File'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_61" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2d9e4801-c4c8-4e56-a5ae-34650a24f1e8" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="190a10ab-a8e8-4286-b741-1f469961ac8f" ContentHash="arWFCRaFV0uher3gkBDDfA" CvElementArea="428, 34, 87, 68" CvTextArea="437, 61, 67, 13" CvTextArgument="Gen Dat File" CvType="Button" DesignTimeRectangle="428, 35, 86, 68" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='1011' title='Gen Dat File' /&gt;" Guid="17e1fff3-172a-4b5e-9b7a-c38380df5ff0" InformativeScreenshot="3328299acbb5d5072b5a21dca0489c36.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/XIsaLVlbUUaNDT13ocq6yQ" ScopeSelectorArgument="&lt;wnd app='gen signature dat.exe' cls='#32770' title='Gen Signature-NA-NA-NA-00.00.02.00' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-1250, 485, 529, 285" ContentHash="qAEbCnckgkSifKQTtD7-7w" FilePath="[signaturePath]" IconBase64="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" InformativeScreenshot="7854bbcadf7a639a71fa34c8ab905961.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/Bq7MIXNn9kWjmMuTp7x_AA" Selector="&lt;wnd app='gen signature dat.exe' cls='#32770' title='Gen Signature-NA-NA-NA-00.00.02.00' /&gt;" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="WinMerge" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1022,467" sap2010:WorkflowViewState.IdRef="NApplicationCard_18" ScopeGuid="ce01a789-a504-4bae-ab24-93caa1179fbf" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,177" sap2010:WorkflowViewState.IdRef="Sequence_69">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="416,115" sap2010:WorkflowViewState.IdRef="Delay_23" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-1407, 531, 1054, 669" ContentHash="FFbVmPFkn0q_lRjznihsQA" FilePath="D:\Program Files\WinMerge\winmergeu.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAcDSURBVFhH1ZZ7UJtVGsY/dnTtiE5n3X9aqdZepLVbasZbvYzuVju71lG7tbNaL7VjHe+2xRE7W7eS0i7LUpaprcZqEasg0JYiplRSoNwitxBSmnAn0PBBSUhDmoQkhBDCs+/58oUElu5A1T98Z55533O+zHue/PLlnMP9KkLyUTlmpd2lE/VNknVrOI6bS4ogXV1IqNFMw+/3wzY0LCwuze8ImFh6z9+ozdWbkIgGjENj6LnsQ8elUWiNXqj7RlDZ5YKiyYo8tREZym4cKWoGz/N46qNsxGY34z+KbsFE5C0rn6ZWV2dCIhqwuv1o7PeistsDeZsbWY1OyGod2Fdkwo4cPV48rMHafUX4TF4H2YmziNl5GqVtg2EmYp6idrM3IRENuLzjuDw8BlM4CVOQhBNnmq04Wd+PtMIGgcKjcV9hS9o5aHocP82ERDQwOjYOs9MPvdWLRlqYkSgQSRwmEomMxHE9Nh2qxbEyLf71VQHullYg9Uw3GgxD05m4chyZc2NWVMRvbqJyjkQ0MD4OeP3jk0nYiIRlFDqRhJJIKHSDyC7VCRQefv8b/DmlGodKDGTif0hcOdLn3IiUyLnFkRERMat2FQkGWPj8gNvrh4VIGBgJ8Z2YSmJbhg7Faj0+/Px7YcG1ydX4U1IVnkitxctHzglzwkJXimO3LcJAVRU+jo4+t+iZZHg8HtEC/dWIBPs5giQGnGPgiUSnSKLhIr0T+iHIa9oEChJabIM0G6cqNJCXN+ClvZlBA6+xtaaNvOVLMDI4iM70NLy8eAWadDoMh5kIkmDvhMHqC7wThhCJL4iEVN6N3IrA37JWo8P6re8j9h+JqGhoDxrYIyw2XcglS+Hu74OtRQfNrlhkPr4G2vNkYngyCe8ECT8G6J0IkRhFfe8wvqvphPRQJrbsiMfWDxKx7Z+fo7CwMGRAvuz3KLx3MRSrbw/o/kC2aurgvKDHoKoKxjNytOyXInXV9ch9g0P7pxz4NA6GL0LigzWbDz6j3HmYQ0MKh9J9HJRJHLQfc7BarSEDJY8sgaP1PBxt2kAOShwPnC0AfzwdRkUe1Ns248TGh6BTn4LLpsWYp33WMqRzAr0JA8p10bBr62AuzoXp9LeTVZAJY96X6ElPQv/JNPSkJaF179vIf341ztcchdNcAp+jEqOTpBTmfJTZOPw5q/nMKQZUG5fBoS6BOV8GY06KINMxklgz9crihDmW2bjpzSeQ+WAk1Js4eOKpYSJpb5jYOKiwsb1pLdGkOtxA4+blGPzu3+jbv4G0EUbZqzClb4c5YycuZe+GOXMnepM3CfPdcY+iR7oGba/fjsz1N+PL5AfRodwAW+vzsLeJYnVQwXHYPJ8/xUDLGytgL9wD0/670C+9lbQwlONZvRA9r88T83xceG8BUh6IxPoYDlmvcDDRNxuXUdPPRH0SVgfHouwd28H/QHW4AX3scrgqPoAt4x5cTl8KG0nIaQGx2pJ0i1DzO+Yj49kovPDXO5Ga8CTqFO9ioCUe9q69cJDsXQkTdWicII4Dz/pKrp1swLAjCvzOaBhio2DYPg+GbSTK7rMrMVx+H+UYOPMWwXp0CT75y1w8dv8NSIydh9Kji9FVFI2+8jvQV7pMyLxQs8zGy8DTPE9j4Xkw0/wkAxRLSe+QDoTLlLACYwO74ev6Ixw5tyL3tTvw8GOPY+u7cUhNy8bxQiXkZSqcLldBUVmPYmU9yqrqUVFTD2VtParr1KhRqYVcVauGkubLqgOfm2rgBhIzIQmXNWUVxkf3w9P4EJKeXIAtm19C3L6DiM+qw5FqC3Jou5W3uFHU4RYOIxXvEQ6mNrNX2Jr7HT5Y6ALDLjEWp0/YstmclXbMqQamDcfBlfBd/BDy7dEDv4teDZlMhq+LNCjvsEPVOwLNRa9wLWsxjwpb7wVatJe2YaNjjBYbExa2e/zCNu0muejccI6MC3MzMuA6sBAVf49uv37Ob79dsC4Wzc3N+KH5MqQlNiSV23DgR4dw4HyjceK4dioNMkeHU4fFN0HDJBIYGpmhAT5p/qnrromIo/Lt5W8eFY7jwvZhFHcOo7TLg8oLHlT3jAg0zhF6dgy3htOwEw06nC65iAZhd9A3dxABx0wNUESRHiH9IXghYd/yrXwL3iuwYpfCigSikUw0DjIaqqk0yCQdz6q+EI1u+onsM30HKK4jsXvbxJXspM6F/GY3ClrdEzTKiIaSaNQQjXq6kjEaTbRgG9HQEw0DXV77iAa7vgVpsGA9qff/NTAREtHAsfMuPJdlxuYcC17NteCd6WhUh2jkasks0SjRe/Aj0VATDfaCsmA9qfXsDLCbTg6ZOKF1Ia/Jhe9FGoqpNPhpaAyGaLBgPan17Az8nMF6UuuZG/glxM3UgBjswz+zuD3/Bc2NFbjB290MAAAAAElFTkSuQmCC" InformativeScreenshot="3637572dad459421d40476e6cc68dacf.png" Reference="EdNSm3KZAUmUdwdO1xTKrw/EswRR5in4U6A7nOW0oTouw" Selector="&lt;wnd app='winmergeu.exe' cls='WinMergeWindowClassW' title='WinMerge - [選取檔案或資料夾]' /&gt;&lt;wnd aaname='工作區' cls='MDIClient' /&gt;&lt;wnd cls='Afx:*' title='選取檔案或資料夾' /&gt;" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
   </Sequence>
 </Activity>
