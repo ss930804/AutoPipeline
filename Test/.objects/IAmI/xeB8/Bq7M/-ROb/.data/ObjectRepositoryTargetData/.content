@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="FHJn1PjZIkGeM0GFMhTcEQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="ba2a3b4d-9a8b-4d92-be55-bc455f1ae446" CvTextArea="143, 120, 21, 14" CvTextArgument="(D:)" CvType="Text" DesignTimeRectangle="79, 117, 87, 19" FullSelectorArgument="&lt;wnd ctrlid='14145' /&gt;&lt;ctrl name='新增磁碟區 (D:)' role='outline item' /&gt;" Guid="0e568340-8ccc-4c50-8d32-5b788dffb5c8" ScopeSelectorArgument="&lt;wnd app='gen signature dat.exe' cls='#32770' title='瀏覽資料夾' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="5021461f801d98237a3e762815464385.png" xmlns="">0x-o13wkJIUmuEs8bkvkniA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

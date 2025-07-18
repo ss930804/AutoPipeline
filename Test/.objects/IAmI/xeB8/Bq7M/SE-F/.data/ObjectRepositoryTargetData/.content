@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="WW3QBgzLf0aCG35_QDzA5g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="139027da-1d59-4ad9-abab-de9b82f97e24" DesignTimeRectangle="174, 155, 32, 19" FullSelectorArgument="&lt;wnd ctrlid='14145' /&gt;&lt;ctrl name='S036' role='outline item' /&gt;" Guid="a0a2ea91-645d-4ed2-9785-3106f6f6bdaa" ScopeSelectorArgument="&lt;wnd app='gen signature dat.exe' cls='#32770' title='瀏覽資料夾' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="a608a3155161dfbe13c2ece76ffd8184.png" xmlns="">01ChMo1GXzEKABuEGk_RBPw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Hover</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="aSx5oeQUqUCNAo5mYm7B4w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="618785fd-37f7-4e03-af4e-941336f32086" CvTextArea="117, 158, 29, 12" CvTextArgument="s036" CvType="Text" DesignTimeRectangle="117, 155, 30, 19" FullSelectorArgument="&lt;wnd ctrlid='14145' /&gt;&lt;ctrl name='s036' role='outline item' /&gt;" Guid="c2f7225e-47e2-4e69-b617-3c486f104e8d" ScopeSelectorArgument="&lt;wnd app='gen signature dat.exe' cls='#32770' title='瀏覽資料夾' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="b929215a3f134e44901baed616278ef3.png" xmlns="">0OocBV-xqJk260SLyXIfr_A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">MouseScrollSearchedElement</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

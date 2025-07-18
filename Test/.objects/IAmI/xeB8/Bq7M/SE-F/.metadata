@@ -1,0 +1,13 @@
+﻿{
+  "Name": "S036",
+  "Type": "Element",
+  "Id": "SE-Fdya_5kitGlmbqayWPg",
+  "Reference": "EdNSm3KZAUmUdwdO1xTKrw/SE-Fdya_5kitGlmbqayWPg",
+  "ParentRef": "EdNSm3KZAUmUdwdO1xTKrw/Bq7MIXNn9kWjmMuTp7x_AA",
+  "Created": "2025-07-18T03:54:35.8425479Z",
+  "Updated": "2025-07-18T03:54:35.8425479Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
